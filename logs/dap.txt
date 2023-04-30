@@ -145,3 +145,19 @@ Sun Apr 30 2023 [13:36:13 GMT+0700 (Indochina Time)] Log file started
 [1:49:52 PM] [DAP] [Info] <== {"seq":121,"type":"event","event":"dart.navigate","body":{"file":"file:///D:/BETTERday/BETTERday/betterday/lib/main.dart","line":81,"column":16,"inOtherEditorColumn":true,"fromInspector":true}}
 [1:49:52 PM] [DAP] [Info] <== {"seq":122,"type":"event","event":"dart.log","body":{"message":"==> [{\"id\":\"2\",\"method\":\"app.callServiceExtension\",\"params\":{\"appId\":\"a49d34b5-3902-4cf4-8bee-436fc12ce271\",\"methodName\":\"ext.flutter.inspector.disposeGroup\",\"params\":{\"objectGroup\":\"my-group\"}}}]\r\n","severity":0,"category":9}}
 [1:49:52 PM] [DAP] [Info] <== {"seq":123,"type":"event","event":"dart.log","body":{"message":"<== [{\"id\":\"2\",\"result\":{\"result\":null,\"type\":\"_extensionType\",\"method\":\"ext.flutter.inspector.disposeGroup\"}}]\r\n","severity":0,"category":9}}
+[1:51:02 PM] [DAP] [Info] ==> {"command":"terminate","arguments":{"restart":false},"type":"request","seq":8}
+[1:51:02 PM] [DAP] [Info] <== {"seq":124,"type":"event","event":"dart.progressStart","body":{"progressId":"terminate","message":"Terminating debug session…"}}
+[1:51:02 PM] [DAP] [Info] <== {"seq":125,"type":"response","request_seq":8,"command":"terminate","success":true}
+[1:51:02 PM] [DAP] [Info] <== {"seq":126,"type":"event","event":"dart.log","body":{"message":"==> [{\"id\":\"3\",\"method\":\"app.stop\",\"params\":{\"appId\":\"a49d34b5-3902-4cf4-8bee-436fc12ce271\"}}]\r\n","severity":0,"category":9}}
+[1:51:03 PM] [DAP] [Info] <== {"seq":127,"type":"event","event":"dart.log","body":{"message":"<== Application finished.\r\n","severity":0,"category":9}}
+[1:51:03 PM] [DAP] [Info] <== {"seq":128,"type":"event","event":"output","body":{"category":"stdout","output":"Application finished.\n"}}
+[1:51:03 PM] [DAP] [Info] <== {"seq":129,"type":"event","event":"dart.log","body":{"message":"<== [{\"id\":\"3\",\"result\":true}]\r\n","severity":0,"category":9}}
+[1:51:03 PM] [DAP] [Info] <== {"seq":130,"type":"event","event":"dart.log","body":{"message":"<== [{\"event\":\"app.stop\",\"params\":{\"appId\":\"a49d34b5-3902-4cf4-8bee-436fc12ce271\"}}]\r\n","severity":0,"category":9}}
+[1:51:03 PM] [DAP] [Info] <== {"seq":131,"type":"event","event":"dart.log","body":{"message":"Process C:\\src\\flutter\\bin\\flutter.bat terminated! null, SIGTERM","severity":0,"category":9}}
+[1:51:03 PM] [DAP] [Info] <== {"seq":132,"type":"event","event":"output","body":{"category":"console","output":"Exited (sigterm)\n"}}
+[1:51:03 PM] [DAP] [Info] <== {"seq":133,"type":"event","event":"terminated"}
+[1:51:03 PM] [DAP] [Info] ==> {"command":"disconnect","arguments":{"restart":false},"type":"request","seq":9}
+[1:51:03 PM] [DAP] [Info] <== {"seq":134,"type":"response","request_seq":9,"command":"disconnect","success":true}
+[1:51:03 PM] [DAP] [Info] Stopping debug session d8798c35-43d1-4149-8921-6f8b2f39e3bd
+[1:51:03 PM] [DAP] [Info] Debug session d8798c35-43d1-4149-8921-6f8b2f39e3bd errored: {}
+[1:51:03 PM] [DAP] [Info] Debug session d8798c35-43d1-4149-8921-6f8b2f39e3bd exit: code: 0, signal: undefined
