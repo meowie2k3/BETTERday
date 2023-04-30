@@ -13,4 +13,6 @@ NO_PROXY: undefined
 Logging Categories:
     DAP
 
-Sun Apr 30 2023 [16:04:44 GMT+0700 (Indochina Time)] Log file started
+Sun Apr 30 2023 [20:47:58 GMT+0700 (Indochina Time)] Log file started
+[9:36:15 PM] [DAP] [Info] Starting debug session 56715ae6-82ee-4b37-8144-08306cff9974
+[9:36:15 PM] [DAP] [Info] ==> {"command":"initialize","arguments":{"clientID":"vscode","clientName":"Visual Studio Code","adapterID":"dart","pathFormat":"path","linesStartAt1":true,"columnsStartAt1":true,"supportsVariableType":true,"supportsVariablePaging":true,"supportsRunInTerminalRequest":true,"locale":"en","supportsProgressReporting":true,"supportsInvalidatedEvent":true,"supportsMemoryReferences":true,"supportsArgsCanBeInterpretedByShell":true,"supportsMemoryEvent":true,"supportsStartDebuggingRequest":true},"type":"request","seq":1}
