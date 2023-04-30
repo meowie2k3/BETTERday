@@ -38,3 +38,24 @@ Sun Apr 30 2023 [20:47:58 GMT+0700 (Indochina Time)] Log file started
 [9:35:37 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"emulator-5554","name":"sdk gphone x86","platform":"android-x86","emulator":true,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":"betterday","sdk":"Android 11 (API 30)","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":true,"fastStart":true,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
 [9:35:37 PM] [FlutterDaemon] [Info] ==> [{"id":"7","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
 [9:35:37 PM] [FlutterDaemon] [Info] <== [{"id":"7","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[9:36:15 PM] [FlutterDaemon] [Info] ==> [{"id":"8","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[9:36:15 PM] [FlutterDaemon] [Info] <== [{"id":"8","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[9:36:15 PM] [FlutterDaemon] [Info] ==> [{"id":"9","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[9:36:15 PM] [FlutterDaemon] [Info] <== [{"id":"9","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[9:40:53 PM] [FlutterDaemon] [Info] ==> [{"id":"10","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[9:40:53 PM] [FlutterDaemon] [Info] <== [{"id":"10","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[9:40:53 PM] [FlutterDaemon] [Info] ==> [{"id":"11","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[9:40:53 PM] [FlutterDaemon] [Info] <== [{"id":"11","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[10:00:59 PM] [General] [Error] Canceled
+Canceled: Canceled
+    at a.P (vscode-file://vscode-app/c:/Users/Truong%20Tri%20Dung/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:893:44406)
+    at vscode-file://vscode-app/c:/Users/Truong%20Tri%20Dung/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:893:44333
+[10:01:01 PM] [FlutterDaemon] [Info] ==> [{"id":"12","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[10:01:01 PM] [FlutterDaemon] [Info] <== [{"id":"12","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[10:01:01 PM] [FlutterDaemon] [Info] ==> [{"id":"13","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[10:01:01 PM] [FlutterDaemon] [Info] <== [{"id":"13","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[10:19:56 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"Error 1 retrieving device properties for sdk gphone x86:"}}]
+[10:19:56 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"adb.exe: device 'emulator-5554' not found\r\n"}}]
+[10:19:56 PM] [FlutterDaemon] [Info] <== [{"event":"device.removed","params":{"id":"emulator-5554","name":"sdk gphone x86","platform":"android-arm","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null,"sdk":"Android null (API null)","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":true,"fastStart":true,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
+[10:19:56 PM] [FlutterDaemon] [Info] ==> [{"id":"14","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[10:19:56 PM] [FlutterDaemon] [Info] <== [{"id":"14","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]

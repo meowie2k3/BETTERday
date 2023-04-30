@@ -1,18 +1,4 @@
-[10:01:01 PM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\main.dart"]
-[10:01:01 PM]: ..  in D:\BETTERday\BETTERday\betterday
-[10:01:01 PM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
-[10:01:02 PM]: PID: 30044
-[10:01:04 PM]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":28072}}]
-[10:01:04 PM]: <== [{"event":"app.start","params":{"appId":"b90400f2-b2d7-49e4-81e3-7f8134a87450","deviceId":"emulator-5554","directory":"D:\\BETTERday\\BETTERday\\betterday","supportsRestart":true,"launchMode":"run"}}]
-[10:01:04 PM]: <== Launching lib\main.dart on sdk gphone x86 in debug mode...
-[10:01:05 PM]: <== [{"event":"app.progress","params":{"appId":"b90400f2-b2d7-49e4-81e3-7f8134a87450","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
-[10:01:17 PM]: <== [{"event":"app.progress","params":{"appId":"b90400f2-b2d7-49e4-81e3-7f8134a87450","id":"0","progressId":null,"finished":true}}]
-[10:01:17 PM]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
-[10:01:18 PM]: <== [{"event":"app.progress","params":{"appId":"b90400f2-b2d7-49e4-81e3-7f8134a87450","id":"1","progressId":null,"message":"Installing build\\app\\outputs\\flutter-apk\\app-debug.apk...","finished":false}}]
-[10:01:19 PM]: <== [{"event":"app.progress","params":{"appId":"b90400f2-b2d7-49e4-81e3-7f8134a87450","id":"1","progressId":null,"finished":true}}]
-[10:01:22 PM]: <== [{"event":"app.debugPort","params":{"appId":"b90400f2-b2d7-49e4-81e3-7f8134a87450","port":63593,"wsUri":"ws://127.0.0.1:63593/xNkx5r2fJjY=/ws","baseUri":"file:///data/user/0/com.example.betterday/code_cache/betterdayKJFJLU/betterday/"}}]
-[10:01:23 PM]: <== [{"event":"app.progress","params":{"appId":"b90400f2-b2d7-49e4-81e3-7f8134a87450","id":"2","progressId":null,"message":"Syncing files to device sdk gphone x86...","finished":false}}]
-[10:01:23 PM]: <== [{"event":"app.progress","params":{"appId":"b90400f2-b2d7-49e4-81e3-7f8134a87450","id":"2","progressId":null,"finished":true}}]
-[10:01:23 PM]: <== [{"event":"app.started","params":{"appId":"b90400f2-b2d7-49e4-81e3-7f8134a87450"}}]
-[10:19:55 PM]: <== Lost connection to device.
-[10:19:55 PM]: <== [{"event":"app.stop","params":{"appId":"b90400f2-b2d7-49e4-81e3-7f8134a87450"}}]
+[12:12:47 AM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\main.dart"]
+[12:12:47 AM]: ..  in D:\BETTERday\BETTERday\betterday
+[12:12:47 AM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[12:12:47 AM]: PID: 24588

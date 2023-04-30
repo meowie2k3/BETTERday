@@ -284,3 +284,220 @@ NO_PROXY: undefined
 [8:48:16 PM] [General] [Info] Returning cached results for project search
 [8:48:16 PM] [General] [Info] Checking 1 projects for supported platforms
 [8:48:17 PM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
+[8:49:20 PM] [General] [Info] Returning cached results for project search
+[9:35:24 PM] [General] [Info] Took 45ms to search for projects (5 levels)
+[9:35:24 PM] [General] [Info] Took 12ms to filter out excluded projects (0 exclusion rules)
+[9:35:24 PM] [General] [Info] Checking 1 projects for supported platforms
+[9:35:24 PM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
+[9:35:37 PM] [General] [Info] Saving emulator-5554 as preferred device
+[9:35:37 PM] [General] [Info] Returning cached results for project search
+[9:35:37 PM] [General] [Info] Checking 1 projects for supported platforms
+[9:35:37 PM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
+[9:36:15 PM] [General] [Info] Starting debug session...
+[9:36:15 PM] [General] [Info]     workspace: D:\BETTERday\BETTERday
+[9:36:15 PM] [General] [Info]     program  : D:\BETTERday\BETTERday\betterday\lib\main.dart
+[9:36:15 PM] [General] [Info] Setting cwd based on likely entry point: D:\BETTERday\BETTERday
+[9:36:15 PM] [General] [Info] Using workspace as cwd: D:\BETTERday\BETTERday
+[9:36:15 PM] [General] [Info] Found better project root to use as cwd: D:\BETTERday\BETTERday\betterday
+[9:36:15 PM] [General] [Info] Detected launch project as Flutter
+[9:36:15 PM] [General] [Info] Using Flutter debug adapter for this session
+[9:36:15 PM] [General] [Info] Getting DevTools server address to pass to Flutter...
+[9:36:15 PM] [General] [Info] Checking for errors before launching
+[9:36:15 PM] [General] [Info] Debug session starting...
+    {
+        "name": "Dart ",
+        "noDebug": false,
+        "request": "launch",
+        "type": "dart",
+        "groupId": 0,
+        "program": "D:\\BETTERday\\BETTERday\\betterday\\lib\\main.dart",
+        "dartCodeDebugSessionID": "session-59931",
+        "cwd": "D:\\BETTERday\\BETTERday\\betterday",
+        "deviceId": "emulator-5554",
+        "deviceName": "betterday (android-x86)",
+        "toolEnv": {
+            "FLUTTER_HOST": "VSCode",
+            "PUB_ENVIRONMENT": "vscode.dart-code"
+        },
+        "sendLogsToClient": false,
+        "sendCustomProgressEvents": true,
+        "additionalProjectPaths": [
+            "D:\\BETTERday\\BETTERday"
+        ],
+        "args": [],
+        "vmAdditionalArgs": [],
+        "toolArgs": [
+            "-d",
+            "emulator-5554",
+            "--devtools-server-address",
+            "http://127.0.0.1:9101/"
+        ],
+        "vmServicePort": 0,
+        "dartSdkPath": "C:\\src\\flutter\\bin\\cache\\dart-sdk",
+        "vmServiceLogFile": "D:\\BETTERday\\BETTERday\\logs\\observatory.txt",
+        "maxLogLineLength": 2000,
+        "dartTestLogFile": "D:\\BETTERday\\BETTERday\\logs\\dart_test.txt",
+        "debugSdkLibraries": false,
+        "debugExternalPackageLibraries": false,
+        "showDartDeveloperLogs": true,
+        "evaluateGettersInDebugViews": true,
+        "evaluateToStringInDebugViews": true,
+        "flutterSdkPath": "C:\\src\\flutter",
+        "useInspectorNotificationsForWidgetErrors": true,
+        "flutterRunLogFile": "D:\\BETTERday\\BETTERday\\logs\\flutter_run.txt",
+        "flutterTestLogFile": "D:\\BETTERday\\BETTERday\\logs\\flutter_test.txt",
+        "showMemoryUsage": false,
+        "debuggerType": 2
+    }
+[9:36:15 PM] [General] [Info] Using flutter debugger for Flutter
+[9:36:15 PM] [General] [Info] SDK DAP setting is false, set by sdkDaps experiment
+[9:36:15 PM] [General] [Info] Running debugger via node with c:\Users\Truong Tri Dung\.vscode\extensions\dart-code.dart-code-3.62.0\out\dist\debug.js    flutter
+[9:36:16 PM] [General] [Info] Did not find session 56715ae6-82ee-4b37-8144-08306cff9974 to handle dart.progressStart. There were 0 sessions:
+[9:36:16 PM] [General] [Info] Event will be queued and processed when the session start event fires
+[9:36:16 PM] [General] [Info] Processing delayed event dart.progressStart for session 56715ae6-82ee-4b37-8144-08306cff9974
+[9:36:57 PM] [General] [Info] Returning cached results for project search
+[9:40:53 PM] [General] [Info] Starting debug session...
+[9:40:53 PM] [General] [Info]     workspace: D:\BETTERday\BETTERday
+[9:40:53 PM] [General] [Info]     program  : D:\BETTERday\BETTERday\betterday\lib\main.dart
+[9:40:53 PM] [General] [Info] Setting cwd based on likely entry point: D:\BETTERday\BETTERday
+[9:40:53 PM] [General] [Info] Using workspace as cwd: D:\BETTERday\BETTERday
+[9:40:53 PM] [General] [Info] Found better project root to use as cwd: D:\BETTERday\BETTERday\betterday
+[9:40:53 PM] [General] [Info] Detected launch project as Flutter
+[9:40:53 PM] [General] [Info] Using Flutter debug adapter for this session
+[9:40:53 PM] [General] [Info] Getting DevTools server address to pass to Flutter...
+[9:40:53 PM] [General] [Info] Checking for errors before launching
+[9:40:53 PM] [General] [Info] Debug session starting...
+    {
+        "name": "Dart ",
+        "noDebug": false,
+        "request": "launch",
+        "type": "dart",
+        "groupId": 0,
+        "program": "D:\\BETTERday\\BETTERday\\betterday\\lib\\main.dart",
+        "dartCodeDebugSessionID": "session-2b38f",
+        "cwd": "D:\\BETTERday\\BETTERday\\betterday",
+        "deviceId": "emulator-5554",
+        "deviceName": "betterday (android-x86)",
+        "toolEnv": {
+            "FLUTTER_HOST": "VSCode",
+            "PUB_ENVIRONMENT": "vscode.dart-code"
+        },
+        "sendLogsToClient": false,
+        "sendCustomProgressEvents": true,
+        "additionalProjectPaths": [
+            "D:\\BETTERday\\BETTERday"
+        ],
+        "args": [],
+        "vmAdditionalArgs": [],
+        "toolArgs": [
+            "-d",
+            "emulator-5554",
+            "--devtools-server-address",
+            "http://127.0.0.1:9101/"
+        ],
+        "vmServicePort": 0,
+        "dartSdkPath": "C:\\src\\flutter\\bin\\cache\\dart-sdk",
+        "vmServiceLogFile": "D:\\BETTERday\\BETTERday\\logs\\observatory.txt",
+        "maxLogLineLength": 2000,
+        "dartTestLogFile": "D:\\BETTERday\\BETTERday\\logs\\dart_test.txt",
+        "debugSdkLibraries": false,
+        "debugExternalPackageLibraries": false,
+        "showDartDeveloperLogs": true,
+        "evaluateGettersInDebugViews": true,
+        "evaluateToStringInDebugViews": true,
+        "flutterSdkPath": "C:\\src\\flutter",
+        "useInspectorNotificationsForWidgetErrors": true,
+        "flutterRunLogFile": "D:\\BETTERday\\BETTERday\\logs\\flutter_run.txt",
+        "flutterTestLogFile": "D:\\BETTERday\\BETTERday\\logs\\flutter_test.txt",
+        "showMemoryUsage": false,
+        "debuggerType": 2
+    }
+[9:40:53 PM] [General] [Info] Using flutter debugger for Flutter
+[9:40:53 PM] [General] [Info] SDK DAP setting is false, set by sdkDaps experiment
+[9:40:53 PM] [General] [Info] Running debugger via node with c:\Users\Truong Tri Dung\.vscode\extensions\dart-code.dart-code-3.62.0\out\dist\debug.js    flutter
+[9:40:54 PM] [General] [Info] Did not find session ab0b2580-8f00-4ea3-8883-934fd5797fd1 to handle dart.progressStart. There were 1 sessions:
+  56715ae6-82ee-4b37-8144-08306cff9974
+[9:40:54 PM] [General] [Info] Event will be queued and processed when the session start event fires
+[9:40:54 PM] [General] [Info] Processing delayed event dart.progressStart for session ab0b2580-8f00-4ea3-8883-934fd5797fd1
+[9:41:10 PM] [General] [Info] Took 53ms to search for projects (5 levels)
+[9:41:10 PM] [General] [Info] Took 5ms to filter out excluded projects (0 exclusion rules)
+[9:42:30 PM] [General] [Info] Returning cached results for project search
+[9:51:54 PM] [General] [Info] Took 57ms to search for projects (5 levels)
+[9:51:54 PM] [General] [Info] Took 5ms to filter out excluded projects (0 exclusion rules)
+[9:53:16 PM] [General] [Info] Returning cached results for project search
+[9:54:48 PM] [General] [Info] Returning cached results for project search
+[9:55:55 PM] [General] [Info] Returning cached results for project search
+[9:56:08 PM] [General] [Info] Returning cached results for project search
+[10:00:58 PM] [General] [Info] Took 73ms to search for projects (5 levels)
+[10:00:58 PM] [General] [Info] Took 5ms to filter out excluded projects (0 exclusion rules)
+[10:00:59 PM] [General] [Error] Canceled
+Canceled: Canceled
+    at a.P (vscode-file://vscode-app/c:/Users/Truong%20Tri%20Dung/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:893:44406)
+    at vscode-file://vscode-app/c:/Users/Truong%20Tri%20Dung/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/workbench.desktop.main.js:893:44333
+[10:01:01 PM] [General] [Info] Starting debug session...
+[10:01:01 PM] [General] [Info]     workspace: D:\BETTERday\BETTERday
+[10:01:01 PM] [General] [Info]     program  : D:\BETTERday\BETTERday\betterday\lib\main.dart
+[10:01:01 PM] [General] [Info] Setting cwd based on likely entry point: D:\BETTERday\BETTERday
+[10:01:01 PM] [General] [Info] Using workspace as cwd: D:\BETTERday\BETTERday
+[10:01:01 PM] [General] [Info] Found better project root to use as cwd: D:\BETTERday\BETTERday\betterday
+[10:01:01 PM] [General] [Info] Detected launch project as Flutter
+[10:01:01 PM] [General] [Info] Using Flutter debug adapter for this session
+[10:01:01 PM] [General] [Info] Getting DevTools server address to pass to Flutter...
+[10:01:01 PM] [General] [Info] Checking for errors before launching
+[10:01:01 PM] [General] [Info] Debug session starting...
+    {
+        "name": "Dart ",
+        "noDebug": false,
+        "request": "launch",
+        "type": "dart",
+        "groupId": 0,
+        "program": "D:\\BETTERday\\BETTERday\\betterday\\lib\\main.dart",
+        "dartCodeDebugSessionID": "session-5cc0c",
+        "cwd": "D:\\BETTERday\\BETTERday\\betterday",
+        "deviceId": "emulator-5554",
+        "deviceName": "betterday (android-x86)",
+        "toolEnv": {
+            "FLUTTER_HOST": "VSCode",
+            "PUB_ENVIRONMENT": "vscode.dart-code"
+        },
+        "sendLogsToClient": false,
+        "sendCustomProgressEvents": true,
+        "additionalProjectPaths": [
+            "D:\\BETTERday\\BETTERday"
+        ],
+        "args": [],
+        "vmAdditionalArgs": [],
+        "toolArgs": [
+            "-d",
+            "emulator-5554",
+            "--devtools-server-address",
+            "http://127.0.0.1:9101/"
+        ],
+        "vmServicePort": 0,
+        "dartSdkPath": "C:\\src\\flutter\\bin\\cache\\dart-sdk",
+        "vmServiceLogFile": "D:\\BETTERday\\BETTERday\\logs\\observatory.txt",
+        "maxLogLineLength": 2000,
+        "dartTestLogFile": "D:\\BETTERday\\BETTERday\\logs\\dart_test.txt",
+        "debugSdkLibraries": false,
+        "debugExternalPackageLibraries": false,
+        "showDartDeveloperLogs": true,
+        "evaluateGettersInDebugViews": true,
+        "evaluateToStringInDebugViews": true,
+        "flutterSdkPath": "C:\\src\\flutter",
+        "useInspectorNotificationsForWidgetErrors": true,
+        "flutterRunLogFile": "D:\\BETTERday\\BETTERday\\logs\\flutter_run.txt",
+        "flutterTestLogFile": "D:\\BETTERday\\BETTERday\\logs\\flutter_test.txt",
+        "showMemoryUsage": false,
+        "debuggerType": 2
+    }
+[10:01:01 PM] [General] [Info] Using flutter debugger for Flutter
+[10:01:01 PM] [General] [Info] SDK DAP setting is false, set by sdkDaps experiment
+[10:01:01 PM] [General] [Info] Running debugger via node with c:\Users\Truong Tri Dung\.vscode\extensions\dart-code.dart-code-3.62.0\out\dist\debug.js    flutter
+[10:01:01 PM] [General] [Info] Did not find session a488f20d-3db1-4659-aaeb-2424bed68676 to handle dart.progressStart. There were 0 sessions:
+[10:01:01 PM] [General] [Info] Event will be queued and processed when the session start event fires
+[10:01:01 PM] [General] [Info] Processing delayed event dart.progressStart for session a488f20d-3db1-4659-aaeb-2424bed68676
+[10:01:24 PM] [General] [Info] Returning cached results for project search
+[10:19:56 PM] [General] [Info] Took 115ms to search for projects (5 levels)
+[10:19:56 PM] [General] [Info] Took 6ms to filter out excluded projects (0 exclusion rules)
+[10:19:56 PM] [General] [Info] Checking 1 projects for supported platforms
+[10:19:56 PM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
