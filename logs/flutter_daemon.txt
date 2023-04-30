@@ -1,7 +1,7 @@
 !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
 
 Dart Code extension: 3.62.0
-Flutter extension: 3.62.0 (activated)
+Flutter extension: 3.62.0 (not activated)
 
 App: Visual Studio Code
 Version: 1.77.3
@@ -13,46 +13,19 @@ NO_PROXY: undefined
 Logging Categories:
     FlutterDaemon
 
-Sun Apr 30 2023 [13:36:13 GMT+0700 (Indochina Time)] Log file started
-[1:36:13 PM] [FlutterDaemon] [Info] Spawning C:\src\flutter\bin\flutter.bat with args ["daemon"]
-[1:36:13 PM] [FlutterDaemon] [Info] ..  in C:\src\flutter
-[1:36:13 PM] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
-[1:36:13 PM] [FlutterDaemon] [Info]     PID: 7328
-[1:36:13 PM] [FlutterDaemon] [Info] ==> [{"id":"1","method":"emulator.getEmulators"}]
-[1:36:14 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":20272}}]
-[1:36:14 PM] [FlutterDaemon] [Info] ==> [{"id":"2","method":"device.enable"}]
-[1:36:14 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"Starting device daemon..."}}]
-[1:36:14 PM] [FlutterDaemon] [Info] <== [{"id":"2"}]
-[1:36:14 PM] [FlutterDaemon] [Info] <== [{"id":"1","result":[{"id":"betterday","name":"betterday","category":"mobile","platformType":"android"}]}]
-[1:36:18 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"windows","name":"Windows","platform":"windows-x64","emulator":false,"category":"desktop","platformType":"windows","ephemeral":false,"emulatorId":null,"sdk":"Microsoft Windows [Version 10.0.22621.1555]","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
-[1:36:18 PM] [FlutterDaemon] [Info] ==> [{"id":"3","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
-[1:36:18 PM] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
-[1:36:18 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"chrome","name":"Chrome","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null,"sdk":"Google Chrome 112.0.5615.138","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":false,"hardwareRendering":true,"startPaused":true}}}]
-[1:36:18 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"edge","name":"Edge","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null,"sdk":"Microsoft Edge 112.0.1722.64","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":false,"hardwareRendering":true,"startPaused":true}}}]
-[1:43:05 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"RF8T30T62ZN","name":"SM M515F","platform":"android-arm64","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null,"sdk":"Android 12 (API 31)","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":true,"fastStart":true,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
-[1:43:05 PM] [FlutterDaemon] [Info] ==> [{"id":"4","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
-[1:43:05 PM] [FlutterDaemon] [Info] <== [{"id":"4","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
-[1:43:46 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"Error 1 retrieving device properties for SM M515F:"}}]
-[1:43:46 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"adb.exe: device 'RF8T30T62ZN' not found\r\n"}}]
-[1:43:46 PM] [FlutterDaemon] [Info] <== [{"event":"device.removed","params":{"id":"RF8T30T62ZN","name":"SM M515F","platform":"android-arm","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null,"sdk":"Android null (API null)","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":true,"fastStart":true,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
-[1:43:46 PM] [FlutterDaemon] [Info] ==> [{"id":"5","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
-[1:43:46 PM] [FlutterDaemon] [Info] <== [{"id":"5","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
-[1:43:50 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"RF8T30T62ZN","name":"SM M515F","platform":"android-arm64","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null,"sdk":"Android 12 (API 31)","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":true,"fastStart":true,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
-[1:44:26 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"Error 1 retrieving device properties for SM M515F:"}}]
-[1:44:26 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"adb.exe: device 'RF8T30T62ZN' not found\r\n"}}]
-[1:44:26 PM] [FlutterDaemon] [Info] <== [{"event":"device.removed","params":{"id":"RF8T30T62ZN","name":"SM M515F","platform":"android-arm","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null,"sdk":"Android null (API null)","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":true,"fastStart":true,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
-[1:44:26 PM] [FlutterDaemon] [Info] ==> [{"id":"6","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
-[1:44:26 PM] [FlutterDaemon] [Info] <== [{"id":"6","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
-[1:48:40 PM] [FlutterDaemon] [Info] ==> [{"id":"7","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
-[1:48:40 PM] [FlutterDaemon] [Info] <== [{"id":"7","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
-[1:48:40 PM] [FlutterDaemon] [Info] ==> [{"id":"8","method":"emulator.getEmulators"}]
-[1:48:41 PM] [FlutterDaemon] [Info] <== [{"id":"8","result":[{"id":"betterday","name":"betterday","category":"mobile","platformType":"android"}]}]
-[1:48:42 PM] [FlutterDaemon] [Info] ==> [{"id":"9","method":"emulator.launch","params":{"emulatorId":"betterday","coldBoot":false}}]
-[1:48:46 PM] [FlutterDaemon] [Info] <== [{"id":"9"}]
-[1:48:51 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"emulator-5554","name":"sdk gphone x86","platform":"android-x86","emulator":true,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":"betterday","sdk":"Android 11 (API 30)","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":true,"fastStart":true,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
-[1:48:51 PM] [FlutterDaemon] [Info] ==> [{"id":"10","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
-[1:48:51 PM] [FlutterDaemon] [Info] <== [{"id":"10","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
-[1:48:51 PM] [FlutterDaemon] [Info] ==> [{"id":"11","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
-[1:48:51 PM] [FlutterDaemon] [Info] <== [{"id":"11","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
-[1:48:51 PM] [FlutterDaemon] [Info] ==> [{"id":"12","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
-[1:48:51 PM] [FlutterDaemon] [Info] <== [{"id":"12","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+Sun Apr 30 2023 [16:04:44 GMT+0700 (Indochina Time)] Log file started
+[4:04:44 PM] [FlutterDaemon] [Info] Spawning C:\src\flutter\bin\flutter.bat with args ["daemon"]
+[4:04:44 PM] [FlutterDaemon] [Info] ..  in C:\src\flutter
+[4:04:44 PM] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[4:04:44 PM] [FlutterDaemon] [Info]     PID: 12696
+[4:04:44 PM] [FlutterDaemon] [Info] ==> [{"id":"1","method":"emulator.getEmulators"}]
+[4:04:48 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":12828}}]
+[4:04:48 PM] [FlutterDaemon] [Info] ==> [{"id":"2","method":"device.enable"}]
+[4:04:48 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"Starting device daemon..."}}]
+[4:04:48 PM] [FlutterDaemon] [Info] <== [{"id":"2"}]
+[4:04:51 PM] [FlutterDaemon] [Info] <== [{"id":"1","result":[{"id":"betterday","name":"betterday","category":"mobile","platformType":"android"}]}]
+[4:04:53 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"windows","name":"Windows","platform":"windows-x64","emulator":false,"category":"desktop","platformType":"windows","ephemeral":false,"emulatorId":null,"sdk":"Microsoft Windows [Version 10.0.22621.1555]","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
+[4:04:53 PM] [FlutterDaemon] [Info] ==> [{"id":"3","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[4:04:53 PM] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[4:04:53 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"chrome","name":"Chrome","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null,"sdk":"Google Chrome 112.0.5615.138","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":false,"hardwareRendering":true,"startPaused":true}}}]
+[4:04:53 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"edge","name":"Edge","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null,"sdk":"Microsoft Edge 112.0.1722.64","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":false,"hardwareRendering":true,"startPaused":true}}}]

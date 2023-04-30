@@ -1,22 +1,20 @@
-[1:48:52 PM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\main.dart"]
-[1:48:52 PM]: ..  in D:\BETTERday\BETTERday\betterday
-[1:48:52 PM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
-[1:48:52 PM]: PID: 2640
-[1:48:55 PM]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":2872}}]
-[1:48:55 PM]: <== [{"event":"app.start","params":{"appId":"a49d34b5-3902-4cf4-8bee-436fc12ce271","deviceId":"emulator-5554","directory":"D:\\BETTERday\\BETTERday\\betterday","supportsRestart":true,"launchMode":"run"}}]
-[1:48:55 PM]: <== Launching lib\main.dart on sdk gphone x86 in debug mode...
-[1:48:56 PM]: <== [{"event":"app.progress","params":{"appId":"a49d34b5-3902-4cf4-8bee-436fc12ce271","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
-[1:49:02 PM]: <== [{"event":"app.progress","params":{"appId":"a49d34b5-3902-4cf4-8bee-436fc12ce271","id":"0","progressId":null,"finished":true}}]
-[1:49:03 PM]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
-[1:49:14 PM]: <== [{"event":"app.debugPort","params":{"appId":"a49d34b5-3902-4cf4-8bee-436fc12ce271","port":56088,"wsUri":"ws://127.0.0.1:56088/RGmRskjAoj0=/ws","baseUri":"file:///data/user/0/com.example.betterday/code_cache/betterdayLSEXDJ/betterday/"}}]
-[1:49:14 PM]: <== [{"event":"app.progress","params":{"appId":"a49d34b5-3902-4cf4-8bee-436fc12ce271","id":"1","progressId":null,"message":"Syncing files to device sdk gphone x86...","finished":false}}]
-[1:49:14 PM]: <== [{"event":"app.progress","params":{"appId":"a49d34b5-3902-4cf4-8bee-436fc12ce271","id":"1","progressId":null,"finished":true}}]
-[1:49:14 PM]: <== [{"event":"app.started","params":{"appId":"a49d34b5-3902-4cf4-8bee-436fc12ce271"}}]
-[1:49:52 PM]: ==> [{"id":"1","method":"app.callServiceExtension","params":{"appId":"a49d34b5-3902-4cf4-8bee-436fc12ce271","methodName":"ext.flutter.inspector.getSelectedSummaryWidget","params":{"previousSelectionId":null,"objectGroup":"my-group"}}}]
-[1:49:52 PM]: <== [{"id":"1","result":{"result":{"description":"Column","type":"_ElementDiagnosticableTreeNode","style":"dense","hasChildren":true,"allowWrap":false,"objectId":"inspector-1634","valueId":"inspector-13","locationId":6,"creationLocation":{"file":"file:///D:/BETTERday/BETTERday/betterday/lib/main.dart","line":81,"column":16,"name":"Column"},"createdByLocalProject":true,"children":[{"description":"Text","type":"_ElementDiagnosticableTreeNode","style":"dense","hasChildren":true,"allowWrap":false,"objectId":"inspector-1635","valueId":"inspector-15","locationId":7,"creationLocation":{"file":"file:///D:/BETTERday/BETTERday/betterday/lib/main.dart","line":98,"column":19,"name":"Text"},"createdByLocalProject":true,"widgetRuntimeType":"Text","stateful":false},{"description":"Text","type":"_ElementDiagnosticableTreeNode","style":"dense","hasChildren":true,"allowWrap":false,"objectId":"inspector-1636","valueId":"inspector-17","locationId":8,"creationLocation":{"file":"file:///D:/BETTERday/BETTERday/betterday/lib/main.dart","line":101,"column":13,"name":"Text"},"createdByLocalProject":true,"widgetRuntimeType":"Text","stateful":false}],"widgetRuntimeType":"Column","stateful":false},"type":"_extensionType","method":"ext.flutter.inspector.getSelectedSummaryWidget"}}]
-[1:49:52 PM]: ==> [{"id":"2","method":"app.callServiceExtension","params":{"appId":"a49d34b5-3902-4cf4-8bee-436fc12ce271","methodName":"ext.flutter.inspector.disposeGroup","params":{"objectGroup":"my-group"}}}]
-[1:49:52 PM]: <== [{"id":"2","result":{"result":null,"type":"_extensionType","method":"ext.flutter.inspector.disposeGroup"}}]
-[1:51:02 PM]: ==> [{"id":"3","method":"app.stop","params":{"appId":"a49d34b5-3902-4cf4-8bee-436fc12ce271"}}]
-[1:51:03 PM]: <== Application finished.
-[1:51:03 PM]: <== [{"id":"3","result":true}]
-[1:51:03 PM]: <== [{"event":"app.stop","params":{"appId":"a49d34b5-3902-4cf4-8bee-436fc12ce271"}}]
+[4:22:12 PM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\main.dart"]
+[4:22:12 PM]: ..  in D:\BETTERday\BETTERday\betterday
+[4:22:12 PM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[4:22:12 PM]: PID: 1680
+[4:22:13 PM]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":10696}}]
+[4:22:13 PM]: <== [{"event":"app.start","params":{"appId":"959f4e44-79aa-4dbb-91f3-e946e93cb4d8","deviceId":"emulator-5554","directory":"D:\\BETTERday\\BETTERday\\betterday","supportsRestart":true,"launchMode":"run"}}]
+[4:22:13 PM]: <== Launching lib\main.dart on sdk gphone x86 in debug mode...
+[4:22:14 PM]: <== [{"event":"app.progress","params":{"appId":"959f4e44-79aa-4dbb-91f3-e946e93cb4d8","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
+[4:22:19 PM]: <== [{"event":"app.progress","params":{"appId":"959f4e44-79aa-4dbb-91f3-e946e93cb4d8","id":"0","progressId":null,"finished":true}}]
+[4:22:19 PM]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
+[4:22:19 PM]: <== [{"event":"app.progress","params":{"appId":"959f4e44-79aa-4dbb-91f3-e946e93cb4d8","id":"1","progressId":null,"message":"Installing build\\app\\outputs\\flutter-apk\\app-debug.apk...","finished":false}}]
+[4:22:21 PM]: <== [{"event":"app.progress","params":{"appId":"959f4e44-79aa-4dbb-91f3-e946e93cb4d8","id":"1","progressId":null,"finished":true}}]
+[4:22:24 PM]: <== [{"event":"app.debugPort","params":{"appId":"959f4e44-79aa-4dbb-91f3-e946e93cb4d8","port":62199,"wsUri":"ws://127.0.0.1:62199/hAQoz1rYhD8=/ws","baseUri":"file:///data/user/0/com.example.betterday/code_cache/betterdayEIXSFA/betterday/"}}]
+[4:22:24 PM]: <== [{"event":"app.progress","params":{"appId":"959f4e44-79aa-4dbb-91f3-e946e93cb4d8","id":"2","progressId":null,"message":"Syncing files to device sdk gphone x86...","finished":false}}]
+[4:22:24 PM]: <== [{"event":"app.progress","params":{"appId":"959f4e44-79aa-4dbb-91f3-e946e93cb4d8","id":"2","progressId":null,"finished":true}}]
+[4:22:24 PM]: <== [{"event":"app.started","params":{"appId":"959f4e44-79aa-4dbb-91f3-e946e93cb4d8"}}]
+[4:23:09 PM]: ==> [{"id":"1","method":"app.stop","params":{"appId":"959f4e44-79aa-4dbb-91f3-e946e93cb4d8"}}]
+[4:23:09 PM]: <== Application finished.
+[4:23:09 PM]: <== [{"id":"1","result":true}]
+[4:23:09 PM]: <== [{"event":"app.stop","params":{"appId":"959f4e44-79aa-4dbb-91f3-e946e93cb4d8"}}]
