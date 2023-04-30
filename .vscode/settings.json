@@ -1,4 +1,5 @@
 {
+	"java.configuration.updateBuildConfiguration": "interactive",
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,
 	"editor.tabSize": 4,
@@ -31,12 +32,9 @@
 	"dart.doNotFormat": [
 		"**/lib/comments.dart"
 	],
-
-    "editor.formatOnSave": true,
-    "editor.codeActionOnSave": {
-        "sorce.fixAll": true
-    },
-    "dart.previewFlutterUiGuides": true
-
-
+	"editor.formatOnSave": true,
+	"editor.codeActionOnSave": {
+		"sorce.fixAll": true
+	},
+	"dart.previewFlutterUiGuides": true
 }

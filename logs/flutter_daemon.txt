@@ -1,0 +1,21 @@
+!! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+
+Dart Code extension: 3.62.0
+Flutter extension: 3.62.0 (activated)
+
+App: Visual Studio Code
+Version: 1.77.3
+Platform: win
+
+HTTP_PROXY: undefined
+NO_PROXY: undefined
+
+Logging Categories:
+    FlutterDaemon
+
+Sun Apr 30 2023 [13:36:13 GMT+0700 (Indochina Time)] Log file started
+[1:36:13 PM] [FlutterDaemon] [Info] Spawning C:\src\flutter\bin\flutter.bat with args ["daemon"]
+[1:36:13 PM] [FlutterDaemon] [Info] ..  in C:\src\flutter
+[1:36:13 PM] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[1:36:13 PM] [FlutterDaemon] [Info]     PID: 7328
+[1:36:13 PM] [FlutterDaemon] [Info] ==> [{"id":"1","method":"emulator.getEmulators"}]
