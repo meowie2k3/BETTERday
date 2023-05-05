@@ -1,10 +1,8 @@
-import 'package:betterday/HomeScreen.dart';
 import 'package:flutter/material.dart';
-import 'WelcomePage.dart';
+import 'package:betterday/WelcomePage.dart';
 
 void main(List<String> args) {
   runApp(const MaterialApp(
-    debugShowCheckedModeBanner: false,
     home: MyApp(),
   ));
 }
@@ -16,8 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Navigate to a new screen',
-      home: HomeScreen(),
+      home: WelcomePage(),
     );
   }
 }
