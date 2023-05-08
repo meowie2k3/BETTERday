@@ -5,6 +5,7 @@
 import 'package:betterday/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:betterday/DustyCircle.dart';
+import 'package:betterday/GradientCircle.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -102,7 +103,7 @@ class WelcomePage extends StatelessWidget {
                 },
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all<Color>(
-                      Color.fromARGB(255, 23, 140, 99)),
+                      const Color.fromARGB(255, 23, 140, 99)),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),
@@ -114,7 +115,7 @@ class WelcomePage extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'Google Sans',
                     fontSize: 18,
-                    color: const Color(0xffffffff),
+                    color: Color(0xffffffff),
                     fontWeight: FontWeight.w400,
                   ),
                 ),
@@ -130,44 +131,6 @@ class WelcomePage extends StatelessWidget {
       ]),
     );
   }
-}
-
-class GradientCircle extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return CustomPaint(
-      size: const Size(350, 350),
-      painter: _GradientCirclePainter(),
-    );
-  }
-}
-
-class _GradientCirclePainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    final center = Offset(size.width / 2, size.height / 2);
-    final radius = size.width / 2;
-
-    const gradient = LinearGradient(
-      colors: [
-        Color(0xff063B28),
-        Color(0xff07D9AD),
-      ],
-      begin: Alignment.topLeft,
-      end: Alignment.bottomRight,
-    );
-
-    final shader = gradient.createShader(
-      Rect.fromCircle(center: center, radius: radius),
-    );
-
-    final paint = Paint()..shader = shader;
-
-    canvas.drawCircle(center, radius, paint);
-  }
-
-  @override
-  bool shouldRepaint(_GradientCirclePainter oldDelegate) => false;
 }
 
 class RatingButton extends StatelessWidget {
