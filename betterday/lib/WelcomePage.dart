@@ -1,7 +1,3 @@
-// ignore: duplicate_ignore
-// ignore: file_names
-// ignore_for_file: file_names
-
 import 'package:betterday/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:betterday/DustyCircle.dart';
@@ -14,11 +10,16 @@ class WelcomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Stack(children: [
+      body: Stack(children: <Widget>[
         Positioned(
           top: -50,
           left: -100,
           child: GradientCircle(),
+        ),
+        const Positioned(
+          top: 450,
+          right: -230,
+          child: DustyCircle(radius: 250),
         ),
         Transform.translate(
           offset: const Offset(0, -50),
@@ -37,7 +38,7 @@ class WelcomePage extends StatelessWidget {
                 style: TextStyle(
                   fontFamily: 'Google Sans',
                   fontSize: 23,
-                  color: const Color(0xff000000),
+                  color: Color(0xff000000),
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -46,34 +47,33 @@ class WelcomePage extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                // ignore: prefer_const_literals_to_create_immutables
-                children: [
-                  const RatingButton(
+                children: const <Widget>[
+                  RatingButton(
                       imageUrl: 'https://i.imgur.com/UQB0TYm.png',
                       size: 45,
                       text: 'Tuyệt vời'),
-                  const SizedBox(width: 10),
-                  const RatingButton(
+                  SizedBox(width: 10),
+                  RatingButton(
                       imageUrl: 'https://i.imgur.com/1ufDJ4E.png',
                       size: 45,
                       text: 'Vui vẻ'),
-                  const SizedBox(width: 10),
-                  const RatingButton(
+                  SizedBox(width: 10),
+                  RatingButton(
                       imageUrl: 'https://i.imgur.com/Obdcq5i.png',
                       size: 45,
                       text: 'Bình thường'),
-                  const SizedBox(width: 10),
-                  const RatingButton(
+                  SizedBox(width: 10),
+                  RatingButton(
                       imageUrl: 'https://i.imgur.com/CQ3tPRC.png',
                       size: 45,
                       text: 'Buồn'),
-                  const SizedBox(width: 10),
-                  const RatingButton(
+                  SizedBox(width: 10),
+                  RatingButton(
                       imageUrl: 'https://i.imgur.com/TQFekcJ.png',
                       size: 45,
                       text: 'Tệ'),
-                  const SizedBox(width: 10),
-                  const RatingButton(
+                  SizedBox(width: 10),
+                  RatingButton(
                       imageUrl: 'https://i.imgur.com/5637DkS.png',
                       size: 45,
                       text: 'Cực tệ'),
@@ -87,7 +87,7 @@ class WelcomePage extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'Google Sans',
                     fontSize: 15,
-                    color: const Color(0xff000000),
+                    color: Color(0xff000000),
                     fontWeight: FontWeight.w500,
                   )),
               const SizedBox(
@@ -122,11 +122,6 @@ class WelcomePage extends StatelessWidget {
               )
             ],
           )),
-        ),
-        const Positioned(
-          top: 450,
-          right: -230,
-          child: DustyCircle(radius: 250),
         ),
       ]),
     );
