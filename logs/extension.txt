@@ -266,3 +266,7 @@ Flutter SDK:
 
 HTTP_PROXY: undefined
 NO_PROXY: undefined
+[12:13:08 PM] [General] [Info] Returning cached results for project search
+[12:13:08 PM] [General] [Info] Checking 1 projects for supported platforms
+[12:13:08 PM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
+[12:13:32 PM] [General] [Info] Returning cached results for project search
