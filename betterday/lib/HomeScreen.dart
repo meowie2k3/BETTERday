@@ -1,3 +1,4 @@
+import 'package:betterday/BotChatScreen.dart';
 import 'package:betterday/CallScreenPatient.dart';
 import 'package:flutter/material.dart';
 
@@ -324,7 +325,10 @@ class HomeScreen extends StatelessWidget {
             ),
             IconButton(
               icon: const Icon(Icons.chat_bubble_outline),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const BotChat()));
+              },
             ),
           ],
         ),
