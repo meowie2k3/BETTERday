@@ -4,7 +4,7 @@ Dart Code extension: 3.62.0
 Flutter extension: 3.62.0 (not activated)
 
 App: Visual Studio Code
-Version: 1.77.3
+Version: 1.78.1
 Platform: win
 
 HTTP_PROXY: undefined
@@ -13,232 +13,232 @@ NO_PROXY: undefined
 Logging Categories:
     General
 
-Mon May 01 2023 [16:39:18 GMT+0700 (Indochina Time)] Log file started
-[4:39:18 PM] [General] [Info] Searching for SDKs...
-[4:39:18 PM] [General] [Info] Environment PATH:
-[4:39:18 PM] [General] [Info]     C:\Program Files\Common Files\Oracle\Java\javapath
-[4:39:18 PM] [General] [Info]     C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler
-[4:39:18 PM] [General] [Info]     C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler
-[4:39:18 PM] [General] [Info]     C:\Program Files (x86)\Common Files\Oracle\Java\javapath
-[4:39:18 PM] [General] [Info]     C:\ProgramData\Oracle\Java\javapath
-[4:39:18 PM] [General] [Info]     C:\Windows\system32
-[4:39:18 PM] [General] [Info]     C:\Windows
-[4:39:18 PM] [General] [Info]     C:\Windows\System32\Wbem
-[4:39:18 PM] [General] [Info]     C:\Windows\System32\WindowsPowerShell\v1.0\
-[4:39:18 PM] [General] [Info]     C:\Windows\System32\OpenSSH\
-[4:39:18 PM] [General] [Info]     C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
-[4:39:18 PM] [General] [Info]     C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR
-[4:39:18 PM] [General] [Info]     C:\Program Files (x86)\Dev-Cpp\MinGW64\bin
-[4:39:18 PM] [General] [Info]     C:\WINDOWS\system32
-[4:39:18 PM] [General] [Info]     C:\WINDOWS
-[4:39:18 PM] [General] [Info]     C:\WINDOWS\System32\Wbem
-[4:39:18 PM] [General] [Info]     C:\WINDOWS\System32\WindowsPowerShell\v1.0\
-[4:39:18 PM] [General] [Info]     C:\WINDOWS\System32\OpenSSH\
-[4:39:18 PM] [General] [Info]     C:\Program Files\Git\cmd
-[4:39:18 PM] [General] [Info]     C:\Program Files\dotnet\
-[4:39:18 PM] [General] [Info]     C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\
-[4:39:18 PM] [General] [Info]     C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\
-[4:39:18 PM] [General] [Info]     C:\Program Files\Microsoft SQL Server\120\Tools\Binn\
-[4:39:18 PM] [General] [Info]     C:\Program Files\Microsoft SQL Server\120\DTS\Binn\
-[4:39:18 PM] [General] [Info]     C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\
-[4:39:18 PM] [General] [Info]     C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\
-[4:39:18 PM] [General] [Info]     C:\Program Files\Android\Android Studio\jre
-[4:39:18 PM] [General] [Info]     C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\Scripts\
-[4:39:18 PM] [General] [Info]     C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\
-[4:39:18 PM] [General] [Info]     C:\Users\Truong Tri Dung\AppData\Local\Microsoft\WindowsApps
-[4:39:18 PM] [General] [Info]     C:\Users\Truong Tri Dung\AppData\Local\Programs\Microsoft VS Code\bin
-[4:39:18 PM] [General] [Info]     C:\mingw64\bin
-[4:39:18 PM] [General] [Info]     C:\MinGW\bin
-[4:39:18 PM] [General] [Info]     C:\Program Files\Java\jdk-18.0.2.1\bin
-[4:39:18 PM] [General] [Info]     C:\Program Files\Java\jdk-18.0.2.1\bin
-[4:39:18 PM] [General] [Info]     C:\Users\Truong Tri Dung\AppData\Local\GitHubDesktop\bin
-[4:39:18 PM] [General] [Info]     C:\src\flutter\bin
-[4:39:18 PM] [General] [Info]     C:\Program Files\Android\Android Studio\jbr\bin
-[4:39:18 PM] [General] [Info] Took 94ms to search for projects (5 levels)
-[4:39:18 PM] [General] [Info] Took 2ms to filter out excluded projects (0 exclusion rules)
-[4:39:18 PM] [General] [Info] Found Flutter project at D:\BETTERday\BETTERday\betterday:
+Wed May 10 2023 [23:49:12 GMT+0700 (Indochina Time)] Log file started
+[11:49:12 PM] [General] [Info] Searching for SDKs...
+[11:49:12 PM] [General] [Info] Environment PATH:
+[11:49:12 PM] [General] [Info]     C:\Program Files\Common Files\Oracle\Java\javapath
+[11:49:12 PM] [General] [Info]     C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler
+[11:49:12 PM] [General] [Info]     C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler
+[11:49:12 PM] [General] [Info]     C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+[11:49:12 PM] [General] [Info]     C:\ProgramData\Oracle\Java\javapath
+[11:49:12 PM] [General] [Info]     C:\Windows\system32
+[11:49:12 PM] [General] [Info]     C:\Windows
+[11:49:12 PM] [General] [Info]     C:\Windows\System32\Wbem
+[11:49:12 PM] [General] [Info]     C:\Windows\System32\WindowsPowerShell\v1.0\
+[11:49:12 PM] [General] [Info]     C:\Windows\System32\OpenSSH\
+[11:49:12 PM] [General] [Info]     C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+[11:49:12 PM] [General] [Info]     C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR
+[11:49:12 PM] [General] [Info]     C:\Program Files (x86)\Dev-Cpp\MinGW64\bin
+[11:49:12 PM] [General] [Info]     C:\WINDOWS\system32
+[11:49:12 PM] [General] [Info]     C:\WINDOWS
+[11:49:12 PM] [General] [Info]     C:\WINDOWS\System32\Wbem
+[11:49:12 PM] [General] [Info]     C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+[11:49:12 PM] [General] [Info]     C:\WINDOWS\System32\OpenSSH\
+[11:49:12 PM] [General] [Info]     C:\Program Files\Git\cmd
+[11:49:12 PM] [General] [Info]     C:\Program Files\dotnet\
+[11:49:12 PM] [General] [Info]     C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\
+[11:49:12 PM] [General] [Info]     C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\
+[11:49:12 PM] [General] [Info]     C:\Program Files\Microsoft SQL Server\120\Tools\Binn\
+[11:49:12 PM] [General] [Info]     C:\Program Files\Microsoft SQL Server\120\DTS\Binn\
+[11:49:12 PM] [General] [Info]     C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\
+[11:49:12 PM] [General] [Info]     C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\
+[11:49:12 PM] [General] [Info]     C:\Program Files\Android\Android Studio\jre
+[11:49:12 PM] [General] [Info]     C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\Scripts\
+[11:49:12 PM] [General] [Info]     C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\
+[11:49:12 PM] [General] [Info]     C:\Users\Truong Tri Dung\AppData\Local\Microsoft\WindowsApps
+[11:49:12 PM] [General] [Info]     C:\Users\Truong Tri Dung\AppData\Local\Programs\Microsoft VS Code\bin
+[11:49:12 PM] [General] [Info]     C:\mingw64\bin
+[11:49:12 PM] [General] [Info]     C:\MinGW\bin
+[11:49:12 PM] [General] [Info]     C:\Program Files\Java\jdk-18.0.2.1\bin
+[11:49:12 PM] [General] [Info]     C:\Program Files\Java\jdk-18.0.2.1\bin
+[11:49:12 PM] [General] [Info]     C:\Users\Truong Tri Dung\AppData\Local\GitHubDesktop\bin
+[11:49:12 PM] [General] [Info]     C:\src\flutter\bin
+[11:49:12 PM] [General] [Info]     C:\Program Files\Android\Android Studio\jbr\bin
+[11:49:12 PM] [General] [Info] Took 125ms to search for projects (5 levels)
+[11:49:12 PM] [General] [Info] Took 8ms to filter out excluded projects (0 exclusion rules)
+[11:49:12 PM] [General] [Info] Found Flutter project at D:\BETTERday\BETTERday\betterday:
 			Mobile? true
 			Web? false
 			Create Trigger? false
 			Flutter Repo? false
-[4:39:18 PM] [General] [Info] Searching for flutter.bat
-[4:39:18 PM] [General] [Info]     Looking for flutter.bat in:
-[4:39:18 PM] [General] [Info]         D:\BETTERday\BETTERday\betterday
-[4:39:18 PM] [General] [Info]         D:\BETTERday\BETTERday\betterday\bin
-[4:39:18 PM] [General] [Info]         C:\src\flutter\bin\
-[4:39:18 PM] [General] [Info]         D:\BETTERday\BETTERday\betterday\.flutter
-[4:39:18 PM] [General] [Info]         D:\BETTERday\BETTERday\betterday\.flutter\bin
-[4:39:18 PM] [General] [Info]         D:\BETTERday\BETTERday\betterday\vendor\flutter
-[4:39:18 PM] [General] [Info]         D:\BETTERday\BETTERday\betterday\vendor\flutter\bin
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\flutter-sdk
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\flutter-sdk\bin
-[4:39:18 PM] [General] [Info]         /google/flutter
-[4:39:18 PM] [General] [Info]         \google\flutter\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath
-[4:39:18 PM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin
-[4:39:18 PM] [General] [Info]         C:\ProgramData\Oracle\Java\javapath
-[4:39:18 PM] [General] [Info]         C:\ProgramData\Oracle\Java\javapath\bin
-[4:39:18 PM] [General] [Info]         C:\Windows\system32
-[4:39:18 PM] [General] [Info]         C:\Windows\system32\bin
-[4:39:18 PM] [General] [Info]         C:\Windows
-[4:39:18 PM] [General] [Info]         C:\Windows\bin
-[4:39:18 PM] [General] [Info]         C:\Windows\System32\Wbem
-[4:39:18 PM] [General] [Info]         C:\Windows\System32\Wbem\bin
-[4:39:18 PM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\
-[4:39:18 PM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\bin
-[4:39:18 PM] [General] [Info]         C:\Windows\System32\OpenSSH\
-[4:39:18 PM] [General] [Info]         C:\Windows\System32\OpenSSH\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR
-[4:39:18 PM] [General] [Info]         C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Dev-Cpp\MinGW64\bin
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\system32
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\system32\bin
-[4:39:18 PM] [General] [Info]         C:\WINDOWS
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\bin
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\System32\Wbem
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\System32\Wbem\bin
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\System32\WindowsPowerShell\v1.0\
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\System32\WindowsPowerShell\v1.0\bin
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\System32\OpenSSH\
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\System32\OpenSSH\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Git\cmd
-[4:39:18 PM] [General] [Info]         C:\Program Files\Git\cmd\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\dotnet\
-[4:39:18 PM] [General] [Info]         C:\Program Files\dotnet\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\
-[4:39:18 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\Tools\Binn\
-[4:39:18 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\Tools\Binn\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\DTS\Binn\
-[4:39:18 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\DTS\Binn\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Android\Android Studio\jre
-[4:39:18 PM] [General] [Info]         C:\Program Files\Android\Android Studio\jre\bin
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\Scripts\
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\Scripts\bin
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\bin
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Microsoft\WindowsApps
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Microsoft\WindowsApps\bin
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Microsoft VS Code\bin
-[4:39:18 PM] [General] [Info]         C:\mingw64\bin
-[4:39:18 PM] [General] [Info]         C:\MinGW\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Java\jdk-18.0.2.1\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Java\jdk-18.0.2.1\bin
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\GitHubDesktop\bin
-[4:39:18 PM] [General] [Info]         C:\src\flutter\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Android\Android Studio\jbr\bin
-[4:39:18 PM] [General] [Info]     Found at:
-[4:39:18 PM] [General] [Info]         C:\src\flutter\bin\
-[4:39:18 PM] [General] [Info]         C:\src\flutter\bin
-[4:39:18 PM] [General] [Info]     Candidate paths to be post-filtered:
-[4:39:18 PM] [General] [Info]         C:\src\flutter
-[4:39:18 PM] [General] [Info]         C:\src\flutter
-[4:39:18 PM] [General] [Info]     Found at C:\src\flutter
-[4:39:18 PM] [General] [Info]     Returning SDK path C:\src\flutter for flutter.bat
-[4:39:18 PM] [General] [Info] Searching for dart.exe
-[4:39:18 PM] [General] [Info]     Looking for dart.exe in:
-[4:39:18 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
-[4:39:18 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath
-[4:39:18 PM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin
-[4:39:18 PM] [General] [Info]         C:\ProgramData\Oracle\Java\javapath
-[4:39:18 PM] [General] [Info]         C:\ProgramData\Oracle\Java\javapath\bin
-[4:39:18 PM] [General] [Info]         C:\Windows\system32
-[4:39:18 PM] [General] [Info]         C:\Windows\system32\bin
-[4:39:18 PM] [General] [Info]         C:\Windows
-[4:39:18 PM] [General] [Info]         C:\Windows\bin
-[4:39:18 PM] [General] [Info]         C:\Windows\System32\Wbem
-[4:39:18 PM] [General] [Info]         C:\Windows\System32\Wbem\bin
-[4:39:18 PM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\
-[4:39:18 PM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\bin
-[4:39:18 PM] [General] [Info]         C:\Windows\System32\OpenSSH\
-[4:39:18 PM] [General] [Info]         C:\Windows\System32\OpenSSH\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR
-[4:39:18 PM] [General] [Info]         C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Dev-Cpp\MinGW64\bin
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\system32
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\system32\bin
-[4:39:18 PM] [General] [Info]         C:\WINDOWS
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\bin
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\System32\Wbem
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\System32\Wbem\bin
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\System32\WindowsPowerShell\v1.0\
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\System32\WindowsPowerShell\v1.0\bin
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\System32\OpenSSH\
-[4:39:18 PM] [General] [Info]         C:\WINDOWS\System32\OpenSSH\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Git\cmd
-[4:39:18 PM] [General] [Info]         C:\Program Files\Git\cmd\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\dotnet\
-[4:39:18 PM] [General] [Info]         C:\Program Files\dotnet\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\
-[4:39:18 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\Tools\Binn\
-[4:39:18 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\Tools\Binn\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\DTS\Binn\
-[4:39:18 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\DTS\Binn\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\
-[4:39:18 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Android\Android Studio\jre
-[4:39:18 PM] [General] [Info]         C:\Program Files\Android\Android Studio\jre\bin
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\Scripts\
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\Scripts\bin
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\bin
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Microsoft\WindowsApps
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Microsoft\WindowsApps\bin
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Microsoft VS Code\bin
-[4:39:18 PM] [General] [Info]         C:\mingw64\bin
-[4:39:18 PM] [General] [Info]         C:\MinGW\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Java\jdk-18.0.2.1\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Java\jdk-18.0.2.1\bin
-[4:39:18 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\GitHubDesktop\bin
-[4:39:18 PM] [General] [Info]         C:\src\flutter\bin
-[4:39:18 PM] [General] [Info]         C:\Program Files\Android\Android Studio\jbr\bin
-[4:39:18 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
-[4:39:18 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk\bin
-[4:39:18 PM] [General] [Info]     Found at:
-[4:39:18 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk\bin
-[4:39:18 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk\bin
-[4:39:18 PM] [General] [Info]     Candidate paths to be post-filtered:
-[4:39:18 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
-[4:39:18 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
-[4:39:18 PM] [General] [Info]     Found at C:\src\flutter\bin\cache\dart-sdk
-[4:39:18 PM] [General] [Info]     Returning SDK path C:\src\flutter\bin\cache\dart-sdk for dart.exe
-[4:39:18 PM] [General] [Info] Experiment random number is 42 for experiment 'sdkDaps'. Experiment is enabled for <= 10
-[4:39:18 PM] [General] [Info] Experiment 'sdkDaps' does not apply and will not be activated
-[4:39:18 PM] [General] [Info] !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+[11:49:12 PM] [General] [Info] Searching for flutter.bat
+[11:49:12 PM] [General] [Info]     Looking for flutter.bat in:
+[11:49:12 PM] [General] [Info]         D:\BETTERday\BETTERday\betterday
+[11:49:12 PM] [General] [Info]         D:\BETTERday\BETTERday\betterday\bin
+[11:49:12 PM] [General] [Info]         C:\src\flutter\bin\
+[11:49:12 PM] [General] [Info]         D:\BETTERday\BETTERday\betterday\.flutter
+[11:49:12 PM] [General] [Info]         D:\BETTERday\BETTERday\betterday\.flutter\bin
+[11:49:12 PM] [General] [Info]         D:\BETTERday\BETTERday\betterday\vendor\flutter
+[11:49:12 PM] [General] [Info]         D:\BETTERday\BETTERday\betterday\vendor\flutter\bin
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\flutter-sdk
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\flutter-sdk\bin
+[11:49:12 PM] [General] [Info]         /google/flutter
+[11:49:12 PM] [General] [Info]         \google\flutter\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath
+[11:49:12 PM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin
+[11:49:12 PM] [General] [Info]         C:\ProgramData\Oracle\Java\javapath
+[11:49:12 PM] [General] [Info]         C:\ProgramData\Oracle\Java\javapath\bin
+[11:49:12 PM] [General] [Info]         C:\Windows\system32
+[11:49:12 PM] [General] [Info]         C:\Windows\system32\bin
+[11:49:12 PM] [General] [Info]         C:\Windows
+[11:49:12 PM] [General] [Info]         C:\Windows\bin
+[11:49:12 PM] [General] [Info]         C:\Windows\System32\Wbem
+[11:49:12 PM] [General] [Info]         C:\Windows\System32\Wbem\bin
+[11:49:12 PM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\
+[11:49:12 PM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\bin
+[11:49:12 PM] [General] [Info]         C:\Windows\System32\OpenSSH\
+[11:49:12 PM] [General] [Info]         C:\Windows\System32\OpenSSH\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR
+[11:49:12 PM] [General] [Info]         C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Dev-Cpp\MinGW64\bin
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\system32
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\system32\bin
+[11:49:12 PM] [General] [Info]         C:\WINDOWS
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\bin
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\System32\Wbem
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\System32\Wbem\bin
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\System32\WindowsPowerShell\v1.0\bin
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\System32\OpenSSH\
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\System32\OpenSSH\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Git\cmd
+[11:49:12 PM] [General] [Info]         C:\Program Files\Git\cmd\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\dotnet\
+[11:49:12 PM] [General] [Info]         C:\Program Files\dotnet\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\
+[11:49:12 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\Tools\Binn\
+[11:49:12 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\Tools\Binn\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\DTS\Binn\
+[11:49:12 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\DTS\Binn\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Android\Android Studio\jre
+[11:49:12 PM] [General] [Info]         C:\Program Files\Android\Android Studio\jre\bin
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\Scripts\
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\Scripts\bin
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\bin
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Microsoft\WindowsApps
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Microsoft\WindowsApps\bin
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Microsoft VS Code\bin
+[11:49:12 PM] [General] [Info]         C:\mingw64\bin
+[11:49:12 PM] [General] [Info]         C:\MinGW\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Java\jdk-18.0.2.1\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Java\jdk-18.0.2.1\bin
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\GitHubDesktop\bin
+[11:49:12 PM] [General] [Info]         C:\src\flutter\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Android\Android Studio\jbr\bin
+[11:49:12 PM] [General] [Info]     Found at:
+[11:49:12 PM] [General] [Info]         C:\src\flutter\bin\
+[11:49:12 PM] [General] [Info]         C:\src\flutter\bin
+[11:49:12 PM] [General] [Info]     Candidate paths to be post-filtered:
+[11:49:12 PM] [General] [Info]         C:\src\flutter
+[11:49:12 PM] [General] [Info]         C:\src\flutter
+[11:49:12 PM] [General] [Info]     Found at C:\src\flutter
+[11:49:12 PM] [General] [Info]     Returning SDK path C:\src\flutter for flutter.bat
+[11:49:12 PM] [General] [Info] Searching for dart.exe
+[11:49:12 PM] [General] [Info]     Looking for dart.exe in:
+[11:49:12 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
+[11:49:12 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath
+[11:49:12 PM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin
+[11:49:12 PM] [General] [Info]         C:\ProgramData\Oracle\Java\javapath
+[11:49:12 PM] [General] [Info]         C:\ProgramData\Oracle\Java\javapath\bin
+[11:49:12 PM] [General] [Info]         C:\Windows\system32
+[11:49:12 PM] [General] [Info]         C:\Windows\system32\bin
+[11:49:12 PM] [General] [Info]         C:\Windows
+[11:49:12 PM] [General] [Info]         C:\Windows\bin
+[11:49:12 PM] [General] [Info]         C:\Windows\System32\Wbem
+[11:49:12 PM] [General] [Info]         C:\Windows\System32\Wbem\bin
+[11:49:12 PM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\
+[11:49:12 PM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\bin
+[11:49:12 PM] [General] [Info]         C:\Windows\System32\OpenSSH\
+[11:49:12 PM] [General] [Info]         C:\Windows\System32\OpenSSH\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR
+[11:49:12 PM] [General] [Info]         C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Dev-Cpp\MinGW64\bin
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\system32
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\system32\bin
+[11:49:12 PM] [General] [Info]         C:\WINDOWS
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\bin
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\System32\Wbem
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\System32\Wbem\bin
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\System32\WindowsPowerShell\v1.0\bin
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\System32\OpenSSH\
+[11:49:12 PM] [General] [Info]         C:\WINDOWS\System32\OpenSSH\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Git\cmd
+[11:49:12 PM] [General] [Info]         C:\Program Files\Git\cmd\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\dotnet\
+[11:49:12 PM] [General] [Info]         C:\Program Files\dotnet\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\
+[11:49:12 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\Tools\Binn\
+[11:49:12 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\Tools\Binn\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\DTS\Binn\
+[11:49:12 PM] [General] [Info]         C:\Program Files\Microsoft SQL Server\120\DTS\Binn\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\
+[11:49:12 PM] [General] [Info]         C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Android\Android Studio\jre
+[11:49:12 PM] [General] [Info]         C:\Program Files\Android\Android Studio\jre\bin
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\Scripts\
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\Scripts\bin
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Python\Python310\bin
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Microsoft\WindowsApps
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Microsoft\WindowsApps\bin
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\Programs\Microsoft VS Code\bin
+[11:49:12 PM] [General] [Info]         C:\mingw64\bin
+[11:49:12 PM] [General] [Info]         C:\MinGW\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Java\jdk-18.0.2.1\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Java\jdk-18.0.2.1\bin
+[11:49:12 PM] [General] [Info]         C:\Users\Truong Tri Dung\AppData\Local\GitHubDesktop\bin
+[11:49:12 PM] [General] [Info]         C:\src\flutter\bin
+[11:49:12 PM] [General] [Info]         C:\Program Files\Android\Android Studio\jbr\bin
+[11:49:12 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
+[11:49:12 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk\bin
+[11:49:12 PM] [General] [Info]     Found at:
+[11:49:12 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk\bin
+[11:49:12 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk\bin
+[11:49:12 PM] [General] [Info]     Candidate paths to be post-filtered:
+[11:49:12 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
+[11:49:12 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
+[11:49:12 PM] [General] [Info]     Found at C:\src\flutter\bin\cache\dart-sdk
+[11:49:12 PM] [General] [Info]     Returning SDK path C:\src\flutter\bin\cache\dart-sdk for dart.exe
+[11:49:12 PM] [General] [Info] Experiment random number is 42 for experiment 'sdkDaps'. Experiment is enabled for <= 10
+[11:49:12 PM] [General] [Info] Experiment 'sdkDaps' does not apply and will not be activated
+[11:49:12 PM] [General] [Info] !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
 
 Dart Code extension: 3.62.0
 Flutter extension: 3.62.0 (not activated)
 
 App: Visual Studio Code
-Version: 1.77.3
+Version: 1.78.1
 Platform: win
 
 Workspace type: Flutter
@@ -254,17 +254,17 @@ Flutter SDK:
 
 HTTP_PROXY: undefined
 NO_PROXY: undefined
-[4:39:18 PM] [General] [Info] Returning cached results for project search
-[4:39:18 PM] [General] [Info] Activating Flutter extension for Flutter project...
-[4:39:18 PM] [General] [Info] Version last used for Pub is 2.19.6 (2.19.0), current is 2.19.6 (2.19.0)
-[4:39:18 PM] [General] [Info] Found 0 folders requiring "pub get" or "pub upgrade":
-[4:39:18 PM] [General] [Info] !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+[11:49:13 PM] [General] [Info] Returning cached results for project search
+[11:49:13 PM] [General] [Info] Activating Flutter extension for Flutter project...
+[11:49:13 PM] [General] [Info] Version last used for Pub is 2.19.6 (2.19.0), current is 2.19.6 (2.19.0)
+[11:49:13 PM] [General] [Info] Found 0 folders requiring "pub get" or "pub upgrade":
+[11:49:13 PM] [General] [Info] !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
 
 Dart Code extension: 3.62.0
 Flutter extension: 3.62.0 (activated)
 
 App: Visual Studio Code
-Version: 1.77.3
+Version: 1.78.1
 Platform: win
 
 Workspace type: Flutter
@@ -280,4 +280,9 @@ Flutter SDK:
 
 HTTP_PROXY: undefined
 NO_PROXY: undefined
-[4:39:18 PM] [General] [Info] Loaded 20000 package names from vscode-userdata:/c%3A/Users/Truong%20Tri%20Dung/AppData/Roaming/Code/User/globalStorage/dart-code.dart-code/package_cache.json
+[11:49:14 PM] [General] [Info] Loaded 20000 package names from vscode-userdata:/c%3A/Users/Truong%20Tri%20Dung/AppData/Roaming/Code/User/globalStorage/dart-code.dart-code/package_cache.json
+[11:49:22 PM] [General] [Info] Returning cached results for project search
+[11:49:22 PM] [General] [Info] Returning cached promise for getSupportedPlatforms()
+[11:49:22 PM] [General] [Info] Returning cached promise for getSupportedPlatforms()
+[11:49:22 PM] [General] [Info] Checking 1 projects for supported platforms
+[11:49:22 PM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web

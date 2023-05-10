@@ -4,7 +4,7 @@ Dart Code extension: 3.62.0
 Flutter extension: 3.62.0 (not activated)
 
 App: Visual Studio Code
-Version: 1.77.3
+Version: 1.78.1
 Platform: win
 
 HTTP_PROXY: undefined
@@ -13,4 +13,14 @@ NO_PROXY: undefined
 Logging Categories:
     DAP
 
-Mon May 01 2023 [16:39:18 GMT+0700 (Indochina Time)] Log file started
+Wed May 10 2023 [23:49:12 GMT+0700 (Indochina Time)] Log file started
+[11:49:41 PM] [DAP] [Info] Starting debug session af04cb56-eb07-4b6c-b909-1cad2716a4a7
+[11:49:41 PM] [DAP] [Info] ==> {"command":"initialize","arguments":{"clientID":"vscode","clientName":"Visual Studio Code","adapterID":"dart","pathFormat":"path","linesStartAt1":true,"columnsStartAt1":true,"supportsVariableType":true,"supportsVariablePaging":true,"supportsRunInTerminalRequest":true,"locale":"en","supportsProgressReporting":true,"supportsInvalidatedEvent":true,"supportsMemoryReferences":true,"supportsArgsCanBeInterpretedByShell":true,"supportsMemoryEvent":true,"supportsStartDebuggingRequest":true},"type":"request","seq":1}
+[11:49:42 PM] [DAP] [Info] <== {"seq":1,"type":"response","request_seq":1,"command":"initialize","success":true,"body":{"supportsRestartRequest":true,"supportsConfigurationDoneRequest":true,"supportsEvaluateForHovers":true,"supportsDelayedStackTraceLoading":true,"supportsConditionalBreakpoints":true,"supportsLogPoints":true,"supportsTerminateRequest":true,"supportsRestartFrame":true,"supportsClipboardContext":true,"exceptionBreakpointFilters":[{"filter":"All","label":"All Exceptions","default":false},{"filter":"Unhandled","label":"Uncaught Exceptions","default":true}]}}
+[11:49:42 PM] [DAP] [Info] ==> {"command":"launch","arguments":{"name":"Dart ","noDebug":false,"request":"launch","type":"dart","groupId":0,"program":"D:\\BETTERday\\BETTERday\\betterday\\lib\\main.dart","dartCodeDebugSessionID":"session-87fc5","cwd":"D:\\BETTERday\\BETTERday\\betterday","deviceId":"emulator-5554","deviceName":"betterday (android-x86)","toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"},"sendLogsToClient":false,"sendCustomProgressEvents":true,"additionalProjectPaths":["D:\\BETTERday\\BETTERday"],"args":[],"vmAdditionalArgs":[],"toolArgs":["-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/"],"vmServicePort":0,"dartSdkPath":"C:\\src\\flutter\\bin\\cache\\dart-sdk","vmServiceLogFile":"D:\\BETTERday\\BETTERday\\logs\\observatory.txt","maxLogLineLength":2000,"dartTestLogFile":"D:\\BETTERday\\BETTERday\\logs\\dart_test.txt","debugSdkLibraries":false,"debugExternalPackageLibraries":false,"showDartDeveloperLogs":true,"evaluateGettersInDebugViews":true,"evaluateToStringInDebugViews":true,"flutterSdkPath":"C:\\src\\flutter","useInspectorNotificationsForWidgetErrors":true,"flutterRunLogFile":"D:\\BETTERday\\BETTERday\\logs\\flutter_run.txt","flutterTestLogFile":"D:\\BETTERday\\BETTERday\\logs\\flutter_test.txt","showMemoryUsage":false,"debuggerType":2,"__sessionId":"af04cb56-eb07-4b6c-b909-1cad2716a4a7"},"type":"request","seq":2}
+[11:49:42 PM] [DAP] [Info] <== {"seq":2,"type":"event","event":"dart.progressStart","body":{"progressId":"launch","message":"Launching…"}}
+[11:49:42 PM] [DAP] [Info] <== {"seq":3,"type":"response","request_seq":2,"command":"launch","success":true}
+[11:49:42 PM] [DAP] [Info] <== {"seq":4,"type":"event","event":"dart.log","body":{"message":"Spawning C:\\src\\flutter\\bin\\flutter.bat with args [\"run\",\"--machine\",\"--start-paused\",\"-d\",\"emulator-5554\",\"--devtools-server-address\",\"http://127.0.0.1:9101/\",\"--target\",\"lib\\\\main.dart\"]","severity":0,"category":9}}
+[11:49:42 PM] [DAP] [Info] <== {"seq":5,"type":"event","event":"dart.log","body":{"message":"..  in D:\\BETTERday\\BETTERday\\betterday","severity":0,"category":9}}
+[11:49:42 PM] [DAP] [Info] <== {"seq":6,"type":"event","event":"dart.log","body":{"message":"..  with {\"toolEnv\":{\"FLUTTER_HOST\":\"VSCode\",\"PUB_ENVIRONMENT\":\"vscode.dart-code\"}}","severity":0,"category":9}}
+[11:49:42 PM] [DAP] [Info] <== {"seq":7,"type":"event","event":"dart.log","body":{"message":"    PID: 17404","severity":0,"category":9}}

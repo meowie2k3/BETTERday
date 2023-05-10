@@ -85,7 +85,10 @@ flutter:
     - 'assets/images/HomeScreen/NguoiLangNghePhuHop/truc.png'
     - 'assets/images/HomeScreen/NguoiLangNghePhuHop/mai.png'
 
-    - 'assets/images/CourseScreen/socratesmethod.png'
+    - 'assets/images/CourseScreen/socratesmethod.jpg'
+    - 'assets/images/CourseScreen/10-bai-hoc-dat-gia-tu-nha-gia-kim-elleman-1.jpg'
+    - 'assets/images/CourseScreen/thay-minh-niem-nhin-kho-dau-bang-con-mat-tinh-thuc-38b906f5c4414a0890292624ce91874d.jpg'
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
