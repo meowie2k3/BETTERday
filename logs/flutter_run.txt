@@ -24,3 +24,6 @@
 [3:55:52 AM]: <== [{"event":"app.progress","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","id":"3","progressId":"hot.restart","finished":true}}]
 [3:55:52 AM]: <== Restarted application in 5,552ms.
 [3:55:52 AM]: <== [{"id":"1","result":{"code":1,"message":"DevFS synchronization failed"}}]
+[3:57:13 AM]: ==> [{"id":"2","method":"app.stop","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948"}}]
+[3:57:14 AM]: <== Application finished.
+[3:57:14 AM]: <== [{"event":"app.stop","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948"}}]
