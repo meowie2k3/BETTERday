@@ -85,7 +85,7 @@ flutter:
     - 'assets/images/HomeScreen/NguoiLangNghePhuHop/truc.png'
     - 'assets/images/HomeScreen/NguoiLangNghePhuHop/mai.png'
 
-    - 'assets/images/CourseScreen/ReturnButton.png'
+    - 'assets/images/CourseScreen/socratesmethod.png'
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
