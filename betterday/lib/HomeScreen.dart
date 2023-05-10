@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
           style: TextStyle(
             color: Color.fromARGB(255, 255, 255, 255),
             fontSize: 20,
-            fontFamily: 'Times New Roman',
+            fontFamily: 'Google Sans',
             height: 1.3,
           ), //style text),
           textAlign: TextAlign.left,
@@ -102,7 +102,7 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(
                       color: Color(0xFF0EBE7F),
                       fontSize: 18,
-                      fontFamily: 'Times New Roman',
+                      fontFamily: 'Google Sans',
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -114,7 +114,7 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(
                       color: Color(0xFF0EBE7F),
                       fontSize: 18,
-                      fontFamily: 'Times New Roman',
+                      fontFamily: 'Google Sans',
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -133,7 +133,7 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
                       fontSize: 20,
-                      fontFamily: 'Times New Roman',
+                      fontFamily: 'Google Sans',
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -145,7 +145,7 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(
                       color: Color(0xFF677294),
                       fontSize: 12,
-                      fontFamily: 'Times New Roman',
+                      fontFamily: 'Google Sans',
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -187,12 +187,12 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
                       fontSize: 20,
-                      fontFamily: 'Times New Roman',
+                      fontFamily: 'Google Sans',
                       fontWeight: FontWeight.w700,
                     ),
                   ),
                 ),
-                SizedBox(width: 35),
+                SizedBox(width: 75),
                 Expanded(
                   child: Text(
                     'Xem tất cả >  ',
@@ -200,7 +200,7 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(
                       color: Color(0xFF677294),
                       fontSize: 12,
-                      fontFamily: 'Times New Roman',
+                      fontFamily: 'Google Sans',
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -247,12 +247,12 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
                       fontSize: 20,
-                      fontFamily: 'Times New Roman',
+                      fontFamily: 'Google Sans',
                       fontWeight: FontWeight.w700,
                     ),
                   ),
                 ),
-                SizedBox(width: 95),
+                SizedBox(width: 125),
                 Expanded(
                   child: Text(
                     'Xem tất cả >  ',
@@ -260,7 +260,7 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(
                       color: Color(0xFF677294),
                       fontSize: 12,
-                      fontFamily: 'Times New Roman',
+                      fontFamily: 'Google Sans',
                       fontWeight: FontWeight.w700,
                     ),
                   ),

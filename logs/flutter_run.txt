@@ -1,4 +1,0 @@
-[5:53:09 PM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\main.dart"]
-[5:53:09 PM]: ..  in D:\BETTERday\BETTERday\betterday
-[5:53:09 PM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
-[5:53:10 PM]: PID: 20796
