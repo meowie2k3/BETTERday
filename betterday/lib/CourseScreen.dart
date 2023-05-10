@@ -691,7 +691,7 @@ class CourseScreen extends StatelessWidget {
                               children: const <Widget>[
                                 SizedBox(width: 15),
                                 Text(
-                                  '19.999 VNĐ',
+                                  '24.999 VNĐ',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
                                     color: Color.fromARGB(255, 0, 0, 0),
