@@ -29,3 +29,50 @@ Wed May 10 2023 [23:49:12 GMT+0700 (Indochina Time)] Log file started
 [11:49:22 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"edge","name":"Edge","platform":"web-javascript","emulator":false,"category":"web","platformType":"web","ephemeral":false,"emulatorId":null,"sdk":"Microsoft Edge 113.0.1774.35","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":false,"fastStart":false,"flutterExit":false,"hardwareRendering":true,"startPaused":true}}}]
 [11:49:22 PM] [FlutterDaemon] [Info] ==> [{"id":"3","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
 [11:49:22 PM] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[11:49:29 PM] [FlutterDaemon] [Info] ==> [{"id":"4","method":"emulator.getEmulators"}]
+[11:49:29 PM] [FlutterDaemon] [Info] <== [{"id":"4","result":[{"id":"betterday","name":"betterday","category":"mobile","platformType":"android"}]}]
+[11:49:31 PM] [FlutterDaemon] [Info] ==> [{"id":"5","method":"emulator.getEmulators"}]
+[11:49:31 PM] [FlutterDaemon] [Info] <== [{"id":"5","result":[{"id":"betterday","name":"betterday","category":"mobile","platformType":"android"}]}]
+[11:49:33 PM] [FlutterDaemon] [Info] ==> [{"id":"6","method":"emulator.launch","params":{"emulatorId":"betterday","coldBoot":false}}]
+[11:49:36 PM] [FlutterDaemon] [Info] <== [{"id":"6"}]
+[11:49:39 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"emulator-5554","name":"sdk gphone x86","platform":"android-x86","emulator":true,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":"betterday","sdk":"Android 11 (API 30)","capabilities":{"hotReload":true,"hotRestart":true,"screenshot":true,"fastStart":true,"flutterExit":true,"hardwareRendering":true,"startPaused":true}}}]
+[11:49:39 PM] [FlutterDaemon] [Info] ==> [{"id":"7","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[11:49:39 PM] [FlutterDaemon] [Info] <== [{"id":"7","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[11:49:41 PM] [FlutterDaemon] [Info] ==> [{"id":"8","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[11:49:41 PM] [FlutterDaemon] [Info] <== [{"id":"8","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[11:49:41 PM] [FlutterDaemon] [Info] ==> [{"id":"9","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[11:49:41 PM] [FlutterDaemon] [Info] <== [{"id":"9","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[11:49:48 PM] [FlutterRun] [Error] [Dart ] No file or variants found for asset: assets/images/CourseScreen/socratesmethod.png.
+[11:49:48 PM] [FlutterRun] [Error] [Dart ]
+[11:49:49 PM] [FlutterRun] [Error] [Dart ] Target debug_android_application failed: Exception: Failed to bundle asset files.
+[11:49:49 PM] [FlutterRun] [Error] [Dart ]
+[11:49:49 PM] [FlutterRun] [Error] [Dart ]
+[11:49:49 PM] [FlutterRun] [Error] [Dart ] FAILURE: Build failed with an exception.
+
+* Where:
+Script 'C:\src\flutter\packages\flutter_tools\gradle\flutter.gradle' line: 1157
+[11:49:49 PM] [FlutterRun] [Error] [Dart ] * What went wrong:
+Execution failed for task ':app:compileFlutterBuildDebug'.
+> Process 'command 'C:\src\flutter\bin\flutter.bat'' finished with non-zero exit value 1
+
+* Try:
+[11:49:49 PM] [FlutterRun] [Error] [Dart ] > Run with --stacktrace option to get the stack trace.
+[11:49:49 PM] [FlutterRun] [Error] [Dart ] > Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+[11:49:49 PM] [FlutterRun] [Error] [Dart ] 
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 4s
+[11:49:49 PM] [FlutterRun] [Error] [Dart ] Exception: Gradle task assembleDebug failed with exit code 1
+[11:50:55 PM] [FlutterDaemon] [Info] ==> [{"id":"10","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[11:50:55 PM] [FlutterDaemon] [Info] <== [{"id":"10","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[11:50:55 PM] [FlutterDaemon] [Info] ==> [{"id":"11","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[11:50:55 PM] [FlutterDaemon] [Info] <== [{"id":"11","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[12:06:41 AM] [FlutterDaemon] [Info] ==> [{"id":"12","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[12:06:41 AM] [FlutterDaemon] [Info] <== [{"id":"12","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[12:06:41 AM] [FlutterDaemon] [Info] ==> [{"id":"13","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[12:06:41 AM] [FlutterDaemon] [Info] <== [{"id":"13","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[12:49:22 AM] [FlutterDaemon] [Info] ==> [{"id":"14","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[12:49:22 AM] [FlutterDaemon] [Info] <== [{"id":"14","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
+[12:49:22 AM] [FlutterDaemon] [Info] ==> [{"id":"15","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"D:\\BETTERday\\BETTERday\\betterday"}}]
+[12:49:22 AM] [FlutterDaemon] [Info] <== [{"id":"15","result":{"platforms":["linux","macos","windows","ios","android","web"]}}]
