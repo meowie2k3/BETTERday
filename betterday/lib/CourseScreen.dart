@@ -1,4 +1,3 @@
-import 'package:betterday/HomeScreen.dart';
 import 'package:flutter/material.dart';
 
 import 'DustyCircle.dart';
@@ -24,37 +23,63 @@ class CourseScreen extends StatelessWidget {
               right: -230,
               child: DustyCircle(radius: 250),
             ),
-            Transform.translate(
-              offset: const Offset(0, 0),
-              child: Column(
-                //crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Row(
-                    children: <Widget>[
-                      Expanded(
-                        child: IconButton(
-                            icon: Transform.scale(
-                              scale: 2.5, // Phóng to 1.5 lần
-                              //alignment: Alignment.topCenter,
-                              child: Image.asset(
-                                  'assets/images/CourseScreen/ReturnButton.png'),
-                            ),
-                            // ignore: avoid_print
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) =>
-                                          const HomeScreen()));
-                            }),
-                      ),
-                    ],
+            Positioned(
+                top: 40,
+                left: 30,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  //tài nguyên và lắng nghe
-                ],
-              ),
-            ),
-            //child: Stack(children: <Widget>[
+                  width: 25,
+                  height: 25,
+                  child: Transform.translate(
+                    offset: const Offset(4, 0),
+                    child: GestureDetector(
+                      onTap: () => Navigator.pop(context),
+                      child: const Icon(
+                        Icons.arrow_back_ios,
+                        color: Color(0xFF677294),
+                      ),
+                    ),
+                  ),
+                ))
+            // Transform.translate(
+            //   offset: const Offset(4, 0),
+            //   child: Column(
+            //     //crossAxisAlignment: CrossAxisAlignment.start,
+            //     children: <Widget>[
+            //       Row(
+            //         children: <Widget>[
+            //           Expanded(
+            //             // child: IconButton(
+            //             //     icon: Transform.scale(
+            //             //       scale: 2.5, // Phóng to 1.5 lần
+            //             //       //alignment: Alignment.topCenter,
+            //             //       child: Image.asset(
+            //             //           'assets/images/CourseScreen/ReturnButton.png'),
+            //             //     ),
+            //             //     // ignore: avoid_print
+            //             //     onPressed: () {
+            //             //       Navigator.push(
+            //             //           context,
+            //             //           MaterialPageRoute(
+            //             //               builder: (context) =>
+            //             //                   const HomeScreen()));
+            //             //     }),
+            //             child: GestureDetector(
+            //               onTap: () => Navigator.pop(context),
+            //               child: const Icon(
+            //                 Icons.arrow_back_ios,
+            //                 color: Color(0xFF677294),
+            //               ),
+            //             ),
+            //           ),
+            //         ],
+            //       ),
+            //     ],
+            //   ),
+            // ),
           ],
         ),
       ),
