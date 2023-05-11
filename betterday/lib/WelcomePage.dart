@@ -1,7 +1,7 @@
-import 'package:betterday/HomeScreen.dart';
-import 'package:flutter/material.dart';
 import 'package:betterday/DustyCircle.dart';
 import 'package:betterday/GradientCircle.dart';
+import 'package:betterday/HomeScreen.dart';
+import 'package:flutter/material.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({Key? key}) : super(key: key);
