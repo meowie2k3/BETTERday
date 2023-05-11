@@ -5,6 +5,7 @@ Flutter extension: 3.64.0 (not activated)
 
 App: Visual Studio Code
 Version: 1.78.1
+Version: 1.78.1
 Platform: win
 
 HTTP_PROXY: undefined
@@ -14,3 +15,4 @@ Logging Categories:
     DAP
 
 Thu May 11 2023 [11:19:15 GMT+0700 (Indochina Time)] Log file started
+

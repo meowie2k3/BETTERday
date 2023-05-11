@@ -221,7 +221,7 @@ Dart Code extension: 3.64.0
 Flutter extension: 3.64.0 (not activated)
 
 App: Visual Studio Code
-Version: 1.78.1
+Version: 1.78.0
 Platform: win
 
 Workspace type: Flutter
@@ -237,18 +237,18 @@ Flutter SDK:
 
 HTTP_PROXY: undefined
 NO_PROXY: undefined
-[11:19:15 AM] [General] [Info] Returning cached results for project search
-[11:19:15 AM] [General] [Info] Activating Flutter extension for Flutter project...
-[11:19:15 AM] [General] [Info] Version last used for Pub is 2.19.6 (2.19.0), current is 2.19.6 (2.19.0)
-[11:19:15 AM] [General] [Info] Found 0 folders requiring "pub get" or "pub upgrade":
-[11:19:15 AM] [General] [Info] Loaded 20000 package names from vscode-userdata:/c%3A/Users/Admin/AppData/Roaming/Code/User/globalStorage/dart-code.dart-code/package_cache.json
-[11:19:16 AM] [General] [Info] !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+[12:13:02 PM] [General] [Info] Returning cached results for project search
+[12:13:02 PM] [General] [Info] Activating Flutter extension for Flutter project...
+[12:13:02 PM] [General] [Info] Version last used for Pub is 2.19.6 (2.19.0), current is 2.19.6 (2.19.0)
+[12:13:02 PM] [General] [Info] Found 0 folders requiring "pub get" or "pub upgrade":
+[12:13:02 PM] [General] [Info] Loaded 20000 package names from vscode-userdata:/c%3A/Users/Admin/AppData/Roaming/Code/User/globalStorage/dart-code.dart-code/package_cache.json
+[12:13:03 PM] [General] [Info] !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
 
 Dart Code extension: 3.64.0
 Flutter extension: 3.64.0 (activated)
 
 App: Visual Studio Code
-Version: 1.78.1
+Version: 1.78.0
 Platform: win
 
 Workspace type: Flutter
@@ -264,9 +264,7 @@ Flutter SDK:
 
 HTTP_PROXY: undefined
 NO_PROXY: undefined
-[11:19:22 AM] [General] [Info] Returning cached results for project search
-[11:19:22 AM] [General] [Info] Returning cached promise for getSupportedPlatforms()
-[11:19:22 AM] [General] [Info] Returning cached promise for getSupportedPlatforms()
-[11:19:22 AM] [General] [Info] Returning cached promise for getSupportedPlatforms()
-[11:19:22 AM] [General] [Info] Checking 1 projects for supported platforms
-[11:19:22 AM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
+[12:13:08 PM] [General] [Info] Returning cached results for project search
+[12:13:08 PM] [General] [Info] Checking 1 projects for supported platforms
+[12:13:08 PM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
+[12:13:32 PM] [General] [Info] Returning cached results for project search
