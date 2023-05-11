@@ -26,6 +26,11 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+# The .vscode directory contains launch configuration for debugging
+# with VSCode. Flutter users should feel free to modify these files
+# to configure their own Flutter-specific launch workflows.
+.vscode/
+# logs
 logs/flutter_daemon.txt
 logs/analyzer.txt
 logs/extension.txt
