@@ -28,3 +28,6 @@ doc/api/
 .flutter-plugins-dependencies
 logs/flutter_daemon.txt
 logs/analyzer.txt
+logs/extension.txt
+logs/flutter_daemon.txt
+logs/dap.txt
