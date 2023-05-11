@@ -5,7 +5,7 @@ Flutter extension: 3.62.0 (not activated)
 
 App: Visual Studio Code
 Version: 1.78.1
-Platform: win
+
 
 HTTP_PROXY: undefined
 NO_PROXY: undefined
@@ -239,44 +239,45 @@ Flutter extension: 3.62.0 (not activated)
 
 App: Visual Studio Code
 Version: 1.78.1
-Platform: win
+
 
 Workspace type: Flutter
 Analyzer type: LSP
 Multi-root?: false
 
 Dart SDK:
-    Loc: C:\src\flutter\bin\cache\dart-sdk
+    Loc: D:\Essential programs\Environment compiler\flutter\bin\cache\dart-sdk
     Ver: 2.19.6
 Flutter SDK:
-    Loc: C:\src\flutter
+    Loc: D:\Essential programs\Environment compiler\flutter
     Ver: 3.7.12
 
 HTTP_PROXY: undefined
 NO_PROXY: undefined
-[4:00:23 AM] [General] [Info] Returning cached results for project search
-[4:00:23 AM] [General] [Info] Activating Flutter extension for Flutter project...
-[4:00:23 AM] [General] [Info] Version last used for Pub is 2.19.6 (2.19.0), current is 2.19.6 (2.19.0)
-[4:00:23 AM] [General] [Info] Found 0 folders requiring "pub get" or "pub upgrade":
-[4:00:24 AM] [General] [Info] Loaded 20000 package names from vscode-userdata:/c%3A/Users/Truong%20Tri%20Dung/AppData/Roaming/Code/User/globalStorage/dart-code.dart-code/package_cache.json
-[4:00:24 AM] [General] [Info] !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+
+[12:13:02 PM] [General] [Info] Returning cached results for project search
+[12:13:02 PM] [General] [Info] Activating Flutter extension for Flutter project...
+[12:13:02 PM] [General] [Info] Version last used for Pub is 2.19.6 (2.19.0), current is 2.19.6 (2.19.0)
+[12:13:02 PM] [General] [Info] Found 0 folders requiring "pub get" or "pub upgrade":
+[12:13:02 PM] [General] [Info] Loaded 20000 package names from vscode-userdata:/c%3A/Users/Admin/AppData/Roaming/Code/User/globalStorage/dart-code.dart-code/package_cache.json
+[12:13:03 PM] [General] [Info] !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
 
 Dart Code extension: 3.62.0
 Flutter extension: 3.62.0 (activated)
 
 App: Visual Studio Code
 Version: 1.78.1
-Platform: win
+
 
 Workspace type: Flutter
 Analyzer type: LSP
 Multi-root?: false
 
 Dart SDK:
-    Loc: C:\src\flutter\bin\cache\dart-sdk
+    Loc: D:\Essential programs\Environment compiler\flutter\bin\cache\dart-sdk
     Ver: 2.19.6
 Flutter SDK:
-    Loc: C:\src\flutter
+    Loc: D:\Essential programs\Environment compiler\flutter
     Ver: 3.7.12
 
 HTTP_PROXY: undefined

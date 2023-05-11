@@ -5,6 +5,7 @@ Flutter extension: 3.62.0 (not activated)
 
 App: Visual Studio Code
 Version: 1.78.1
+
 Platform: win
 
 HTTP_PROXY: undefined
@@ -35,11 +36,46 @@ Content-Type: application/vscode-jsonrpc; charset=utf-8
 [4:00:26 AM] [Analyzer] [Info] <== {"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///D:/BETTERday/BETTERday/betterday/android/app/src/debug/AndroidManifest.xml"}}Content-Length: 178
 Content-Type: application/vscode-jsonrpc; charset=utf-8
 
-{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///D:/BETTERday/BETTERday/betterday/android/app/src/main/AndroidManifest.xml"}}Content-Length: 181
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[{"code":"file_names","codeDescription":{"href":"https://dart-lang.github.io/linter/lints/file_names.html"},"message":"The file name 'GradientCircle.dart' isn't a snake_case identifier.\nTry changing the name to follow the snake_case style.","range":{"end":{"character":0,"line":0},"start":{"character":0,"line":0}},"severity":3,"source":"dart"},{"code":"use_key_in_widget_constructors","codeDescription":{"href":"https://dart-lang.github.io/linter/lints/use_key_in_widget_constructors.html"},"message":"Constructors for public widgets should have a named 'key' parameter.\nTry adding a named parameter to the constructor.","range":{"end":{"character":20,"line":2},"start":{"character":6,"line":2}},"severity":3,"source":"dart"}],"uri":"file:///D:/Projects/BETTERday/betterday/lib/GradientCircle.dart"}}
+[12:13:09 PM] [Analyzer] [Info] <== Content-Length: 496
+Content-Type: application/vscode-jsonrpc; charset=utf-8
+[12:13:09 PM] [Analyzer] [Info] ==> Content-Length: 318
+[12:13:09 PM] [Analyzer] [Info] ==> {"jsonrpc":"2.0","id":11,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///D%3A/Projects/BETTERday/betterday/lib/BotChatScreen.dart"},"range":{"start":{"line":30,"character":16},"end":{"line":30,"character":16}},"context":{"diagnostics":[],"triggerKind":2}},"clientRequestTime":1683609189142}
+[12:13:09 PM] [Analyzer] [Info] ==> Content-Length: 97
+[12:13:09 PM] [Analyzer] [Info] ==> {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":11},"clientRequestTime":1683609189372}
+[12:13:09 PM] [Analyzer] [Info] ==> Content-Length: 318
+[12:13:09 PM] [Analyzer] [Info] ==> {"jsonrpc":"2.0","id":12,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///D%3A/Projects/BETTERday/betterday/lib/BotChatScreen.dart"},"range":{"start":{"line":30,"character":16},"end":{"line":30,"character":16}},"context":{"diagnostics":[],"triggerKind":2}},"clientRequestTime":1683609189372}
+[12:13:09 PM] [Analyzer] [Info] ==> Content-Length: 98
+[12:13:09 PM] [Analyzer] [Info] ==> {"jsonrpc":"2.0","method":"$/setTrace","params":{"value":"off"},"clientRequestTime":1683609189539}
+[12:13:09 PM] [Analyzer] [Info] ==> Content-Length: 122
+[12:13:09 PM] [Analyzer] [Info] ==> {"jsonrpc":"2.0","method":"workspace/didChangeConfiguration","params":{"settings":null},"clientRequestTime":1683609189540}
+[12:13:09 PM] [Analyzer] [Info] ==> Content-Length: 97
+[12:13:09 PM] [Analyzer] [Info] ==> {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":12},"clientRequestTime":1683609189575}
+[12:13:09 PM] [Analyzer] [Info] ==> Content-Length: 318
+[12:13:09 PM] [Analyzer] [Info] ==> {"jsonrpc":"2.0","id":13,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///D%3A/Projects/BETTERday/betterday/lib/BotChatScreen.dart"},"range":{"start":{"line":30,"character":16},"end":{"line":30,"character":16}},"context":{"diagnostics":[],"triggerKind":2}},"clientRequestTime":1683609189577}
+[12:13:09 PM] [Analyzer] [Info] ==> Content-Length: 269
+[12:13:09 PM] [Analyzer] [Info] ==> {"jsonrpc":"2.0","id":14,"method":"textDocument/inlayHint","params":{"textDocument":{"uri":"file:///D%3A/Projects/BETTERday/betterday/lib/BotChatScreen.dart"},"range":{"start":{"line":0,"character":0},"end":{"line":48,"character":0}}},"clientRequestTime":1683609189588}
+[12:13:10 PM] [Analyzer] [Info] ==> Content-Length: 197
+[12:13:10 PM] [Analyzer] [Info] ==> {"jsonrpc":"2.0","id":15,"method":"textDocument/foldingRange","params":{"textDocument":{"uri":"file:///D%3A/Projects/BETTERday/betterday/lib/BotChatScreen.dart"}},"clientRequestTime":1683609190873}
+[12:13:11 PM] [Analyzer] [Info] ==> Content-Length: 97
+[12:13:11 PM] [Analyzer] [Info] ==> {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":15},"clientRequestTime":1683609191238}
+[12:13:11 PM] [Analyzer] [Info] ==> Content-Length: 97
+[12:13:11 PM] [Analyzer] [Info] ==> {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":14},"clientRequestTime":1683609191238}
+[12:13:11 PM] [Analyzer] [Info] ==> Content-Length: 97
+[12:13:11 PM] [Analyzer] [Info] ==> {"jsonrpc":"2.0","method":"$/cancelRequest","params":{"id":13},"clientRequestTime":1683609191238}
+[12:13:11 PM] [Analyzer] [Info] <== {"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[{"code":"file_names","codeDescription":{"href":"https://dart-lang.github.io/linter/lints/file_names.html"},"message":"The file name 'HomeScreen.dart' isn't a snake_case identifier.\nTry changing the name to follow the snake_case style.","range":{"end":{"character":0,"line":0},"start":{"character":0,"line":0}},"severity":3,"source":"dart"}],"uri":"file:///D:/Projects/BETTERday/betterday/lib/HomeScreen.dart"}}
+[12:13:11 PM] [Analyzer] [Info] <== Content-Length: 150
+Content-Type: application/vscode-jsonrpc; charset=utf-8
+[12:13:11 PM] [Analyzer] [Info] <== {"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///D:/Projects/BETTERday/betterday/lib/main.dart"}}Content-Length: 1104
+Content-Type: application/vscode-jsonrpc; charset=utf-8
+[12:13:11 PM] [Analyzer] [Info] <== {"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[{"code":"file_names","codeDescription":{"href":"https://dart-lang.github.io/linter/lints/file_names.html"},"message":"The file name 'WelcomePage.dart' isn't a snake_case identifier.\nTry changing the name to follow the snake_case style.","range":{"end":{"character":0,"line":0},"start":{"character":0,"line":0}},"severity":3,"source":"dart"},{"code":"avoid_print","codeDescription":{"href":"https://dart-lang.github.io/linter/lints/avoid_print.html"},"message":"Don't invoke 'print' in production code.\nTry using a logging framework.","range":{"end":{"character":23,"line":97},"start":{"character":18,"line":97}},"severity":3,"source":"dart"},{"code":"avoid_print","codeDescription":{"href":"https://dart-lang.github.io/linter/lints/avoid_print.html"},"message":"Don't invoke 'print' in production code.\nTry using a logging framework.","range":{"end":{"character":19,"line":149},"start":{"character":14,"line":149}},"severity":3,"source":"dart"}],"uri":"file:///D:/Projects/BETTERday/betterday/lib/WelcomePage.dart"}}
+[12:13:11 PM] [Analyzer] [Info] <== Content-Length: 158
 Content-Type: application/vscode-jsonrpc; charset=utf-8
 
-{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///D:/BETTERday/BETTERday/betterday/android/app/src/profile/AndroidManifest.xml"}}Content-Length: 205
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///D:/Projects/BETTERday/betterday/test/widget_test.dart"}}
+[12:13:11 PM] [Analyzer] [Info] <== Content-Length: 161
 Content-Type: application/vscode-jsonrpc; charset=utf-8
+
 [4:00:26 AM] [Analyzer] [Info] <== {"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///D:/BETTERday/BETTERday/betterday/build/app/intermediates/bundle_manifest/release/AndroidManifest.xml"}}Content-Length: 203
 Content-Type: application/vscode-jsonrpc; charset=utf-8
 

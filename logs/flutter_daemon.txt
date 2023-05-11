@@ -5,7 +5,7 @@ Flutter extension: 3.62.0 (not activated)
 
 App: Visual Studio Code
 Version: 1.78.1
-Platform: win
+
 
 HTTP_PROXY: undefined
 NO_PROXY: undefined
