@@ -1,4 +1,29 @@
-[5:53:09 PM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\main.dart"]
-[5:53:09 PM]: ..  in D:\BETTERday\BETTERday\betterday
-[5:53:09 PM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
-[5:53:10 PM]: PID: 20796
+[3:52:25 AM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\main.dart"]
+[3:52:25 AM]: ..  in D:\BETTERday\BETTERday\betterday
+[3:52:25 AM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[3:52:26 AM]: PID: 28196
+[3:52:27 AM]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":23888}}]
+[3:52:27 AM]: <== [{"event":"app.start","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","deviceId":"emulator-5554","directory":"D:\\BETTERday\\BETTERday\\betterday","supportsRestart":true,"launchMode":"run"}}]
+[3:52:27 AM]: <== Launching lib\main.dart on sdk gphone x86 in debug mode...
+[3:52:27 AM]: <== [{"event":"app.progress","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
+[3:52:44 AM]: <== [{"event":"app.progress","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","id":"0","progressId":null,"finished":true}}]
+[3:52:45 AM]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
+[3:52:45 AM]: <== [{"event":"app.progress","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","id":"1","progressId":null,"message":"Installing build\\app\\outputs\\flutter-apk\\app-debug.apk...","finished":false}}]
+[3:52:46 AM]: <== [{"event":"app.progress","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","id":"1","progressId":null,"finished":true}}]
+[3:52:48 AM]: <== [{"event":"app.debugPort","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","port":57287,"wsUri":"ws://127.0.0.1:57287/ZG8u47GcA08=/ws","baseUri":"file:///data/user/0/com.example.betterday/code_cache/betterdayEQHPXK/betterday/"}}]
+[3:52:49 AM]: <== [{"event":"app.progress","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","id":"2","progressId":null,"message":"Syncing files to device sdk gphone x86...","finished":false}}]
+[3:52:49 AM]: <== [{"event":"app.progress","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","id":"2","progressId":null,"finished":true}}]
+[3:52:49 AM]: <== [{"event":"app.started","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948"}}]
+[3:53:38 AM]: <== I/flutter ( 9428): skipped
+[3:55:47 AM]: ==> [{"id":"1","method":"app.restart","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","fullRestart":true,"pause":true,"reason":"manual"}}]
+[3:55:47 AM]: <== [{"event":"app.progress","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","id":"3","progressId":"hot.restart","message":"Performing hot restart...","finished":false}}]
+[3:55:47 AM]: <== [{"event":"app.progress","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","id":"4","progressId":null,"message":"Syncing files to device sdk gphone x86...","finished":false}}]
+[3:55:52 AM]: Could not update files on device: PathNotFoundException: Cannot open file, path = 'D:\BETTERday\BETTERday\betterday\assets\images\HomeScreen\NguoiLangNghePhuHop\hung.png' (OS Error: The system cannot find the file specified.
+, errno = 2)
+[3:55:52 AM]: <== [{"event":"app.progress","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","id":"4","progressId":null,"finished":true}}]
+[3:55:52 AM]: <== [{"event":"app.progress","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948","id":"3","progressId":"hot.restart","finished":true}}]
+[3:55:52 AM]: <== Restarted application in 5,552ms.
+[3:55:52 AM]: <== [{"id":"1","result":{"code":1,"message":"DevFS synchronization failed"}}]
+[3:57:13 AM]: ==> [{"id":"2","method":"app.stop","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948"}}]
+[3:57:14 AM]: <== Application finished.
+[3:57:14 AM]: <== [{"event":"app.stop","params":{"appId":"a377df1b-7342-4b41-9bef-6a2e58eea948"}}]

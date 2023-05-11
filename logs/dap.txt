@@ -4,7 +4,7 @@ Dart Code extension: 3.62.0
 Flutter extension: 3.62.0 (not activated)
 
 App: Visual Studio Code
-Version: 1.78.0
+Version: 1.78.1
 Platform: win
 
 HTTP_PROXY: undefined
@@ -13,4 +13,5 @@ NO_PROXY: undefined
 Logging Categories:
     DAP
 
-Tue May 09 2023 [12:13:02 GMT+0700 (Indochina Time)] Log file started
+Thu May 11 2023 [04:00:23 GMT+0700 (Indochina Time)] Log file started
+
