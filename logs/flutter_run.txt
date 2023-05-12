@@ -1,4 +1,37 @@
-[5:53:09 PM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\main.dart"]
-[5:53:09 PM]: ..  in D:\BETTERday\BETTERday\betterday
-[5:53:09 PM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
-[5:53:10 PM]: PID: 20796
+[12:05:06]: Spawning D:\Essential programs\Environment compiler\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\main.dart"]
+[12:05:06]: ..  in D:\Projects\BETTERday\betterday
+[12:05:06]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[12:05:06]: PID: 4520
+[12:05:07]: <== Running "flutter pub get" in betterday...
+[12:05:07]: <== Resolving dependencies...
+[12:05:10]: <==   async 2.10.0 (2.11.0 available)
+[12:05:10]: <==   characters 1.2.1 (1.3.0 available)
+[12:05:10]: <==   collection 1.17.0 (1.17.1 available)
+[12:05:10]: <==   intl 0.17.0 (0.18.1 available)
+[12:05:10]: <==   js 0.6.5 (0.6.7 available)
+[12:05:10]: <==   lints 2.0.1 (2.1.0 available)
+[12:05:10]: <==   matcher 0.12.13 (0.12.16 available)
+[12:05:10]: <==   material_color_utilities 0.2.0 (0.5.0 available)
+[12:05:10]: <==   meta 1.8.0 (1.9.1 available)
+[12:05:10]: <==   path 1.8.2 (1.8.3 available)
+[12:05:10]: <==   petitparser 5.1.0 (5.4.0 available)
+[12:05:10]: <==   source_span 1.9.1 (1.10.0 available)
+[12:05:10]: <==   test_api 0.4.16 (0.5.2 available)
+[12:05:10]: <==   win32 4.1.4 (5.0.0 available)
+[12:05:10]: <==   xml 6.2.2 (6.3.0 available)
+[12:05:10]: <== Got dependencies!
+[12:05:10]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":16868}}]
+[12:05:10]: <== [{"event":"app.start","params":{"appId":"c396ff39-f6b7-4e49-89dc-cc25aeb26fa3","deviceId":"emulator-5554","directory":"D:\\Projects\\BETTERday\\betterday","supportsRestart":true,"launchMode":"run"}}]
+[12:05:10]: <== Launching lib\main.dart on sdk gphone64 x86 64 in debug mode...
+[12:05:10]: <== [{"event":"app.progress","params":{"appId":"c396ff39-f6b7-4e49-89dc-cc25aeb26fa3","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
+[12:05:17]: <== [{"event":"app.progress","params":{"appId":"c396ff39-f6b7-4e49-89dc-cc25aeb26fa3","id":"0","progressId":null,"finished":true}}]
+[12:05:18]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
+[12:05:18]: <== [{"event":"app.progress","params":{"appId":"c396ff39-f6b7-4e49-89dc-cc25aeb26fa3","id":"1","progressId":null,"message":"Installing build\\app\\outputs\\flutter-apk\\app-debug.apk...","finished":false}}]
+[12:05:19]: <== [{"event":"app.progress","params":{"appId":"c396ff39-f6b7-4e49-89dc-cc25aeb26fa3","id":"1","progressId":null,"finished":true}}]
+[12:05:21]: <== [{"event":"app.debugPort","params":{"appId":"c396ff39-f6b7-4e49-89dc-cc25aeb26fa3","port":61724,"wsUri":"ws://127.0.0.1:61724/SuC1_XMj1u0=/ws","baseUri":"file:///data/user/0/com.example.betterday/code_cache/betterdayPKUWKC/betterday/"}}]
+[12:05:21]: <== [{"event":"app.progress","params":{"appId":"c396ff39-f6b7-4e49-89dc-cc25aeb26fa3","id":"2","progressId":null,"message":"Syncing files to device sdk gphone64 x86 64...","finished":false}}]
+[12:05:21]: <== [{"event":"app.progress","params":{"appId":"c396ff39-f6b7-4e49-89dc-cc25aeb26fa3","id":"2","progressId":null,"finished":true}}]
+[12:05:21]: <== [{"event":"app.started","params":{"appId":"c396ff39-f6b7-4e49-89dc-cc25aeb26fa3"}}]
+[12:05:22]: <== E/SurfaceSyncer(12568): Failed to find sync for id=0
+[12:05:22]: <== W/Parcel  (12568): Expecting binder but got null!
+[12:05:23]: <== D/EGL_emulation(12568): app_time_stats: avg=379.31ms min=17.47ms max=903.52ms count=3
