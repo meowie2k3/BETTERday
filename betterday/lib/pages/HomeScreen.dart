@@ -1,8 +1,9 @@
-import 'package:betterday/CallScreenPatient.dart';
+import 'package:betterday/pages/BotChatScreen.dart';
+import 'package:betterday/pages/CallScreenPatient.dart';
 import 'package:flutter/material.dart';
 
 import 'CourseScreen.dart';
-import 'DustyCircle.dart';
+import 'package:betterday/widgets/DustyCircle.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -1538,7 +1539,10 @@ class HomeScreen extends StatelessWidget {
             ),
             IconButton(
               icon: const Icon(Icons.chat_bubble_outline),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const BotChat()));
+              },
             ),
           ],
         ),

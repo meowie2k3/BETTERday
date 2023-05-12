@@ -36,5 +36,6 @@
 	"editor.codeActionOnSave": {
 		"sorce.fixAll": true
 	},
-	"dart.previewFlutterUiGuides": true
+	"dart.previewFlutterUiGuides": true,
+	"cmake.configureOnOpen": false
 }

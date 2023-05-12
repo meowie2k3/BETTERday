@@ -1,7 +1,7 @@
-import 'package:betterday/HomeScreen.dart';
+import 'package:betterday/pages/HomeScreen.dart';
 import 'package:flutter/material.dart';
 
-import 'DustyCircle.dart';
+import 'package:betterday/widgets/DustyCircle.dart';
 
 class CourseScreen extends StatelessWidget {
   const CourseScreen({super.key});
