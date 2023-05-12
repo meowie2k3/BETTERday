@@ -31,7 +31,7 @@
                    //    /
                         / */
 
-import 'package:betterday/WelcomePage.dart';
+import 'package:betterday/pages/WelcomePage.dart';
 import 'package:betterday/shared/constants.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';

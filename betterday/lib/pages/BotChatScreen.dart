@@ -1,7 +1,7 @@
-import 'package:betterday/GradientCircle.dart';
+import 'package:betterday/widgets/GradientCircle.dart';
 import 'package:flutter/material.dart';
 
-import 'DustyCircle.dart';
+import 'package:betterday/widgets/DustyCircle.dart';
 
 class BotChat extends StatelessWidget {
   const BotChat({Key? key}) : super(key: key);
