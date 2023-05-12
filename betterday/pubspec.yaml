@@ -28,17 +28,16 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  cloud_firestore: ^4.6.0
+  cupertino_icons: ^1.0.2
+  firebase_auth: ^4.5.0
+  firebase_core: ^2.11.0
   flutter:
     sdk: flutter
-
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.1.1
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  flutter_launcher_icons: "^0.13.1"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -46,16 +45,16 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
-  flutter_launcher_icons: "^0.13.1"
+  flutter_test:
+    sdk: flutter
 
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
   image_path: "assets/icon/icon.png"
-  
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -70,32 +69,27 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
   #HomeScreen
-    - 'assets/images/HomeScreen/ava.png'
-    - 'assets/images/HomeScreen/timkiem.png'
-    - 'assets/images/HomeScreen/icon_khoahoc.png'
-    - 'assets/images/HomeScreen/icon_goidien.png'
-    - 'assets/images/HomeScreen/ChuyenGiaNoiBat/trang.png'
-    - 'assets/images/HomeScreen/ChuyenGiaNoiBat/thu.png'
-    - 'assets/images/HomeScreen/ChuyenGiaNoiBat/nghia.png'
-    - 'assets/images/HomeScreen/ChuyenGiaNoiBat/phuong.png'
-    - 'assets/images/HomeScreen/NguoiLangNghePhuHop/hung.png'
-    - 'assets/images/HomeScreen/NguoiLangNghePhuHop/an.png'
-    - 'assets/images/HomeScreen/NguoiLangNghePhuHop/xuan.png'
-    - 'assets/images/HomeScreen/NguoiLangNghePhuHop/dung.png'
-    - 'assets/images/HomeScreen/NguoiLangNghePhuHop/truc.png'
-    - 'assets/images/HomeScreen/NguoiLangNghePhuHop/mai.png'
+    - 'assets/images/HomeScreen/pexels-vinicius-wiesehofer-1130626.jpg'
 
+    - 'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-guilherme-almeida-1858175.jpg'
+    - 'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-moose-photos-1587009.jpg'
+    - 'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-mushtaq-hussain-15242467.jpg'
+    - 'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-ruslan-sikunov-16542850.jpg'
+
+    - 'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-andrea-piacquadio-774909.jpg'
+    - 'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-bianca-1322543.jpg'
+    - 'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-jc-laurio-1288182.jpg'
+    - 'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-juliana-stein-1898555.jpg'
+    - 'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-nur-andi-ravsanjani-gusma-974266.jpg'
+    - 'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-serhii-volyk-15237921.jpg'
+  #CourseScreen
     - 'assets/images/CourseScreen/socratesmethod.jpg'
     - 'assets/images/CourseScreen/10-bai-hoc-dat-gia-tu-nha-gia-kim-elleman-1.jpg'
     - 'assets/images/CourseScreen/thay-minh-niem-nhin-kho-dau-bang-con-mat-tinh-thuc-38b906f5c4414a0890292624ce91874d.jpg'
-    
-
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
-
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
-
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
