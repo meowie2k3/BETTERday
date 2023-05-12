@@ -1,7 +1,7 @@
-import 'package:betterday/GradientCircle.dart';
+import 'package:betterday/widgets/GradientCircle.dart';
 import 'package:flutter/material.dart';
 
-import 'DustyCircle.dart';
+import 'package:betterday/widgets/DustyCircle.dart';
 
 class BotChat extends StatelessWidget {
   const BotChat({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class BotChat extends StatelessWidget {
       body: Stack(children: <Widget>[
         Positioned(
           top: -50,
-          left: -100,
+          left: -70,
           child: GradientCircle(),
         ),
         const Positioned(
@@ -22,7 +22,7 @@ class BotChat extends StatelessWidget {
           child: DustyCircle(radius: 250),
         ),
         Positioned(
-            top: 40,
+            top: MediaQuery.of(context).padding.top + 20,
             left: 30,
             child: Container(
               decoration: BoxDecoration(
@@ -41,7 +41,20 @@ class BotChat extends StatelessWidget {
                   ),
                 ),
               ),
-            ))
+            )),
+        Positioned(
+          top: MediaQuery.of(context).padding.top + 20,
+          left: MediaQuery.of(context).size.width / 2 - 60,
+          child: const Text(
+            'TRÒ CHUYỆN',
+            style: TextStyle(
+              fontFamily: 'Google Sans',
+              color: Colors.black,
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
       ]),
     );
   }

@@ -3,6 +3,7 @@
 # Files and directories created by pub
 .dart_tool/
 .packages
+.vscode/
 build/
 # If you're building an application, you may want to check-in your pubspec.lock
 pubspec.lock
@@ -25,3 +26,13 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+# The .vscode directory contains launch configuration for debugging
+# with VSCode. Flutter users should feel free to modify these files
+# to configure their own Flutter-specific launch workflows.
+.vscode/
+# logs
+logs/flutter_daemon.txt
+logs/analyzer.txt
+logs/extension.txt
+logs/flutter_daemon.txt
+logs/dap.txt

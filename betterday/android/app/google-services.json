@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "362715560263",
+    "project_id": "betterdaychatfunc-c49d0",
+    "storage_bucket": "betterdaychatfunc-c49d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362715560263:android:1bb763ba9783587f62b462",
+        "android_client_info": {
+          "package_name": "com.example.betterday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362715560263-vvrluf04pfu4t2ci64f4dhkfict6f1k0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.betterday",
+            "certificate_hash": "36746d0639910df58fe6fda2a5459759f2125931"
+          }
+        },
+        {
+          "client_id": "362715560263-pmrkh8j8er8l4uqu1b4p0fh9t0fs3m7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6QCn2GDb8pHDjzehQhXYbfLPX0x9A7e0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362715560263-pmrkh8j8er8l4uqu1b4p0fh9t0fs3m7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
