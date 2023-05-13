@@ -55,7 +55,7 @@ class _WelcomePageState extends State<WelcomePage> {
               SizedBox(
                 width: 350,
                 height: 350,
-                child: Image.network('https://i.imgur.com/OliMevp.png'),
+                child: Image.asset('assets/images/WelcomePage/mascot.png'),
               ),
               const Text(
                 'Xin chào Tú!\nHôm nay của bạn thế nào?',
@@ -74,32 +74,32 @@ class _WelcomePageState extends State<WelcomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const <Widget>[
                   RatingButton(
-                      imageUrl: 'https://i.imgur.com/UQB0TYm.png',
+                      imagedestination: 'assets/images/WelcomePage/Rate_1.png',
                       size: 45,
                       text: 'Tuyệt vời'),
                   SizedBox(width: 10),
                   RatingButton(
-                      imageUrl: 'https://i.imgur.com/1ufDJ4E.png',
+                      imagedestination: 'assets/images/WelcomePage/Rate_2.png',
                       size: 45,
                       text: 'Vui vẻ'),
                   SizedBox(width: 10),
                   RatingButton(
-                      imageUrl: 'https://i.imgur.com/Obdcq5i.png',
+                      imagedestination: 'assets/images/WelcomePage/Rate_3.png',
                       size: 45,
                       text: 'Bình thường'),
                   SizedBox(width: 10),
                   RatingButton(
-                      imageUrl: 'https://i.imgur.com/CQ3tPRC.png',
+                      imagedestination: 'assets/images/WelcomePage/Rate_4.png',
                       size: 45,
                       text: 'Buồn'),
                   SizedBox(width: 10),
                   RatingButton(
-                      imageUrl: 'https://i.imgur.com/TQFekcJ.png',
+                      imagedestination: 'assets/images/WelcomePage/Rate_5.png',
                       size: 45,
                       text: 'Tệ'),
                   SizedBox(width: 10),
                   RatingButton(
-                      imageUrl: 'https://i.imgur.com/5637DkS.png',
+                      imagedestination: 'assets/images/WelcomePage/Rate_6.png',
                       size: 45,
                       text: 'Cực tệ'),
                 ],
@@ -154,13 +154,13 @@ class _WelcomePageState extends State<WelcomePage> {
 }
 
 class RatingButton extends StatelessWidget {
-  final String imageUrl;
+  final String imagedestination;
   final double size;
   final String text;
 
   const RatingButton(
       {Key? key,
-      required this.imageUrl,
+      required this.imagedestination,
       required this.size,
       required this.text})
       : super(key: key);
@@ -189,8 +189,8 @@ class RatingButton extends StatelessWidget {
             ),
             child: Transform.scale(
               scale: 3.5,
-              child: Image.network(
-                imageUrl,
+              child: Image.asset(
+                imagedestination,
                 width: size / 2,
                 height: size / 2,
               ),

@@ -31,13 +31,13 @@
                    //    /
                         / */
 
-import 'package:betterday/pages/HomeScreen.dart';
-import 'package:betterday/pages/WelcomePage.dart';
+import 'package:betterday/pages/SplashScreen.dart';
 import 'package:betterday/shared/constants.dart';
 import 'package:betterday/helper/helper_function.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+
 
 void main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -58,14 +58,21 @@ void main(List<String> args) async {
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  MyApp({Key? key}) : super(key: key);
+  bool _isSignedIn = false;
+
+  bool get isSignedIn => _isSignedIn;
+
+  set isSignedIn(bool value) {
+    _isSignedIn = value;
+  }
 
   @override
   State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-  bool _isSignedIn = false;
+  
 
   @override
   void initState() {
@@ -76,7 +83,9 @@ class _MyAppState extends State<MyApp> {
   getUserLoggedInStatus() async {
     await HelperFunction.getUserLoggedInStatus().then((value) {
       if (value != null) {
-        _isSignedIn = value;
+        setState(() {
+          widget._isSignedIn = value;
+        });
       }
     });
   }
@@ -86,7 +95,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: _isSignedIn ? const HomeScreen() : const WelcomePage(),
+      home: SplashScreen(),
     );
   }
 }

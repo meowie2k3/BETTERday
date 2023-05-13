@@ -35,6 +35,13 @@ class HelperFunction {
     rootBundle.load('assets/images/CourseScreen/10-bai-hoc-dat-gia-tu-nha-gia-kim-elleman-1.jpg'),
     rootBundle.load('assets/images/CourseScreen/thay-minh-niem-nhin-kho-dau-bang-con-mat-tinh-thuc-38b906f5c4414a0890292624ce91874d.jpg'),
 
+    rootBundle.load('assets/images/WelcomePage/mascot.png'),
+    rootBundle.load('assets/images/WelcomePage/Rate_1.png'),
+    rootBundle.load('assets/images/WelcomePage/Rate_2.png'),
+    rootBundle.load('assets/images/WelcomePage/Rate_3.png'),
+    rootBundle.load('assets/images/WelcomePage/Rate_4.png'),
+    rootBundle.load('assets/images/WelcomePage/Rate_5.png'),
+    rootBundle.load('assets/images/WelcomePage/Rate_6.png'),  
   ]);
   // Load other asset types such as fonts, json files, etc. using their respective methods
   // await rootBundle.loadFont('assets/fonts/font1.ttf');
