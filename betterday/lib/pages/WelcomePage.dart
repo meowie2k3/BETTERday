@@ -2,10 +2,35 @@ import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:betterday/widgets/GradientCircle.dart';
 import 'package:betterday/pages/HomeScreen.dart';
 import 'package:flutter/material.dart';
-
-class WelcomePage extends StatelessWidget {
+import 'package:permission_handler/permission_handler.dart';
+class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
+@override
+  _WelcomePageState createState() => _WelcomePageState();
+}
+class _WelcomePageState extends State<WelcomePage> {
+  bool _hasInternetPermission = false;
 
+  @override
+  void initState() {
+    super.initState();
+    _checkInternetPermission();
+  }
+
+  Future<void> _checkInternetPermission() async {
+    final status = await Permission.sensors.status;
+    setState(() {
+      _hasInternetPermission = status == PermissionStatus.granted;
+    });
+  }
+
+  Future<void> _requestInternetPermission() async {
+    final status = await Permission.sensors.request();
+    setState(() {
+      _hasInternetPermission = status == PermissionStatus.granted;
+    });
+  }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(

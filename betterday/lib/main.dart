@@ -54,7 +54,7 @@ void main(List<String> args) async {
     await Firebase.initializeApp();
   }
 
-  runApp(const MyApp());
+  runApp(new MyApp());
 }
 
 class MyApp extends StatefulWidget {
