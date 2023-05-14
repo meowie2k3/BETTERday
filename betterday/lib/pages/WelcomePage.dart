@@ -1,36 +1,26 @@
+import 'package:betterday/service/auth_service.dart';
 import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:betterday/widgets/GradientCircle.dart';
 import 'package:betterday/pages/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
+
 class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
-@override
+  @override
   _WelcomePageState createState() => _WelcomePageState();
 }
+
 class _WelcomePageState extends State<WelcomePage> {
-  bool _hasInternetPermission = false;
+  bool _isLoading = false;
+  AuthService authService = AuthService();
 
-  @override
-  void initState() {
-    super.initState();
-    _checkInternetPermission();
-  }
+  final formKey = GlobalKey<FormState>();
+  // for register
+  String email = "BETTERdayUser01@gmail.com";
+  String password = "123456";
+  String fullname = "BETTERdayUser01";
 
-  Future<void> _checkInternetPermission() async {
-    final status = await Permission.sensors.status;
-    setState(() {
-      _hasInternetPermission = status == PermissionStatus.granted;
-    });
-  }
-
-  Future<void> _requestInternetPermission() async {
-    final status = await Permission.sensors.request();
-    setState(() {
-      _hasInternetPermission = status == PermissionStatus.granted;
-    });
-  }
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,40 +60,52 @@ class _WelcomePageState extends State<WelcomePage> {
               const SizedBox(
                 height: 20,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const <Widget>[
-                  RatingButton(
-                      imagedestination: 'assets/images/WelcomePage/Rate_1.png',
-                      size: 45,
-                      text: 'Tuyệt vời'),
-                  SizedBox(width: 10),
-                  RatingButton(
-                      imagedestination: 'assets/images/WelcomePage/Rate_2.png',
-                      size: 45,
-                      text: 'Vui vẻ'),
-                  SizedBox(width: 10),
-                  RatingButton(
-                      imagedestination: 'assets/images/WelcomePage/Rate_3.png',
-                      size: 45,
-                      text: 'Bình thường'),
-                  SizedBox(width: 10),
-                  RatingButton(
-                      imagedestination: 'assets/images/WelcomePage/Rate_4.png',
-                      size: 45,
-                      text: 'Buồn'),
-                  SizedBox(width: 10),
-                  RatingButton(
-                      imagedestination: 'assets/images/WelcomePage/Rate_5.png',
-                      size: 45,
-                      text: 'Tệ'),
-                  SizedBox(width: 10),
-                  RatingButton(
-                      imagedestination: 'assets/images/WelcomePage/Rate_6.png',
-                      size: 45,
-                      text: 'Cực tệ'),
-                ],
-              ),
+              _isLoading
+                  ? const Center(
+                      child: CircularProgressIndicator(
+                        color: Colors.blue,
+                      ),
+                    )
+                  : Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const <Widget>[
+                        RatingButton(
+                            imagedestination:
+                                'assets/images/WelcomePage/Rate_1.png',
+                            size: 45,
+                            text: 'Tuyệt vời'),
+                        SizedBox(width: 10),
+                        RatingButton(
+                            imagedestination:
+                                'assets/images/WelcomePage/Rate_2.png',
+                            size: 45,
+                            text: 'Vui vẻ'),
+                        SizedBox(width: 10),
+                        RatingButton(
+                            imagedestination:
+                                'assets/images/WelcomePage/Rate_3.png',
+                            size: 45,
+                            text: 'Bình thường'),
+                        SizedBox(width: 10),
+                        RatingButton(
+                            imagedestination:
+                                'assets/images/WelcomePage/Rate_4.png',
+                            size: 45,
+                            text: 'Buồn'),
+                        SizedBox(width: 10),
+                        RatingButton(
+                            imagedestination:
+                                'assets/images/WelcomePage/Rate_5.png',
+                            size: 45,
+                            text: 'Tệ'),
+                        SizedBox(width: 10),
+                        RatingButton(
+                            imagedestination:
+                                'assets/images/WelcomePage/Rate_6.png',
+                            size: 45,
+                            text: 'Cực tệ'),
+                      ],
+                    ),
               const SizedBox(
                 height: 50,
               ),
@@ -120,11 +122,7 @@ class _WelcomePageState extends State<WelcomePage> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  print("skipped");
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const HomeScreen()),
-                  );
+                  register();
                 },
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all<Color>(
@@ -150,6 +148,26 @@ class _WelcomePageState extends State<WelcomePage> {
         ),
       ]),
     );
+  }
+
+  register() async {
+    //if (formKey.currentState!.validate()) {
+    setState(() {
+      _isLoading = true;
+    });
+    await authService
+        .registerUserWithEmailAndPassword(fullname, email, password)
+        .then((value) {
+      if (value == true) {
+        //saving the shared preference state
+        print("Register success");
+      } else {
+        setState(() {
+          _isLoading = false;
+        });
+      }
+    });
+    //}
   }
 }
 
