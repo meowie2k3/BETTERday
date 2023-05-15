@@ -1,7 +1,8 @@
+import 'package:betterday/pages/BotChatScreen.dart';
 import 'package:betterday/pages/HomeScreen.dart';
-import 'package:flutter/material.dart';
-
+import 'package:betterday/widgets/CourseBox.dart';
 import 'package:betterday/widgets/DustyCircle.dart';
+import 'package:flutter/material.dart';
 
 class CourseScreen extends StatelessWidget {
   const CourseScreen({super.key});
@@ -36,7 +37,7 @@ class CourseScreen extends StatelessWidget {
                 //crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   //button và khóa học tâm lý
-                  const SizedBox(height: 25),
+                  const SizedBox(height: 45),
                   Row(
                     children: <Widget>[
                       const SizedBox(width: 25),
@@ -266,536 +267,38 @@ class CourseScreen extends StatelessWidget {
 
                   //Góc nhìn của Socrates
                   const SizedBox(height: 15),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    width: 360,
-                    height: 370,
-                    child: Transform.translate(
-                      offset: const Offset(0, 0),
-                      child: GestureDetector(
-                        //onTap: () {},
-                        child: Column(
-                          children: <Widget>[
-                            //title
-                            const SizedBox(height: 15),
-                            Row(
-                              children: const <Widget>[
-                                SizedBox(width: 15),
-                                Text(
-                                  'Góc nhìn của Socrates',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 0, 0, 0),
-                                    fontSize: 18,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                              ],
-                            ),
+                  const CourseBox(
+                    imageLink: 'assets/images/CourseScreen/socratesmethod.jpg',
+                    name: 'Góc nhìn của Socrates',
+                    details: 'Bao gồm 40+ bài học từ vị triết gia lỗi lạc',
+                    discountCost: '14.999 VNĐ',
+                    realCost: '24.999 VNĐ',
+                    url: '',
+                  ),
 
-                            //description
-                            const SizedBox(height: 10),
-                            Row(
-                              children: const <Widget>[
-                                SizedBox(width: 15),
-                                Text(
-                                  'Bao gồm 40+ bài học từ vị triết gia lỗi lạc',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color(0xFF677294),
-                                    fontSize: 14,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                            //image
-                            const SizedBox(height: 15),
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(10),
-                              child: Image.asset(
-                                'assets/images/CourseScreen/socratesmethod.jpg',
-                                width: 360,
-                                height: 200,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-
-                            //cost
-                            const SizedBox(height: 15),
-                            Row(
-                              children: const <Widget>[
-                                SizedBox(width: 15),
-                                Text(
-                                  '14.999 VNĐ',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 0, 0, 0),
-                                    fontSize: 18,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                                SizedBox(width: 55),
-                                Text(
-                                  '24.999 VNĐ',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color(0xFF677294),
-                                    fontSize: 16,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    decoration: TextDecoration.lineThrough,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                                SizedBox(width: 15),
-                                Text(
-                                  'ƯU ĐÃI CÓ HẠN!',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 222, 12, 12),
-                                    fontSize: 10,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                            //2button
-                            const SizedBox(height: 15),
-                            Row(
-                              children: <Widget>[
-                                //button học thử
-                                const SizedBox(width: 15),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF0EBE7F),
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  width: 150,
-                                  height: 32,
-                                  child: Transform.translate(
-                                    offset: const Offset(0, 0),
-                                    child: TextButton(
-                                      onPressed: () {},
-                                      child: const Text(
-                                        'Học thử miễn phí',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(
-                                              255, 255, 255, 255),
-                                          fontSize: 15,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w500,
-                                          //fontStyle: FontStyle.italic,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-
-                                //button mua ngay
-                                const SizedBox(width: 80),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF0EBE7F),
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  width: 100,
-                                  height: 32,
-                                  child: Transform.translate(
-                                    offset: const Offset(0, 0),
-                                    child: TextButton(
-                                      onPressed: () {},
-                                      child: const Text(
-                                        'Mua ngay',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(
-                                              255, 255, 255, 255),
-                                          fontSize: 15,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w500,
-                                          //fontStyle: FontStyle.italic,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
+                  //Sự tiến hóa của lòng tin
+                  const SizedBox(height: 15),
+                  const CourseBox(
+                    imageLink:
+                        'assets/images/CourseScreen/su_tien_hoa_cua_long_tin.png',
+                    name: 'Sự tiến hóa của lòng tin',
+                    details: 'Khi niềm tin của con người bị lay động',
+                    discountCost: '24.999 VNĐ',
+                    realCost: '34.999 VNĐ',
+                    url: 'https://nghiatt90.github.io/trust-vn/',
                   ),
 
                   //Bài học từ  “Nhà giả kim”
                   const SizedBox(height: 15),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    width: 360,
-                    height: 370,
-                    child: Transform.translate(
-                      offset: const Offset(0, 0),
-                      child: GestureDetector(
-                        //onTap: () {},
-                        child: Column(
-                          children: <Widget>[
-                            //title
-                            const SizedBox(height: 15),
-                            Row(
-                              children: const <Widget>[
-                                SizedBox(width: 15),
-                                Text(
-                                  'Bài học từ  “Nhà giả kim”',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 0, 0, 0),
-                                    fontSize: 18,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                            //description
-                            const SizedBox(height: 10),
-                            Row(
-                              children: const <Widget>[
-                                SizedBox(width: 15),
-                                Text(
-                                  'Khám phá hành trình tìm kiếm chân lý của Santiago',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color(0xFF677294),
-                                    fontSize: 14,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                            //image
-                            const SizedBox(height: 15),
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(10),
-                              child: Image.asset(
-                                'assets/images/CourseScreen/10-bai-hoc-dat-gia-tu-nha-gia-kim-elleman-1.jpg',
-                                width: 360,
-                                height: 200,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-
-                            //cost
-                            const SizedBox(height: 15),
-                            Row(
-                              children: const <Widget>[
-                                SizedBox(width: 15),
-                                Text(
-                                  '19.999 VNĐ',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 0, 0, 0),
-                                    fontSize: 18,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                                SizedBox(width: 55),
-                                Text(
-                                  '29.999 VNĐ',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color(0xFF677294),
-                                    fontSize: 16,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    decoration: TextDecoration.lineThrough,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                                SizedBox(width: 15),
-                                Text(
-                                  'ƯU ĐÃI CÓ HẠN!',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 222, 12, 12),
-                                    fontSize: 10,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                            //2button
-                            const SizedBox(height: 15),
-                            Row(
-                              children: <Widget>[
-                                //button học thử
-                                const SizedBox(width: 15),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF0EBE7F),
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  width: 150,
-                                  height: 32,
-                                  child: Transform.translate(
-                                    offset: const Offset(0, 0),
-                                    child: TextButton(
-                                      onPressed: () {},
-                                      child: const Text(
-                                        'Học thử miễn phí',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(
-                                              255, 255, 255, 255),
-                                          fontSize: 15,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w500,
-                                          //fontStyle: FontStyle.italic,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-
-                                //button mua ngay
-                                const SizedBox(width: 80),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF0EBE7F),
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  width: 100,
-                                  height: 32,
-                                  child: Transform.translate(
-                                    offset: const Offset(0, 0),
-                                    child: TextButton(
-                                      onPressed: () {},
-                                      child: const Text(
-                                        'Mua ngay',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(
-                                              255, 255, 255, 255),
-                                          fontSize: 15,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w500,
-                                          //fontStyle: FontStyle.italic,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-
-                  //Nhìn khổ đau bằng con mắt tỉnh thức
-                  const SizedBox(height: 15),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    width: 360,
-                    height: 385,
-                    child: Transform.translate(
-                      offset: const Offset(0, 0),
-                      child: GestureDetector(
-                        //onTap: () {},
-                        child: Column(
-                          children: <Widget>[
-                            //title
-                            const SizedBox(height: 15),
-                            Row(
-                              children: const <Widget>[
-                                SizedBox(width: 15),
-                                Text(
-                                  'Nhìn khổ đau bằng con mắt tỉnh thức',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 0, 0, 0),
-                                    fontSize: 18,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                            //description
-                            const SizedBox(height: 10),
-                            Row(
-                              children: const <Widget>[
-                                SizedBox(width: 15),
-                                Text(
-                                  'Đôi khi chúng ta chỉ cần nhìn thế giới bằng con mắt\nkhác',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color(0xFF677294),
-                                    fontSize: 14,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                            //image
-                            const SizedBox(height: 15),
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(10),
-                              child: Image.asset(
-                                'assets/images/CourseScreen/thay-minh-niem-nhin-kho-dau-bang-con-mat-tinh-thuc-38b906f5c4414a0890292624ce91874d.jpg',
-                                width: 360,
-                                height: 200,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-
-                            //cost
-                            const SizedBox(height: 15),
-                            Row(
-                              children: const <Widget>[
-                                SizedBox(width: 15),
-                                Text(
-                                  '24.999 VNĐ',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 0, 0, 0),
-                                    fontSize: 18,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                                SizedBox(width: 55),
-                                Text(
-                                  '34.999 VNĐ',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color(0xFF677294),
-                                    fontSize: 16,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    decoration: TextDecoration.lineThrough,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                                SizedBox(width: 15),
-                                Text(
-                                  'ƯU ĐÃI CÓ HẠN!',
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Color.fromARGB(255, 222, 12, 12),
-                                    fontSize: 10,
-                                    fontFamily: 'Google Sans',
-                                    fontWeight: FontWeight.w500,
-                                    //fontStyle: FontStyle.italic,
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                            //2button
-                            const SizedBox(height: 15),
-                            Row(
-                              children: <Widget>[
-                                //button học thử
-                                const SizedBox(width: 15),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF0EBE7F),
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  width: 150,
-                                  height: 32,
-                                  child: Transform.translate(
-                                    offset: const Offset(0, 0),
-                                    child: TextButton(
-                                      onPressed: () {},
-                                      child: const Text(
-                                        'Học thử miễn phí',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(
-                                              255, 255, 255, 255),
-                                          fontSize: 15,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w500,
-                                          //fontStyle: FontStyle.italic,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-
-                                //button mua ngay
-                                const SizedBox(width: 80),
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF0EBE7F),
-                                    borderRadius: BorderRadius.circular(10),
-                                  ),
-                                  width: 100,
-                                  height: 32,
-                                  child: Transform.translate(
-                                    offset: const Offset(0, 0),
-                                    child: TextButton(
-                                      onPressed: () {},
-                                      child: const Text(
-                                        'Mua ngay',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(
-                                              255, 255, 255, 255),
-                                          fontSize: 15,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w500,
-                                          //fontStyle: FontStyle.italic,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
+                  const CourseBox(
+                    imageLink:
+                        'assets/images/CourseScreen/10-bai-hoc-dat-gia-tu-nha-gia-kim-elleman-1.jpg',
+                    name: 'Bài học từ  “Nhà giả kim”',
+                    details:
+                        'Khám phá hành trình tìm kiếm chân lý của Santiago',
+                    discountCost: '19.999 VNĐ',
+                    realCost: '29.999 VNĐ',
+                    url: '',
                   ),
 
                   const SizedBox(height: 15),
@@ -827,16 +330,14 @@ class CourseScreen extends StatelessWidget {
             ),
             IconButton(
               icon: const Icon(Icons.bookmark),
-              onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const CourseScreen()));
-              },
+              onPressed: () {},
             ),
             IconButton(
               icon: const Icon(Icons.chat_bubble_outline),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const BotChat()));
+              },
             ),
           ],
         ),
