@@ -37,7 +37,7 @@ class CourseScreen extends StatelessWidget {
                 //crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   //button và khóa học tâm lý
-                  const SizedBox(height: 25),
+                  const SizedBox(height: 45),
                   Row(
                     children: <Widget>[
                       const SizedBox(width: 25),
