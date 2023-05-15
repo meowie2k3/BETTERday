@@ -1,9 +1,11 @@
 import 'package:betterday/pages/BotChatScreen.dart';
 import 'package:betterday/pages/CallScreenPatient.dart';
+import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/BigBoxInHomeScreen.dart';
+import '../widgets/SmallBoxInHomeScreen.dart';
 import 'CourseScreen.dart';
-import 'package:betterday/widgets/DustyCircle.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,7 +14,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      backgroundColor: Color.fromARGB(255, 214, 240, 234),
+      backgroundColor: const Color.fromARGB(255, 214, 240, 234),
       appBar: AppBar(
         automaticallyImplyLeading: false,
         toolbarHeight: 70,
@@ -250,362 +252,40 @@ class HomeScreen extends StatelessWidget {
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
-                      children: <Widget>[
+                      children: const <Widget>[
                         //trang
-                        const SizedBox(width: 10),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 190,
-                          height: 245,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-guilherme-almeida-1858175.jpg',
-                                      width: 190,
-                                      height: 175,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 65),
-                                      Text(
-                                        'Trang',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 20,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                      SizedBox(width: 5),
-                                      CircleAvatar(
-                                        backgroundColor: Colors.green,
-                                        radius: 5,
-                                        child: Icon(
-                                          Icons.check,
-                                          color: Colors.white,
-                                          size: 10,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 50),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color:
-                                            Color.fromARGB(255, 149, 149, 149),
-                                        size: 20,
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        SizedBox(width: 10),
+                        BigBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-guilherme-almeida-1858175.jpg',
+                            name: 'Trang',
+                            numStar: 4),
 
                         //thu
-                        const SizedBox(width: 15),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 190,
-                          height: 245,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-moose-photos-1587009.jpg',
-                                      width: 190,
-                                      height: 175,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 80),
-                                      Text(
-                                        'Thu',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 20,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                      SizedBox(width: 5),
-                                      CircleAvatar(
-                                        backgroundColor: Colors.green,
-                                        radius: 5,
-                                        child: Icon(
-                                          Icons.check,
-                                          color: Colors.white,
-                                          size: 10,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 50),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        SizedBox(width: 15),
+                        BigBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-moose-photos-1587009.jpg',
+                            name: 'Thu',
+                            numStar: 5),
 
                         //nghĩa
-                        const SizedBox(width: 15),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 190,
-                          height: 245,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-mushtaq-hussain-15242467.jpg',
-                                      width: 190,
-                                      height: 175,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 70),
-                                      Text(
-                                        'Nghĩa',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 20,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                      SizedBox(width: 5),
-                                      CircleAvatar(
-                                        backgroundColor: Colors.green,
-                                        radius: 5,
-                                        child: Icon(
-                                          Icons.check,
-                                          color: Colors.white,
-                                          size: 10,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 50),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color:
-                                            Color.fromARGB(255, 149, 149, 149),
-                                        size: 20,
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        SizedBox(width: 15),
+                        BigBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-mushtaq-hussain-15242467.jpg',
+                            name: 'Nghĩa',
+                            numStar: 4),
 
                         //ngọc
-                        const SizedBox(width: 15),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 190,
-                          height: 245,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-ruslan-sikunov-16542850.jpg',
-                                      width: 190,
-                                      height: 175,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 70),
-                                      Text(
-                                        'Ngọc',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 20,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                      SizedBox(width: 5),
-                                      CircleAvatar(
-                                        backgroundColor: Colors.green,
-                                        radius: 5,
-                                        child: Icon(
-                                          Icons.check,
-                                          color: Colors.white,
-                                          size: 10,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 50),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 20,
-                                      ),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFF959595),
-                                        size: 20,
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        SizedBox(width: 15),
+                        BigBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-ruslan-sikunov-16542850.jpg',
+                            name: 'Ngọc',
+                            numStar: 4),
 
-                        const SizedBox(width: 10),
+                        SizedBox(width: 10),
                       ],
                     ),
                   ),
@@ -647,413 +327,58 @@ class HomeScreen extends StatelessWidget {
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
-                      children: <Widget>[
+                      children: const <Widget>[
                         //Linh
-                        const SizedBox(width: 10),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 96,
-                          height: 130,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  const SizedBox(height: 5),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 10),
-                                      Icon(
-                                        Icons.favorite,
-                                        color: Color.fromARGB(255, 255, 0, 0),
-                                        size: 10,
-                                      ),
-                                      SizedBox(width: 40),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 12,
-                                      ),
-                                      Text(
-                                        '3.7',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 10,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-andrea-piacquadio-774909.jpg',
-                                      width: 55,
-                                      height: 55,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'Linh',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
-                                      fontSize: 12,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 5),
-                                  const Text(
-                                    'Được tài trợ',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color(0xFF677294),
-                                      fontSize: 9,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        SizedBox(width: 10),
+                        SmallBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-andrea-piacquadio-774909.jpg',
+                            name: 'Linh',
+                            isFavorite: true,
+                            numStar: 3.7,
+                            cost: 'Được tài trợ'),
 
                         //Minh
-                        const SizedBox(width: 10),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 96,
-                          height: 130,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  const SizedBox(height: 5),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 10),
-                                      Icon(
-                                        Icons.favorite,
-                                        color: Color(0xFF959595),
-                                        size: 10,
-                                      ),
-                                      SizedBox(width: 40),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 12,
-                                      ),
-                                      Text(
-                                        '3.8',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 10,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-bianca-1322543.jpg',
-                                      width: 55,
-                                      height: 55,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'Minh',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
-                                      fontSize: 12,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 5),
-                                  const Text(
-                                    'Từ 25.000 VNĐ',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color(0xFF677294),
-                                      fontSize: 9,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        SizedBox(width: 10),
+                        SmallBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-bianca-1322543.jpg',
+                            name: 'Minh',
+                            isFavorite: false,
+                            numStar: 3.8,
+                            cost: 'Từ 25.000 VNĐ'),
 
                         //Trí
-                        const SizedBox(width: 10),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 96,
-                          height: 130,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  const SizedBox(height: 5),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 10),
-                                      Icon(
-                                        Icons.favorite,
-                                        color: Color(0xFF959595),
-                                        size: 10,
-                                      ),
-                                      SizedBox(width: 40),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 12,
-                                      ),
-                                      Text(
-                                        '3.2',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 10,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-jc-laurio-1288182.jpg',
-                                      width: 55,
-                                      height: 55,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'Trí',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
-                                      fontSize: 12,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 5),
-                                  const Text(
-                                    'Từ 20.000 VNĐ',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color(0xFF677294),
-                                      fontSize: 9,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        SizedBox(width: 10),
+                        SmallBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-jc-laurio-1288182.jpg',
+                            name: 'Trí',
+                            isFavorite: false,
+                            numStar: 3.2,
+                            cost: 'Từ 20.000 VNĐ'),
 
                         //Thu
-                        const SizedBox(width: 10),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 96,
-                          height: 130,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  const SizedBox(height: 5),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 10),
-                                      Icon(
-                                        Icons.favorite,
-                                        color: Color.fromARGB(255, 255, 0, 0),
-                                        size: 10,
-                                      ),
-                                      SizedBox(width: 40),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 12,
-                                      ),
-                                      Text(
-                                        '3.6',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 10,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-juliana-stein-1898555.jpg',
-                                      width: 55,
-                                      height: 55,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'Thu',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
-                                      fontSize: 12,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 5),
-                                  const Text(
-                                    'Từ 22.000 VNĐ',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color(0xFF677294),
-                                      fontSize: 9,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        SizedBox(width: 10),
+                        SmallBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-juliana-stein-1898555.jpg',
+                            name: 'Thu',
+                            isFavorite: true,
+                            numStar: 3.6,
+                            cost: 'Từ 22.000 VNĐ'),
 
                         //Nhân
-                        const SizedBox(width: 10),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 96,
-                          height: 130,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  const SizedBox(height: 5),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 10),
-                                      Icon(
-                                        Icons.favorite,
-                                        color: Color.fromARGB(255, 255, 0, 0),
-                                        size: 10,
-                                      ),
-                                      SizedBox(width: 40),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 12,
-                                      ),
-                                      Text(
-                                        '3.9',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 10,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-nur-andi-ravsanjani-gusma-974266.jpg',
-                                      width: 55,
-                                      height: 55,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'Nhân',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
-                                      fontSize: 12,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 5),
-                                  const Text(
-                                    'Từ 23.000 VNĐ',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color(0xFF677294),
-                                      fontSize: 9,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        SizedBox(width: 10),
+                        SmallBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-nur-andi-ravsanjani-gusma-974266.jpg',
+                            name: 'Nhân',
+                            isFavorite: true,
+                            numStar: 3.9,
+                            cost: 'Từ 23.000 VNĐ'),
 
-                        const SizedBox(width: 10),
+                        SizedBox(width: 10),
                       ],
                     ),
                   ),
@@ -1095,413 +420,58 @@ class HomeScreen extends StatelessWidget {
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
-                      children: <Widget>[
+                      children: const <Widget>[
                         //Dũng
-                        const SizedBox(width: 10),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 96,
-                          height: 130,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  const SizedBox(height: 5),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 10),
-                                      Icon(
-                                        Icons.favorite,
-                                        color: Color.fromARGB(255, 255, 0, 0),
-                                        size: 10,
-                                      ),
-                                      SizedBox(width: 40),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 12,
-                                      ),
-                                      Text(
-                                        '3.9',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 10,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-serhii-volyk-15237921.jpg',
-                                      width: 55,
-                                      height: 55,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'Dũng',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
-                                      fontSize: 12,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 5),
-                                  const Text(
-                                    'Từ 23.000 VNĐ',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color(0xFF677294),
-                                      fontSize: 9,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        SizedBox(width: 10),
+                        SmallBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-serhii-volyk-15237921.jpg',
+                            name: 'Dũng',
+                            isFavorite: true,
+                            numStar: 3.9,
+                            cost: 'Từ 23.000 VNĐ'),
 
-//Thu
-                        const SizedBox(width: 10),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 96,
-                          height: 130,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  const SizedBox(height: 5),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 10),
-                                      Icon(
-                                        Icons.favorite,
-                                        color: Color.fromARGB(255, 255, 0, 0),
-                                        size: 10,
-                                      ),
-                                      SizedBox(width: 40),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 12,
-                                      ),
-                                      Text(
-                                        '3.6',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 10,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-juliana-stein-1898555.jpg',
-                                      width: 55,
-                                      height: 55,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'Thu',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
-                                      fontSize: 12,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 5),
-                                  const Text(
-                                    'Từ 22.000 VNĐ',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color(0xFF677294),
-                                      fontSize: 9,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        //Thu
+                        SizedBox(width: 10),
+                        SmallBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-juliana-stein-1898555.jpg',
+                            name: 'Thu',
+                            isFavorite: true,
+                            numStar: 3.6,
+                            cost: 'Từ 22.000 VNĐ'),
 
-//Minh
-                        const SizedBox(width: 10),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 96,
-                          height: 130,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  const SizedBox(height: 5),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 10),
-                                      Icon(
-                                        Icons.favorite,
-                                        color: Color(0xFF959595),
-                                        size: 10,
-                                      ),
-                                      SizedBox(width: 40),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 12,
-                                      ),
-                                      Text(
-                                        '3.8',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 10,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-bianca-1322543.jpg',
-                                      width: 55,
-                                      height: 55,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'Minh',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
-                                      fontSize: 12,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 5),
-                                  const Text(
-                                    'Từ 25.000 VNĐ',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color(0xFF677294),
-                                      fontSize: 9,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        //Minh
+                        SizedBox(width: 10),
+                        SmallBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-bianca-1322543.jpg',
+                            name: 'Minh',
+                            isFavorite: false,
+                            numStar: 3.8,
+                            cost: 'Từ 25.000 VNĐ'),
 
-//Linh
-                        const SizedBox(width: 10),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 96,
-                          height: 130,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  const SizedBox(height: 5),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 10),
-                                      Icon(
-                                        Icons.favorite,
-                                        color: Color.fromARGB(255, 255, 0, 0),
-                                        size: 10,
-                                      ),
-                                      SizedBox(width: 40),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 12,
-                                      ),
-                                      Text(
-                                        '3.7',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 10,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-andrea-piacquadio-774909.jpg',
-                                      width: 55,
-                                      height: 55,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'Linh',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
-                                      fontSize: 12,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 5),
-                                  const Text(
-                                    'Được tài trợ',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color(0xFF677294),
-                                      fontSize: 9,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        //Linh
+                        SizedBox(width: 10),
+                        SmallBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-andrea-piacquadio-774909.jpg',
+                            name: 'Linh',
+                            isFavorite: true,
+                            numStar: 3.7,
+                            cost: 'Được tài trợ'),
 
-//Trí
-                        const SizedBox(width: 10),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          width: 96,
-                          height: 130,
-                          child: Transform.translate(
-                            offset: const Offset(0, 0),
-                            child: GestureDetector(
-                              //onTap: () {},
-                              child: Column(
-                                children: <Widget>[
-                                  const SizedBox(height: 5),
-                                  Row(
-                                    children: const <Widget>[
-                                      SizedBox(width: 10),
-                                      Icon(
-                                        Icons.favorite,
-                                        color: Color(0xFF959595),
-                                        size: 10,
-                                      ),
-                                      SizedBox(width: 40),
-                                      Icon(
-                                        Icons.star,
-                                        color: Color(0xFFFEAF20),
-                                        size: 12,
-                                      ),
-                                      Text(
-                                        '3.2',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Color.fromARGB(255, 0, 0, 0),
-                                          fontSize: 10,
-                                          fontFamily: 'Google Sans',
-                                          fontWeight: FontWeight.w700,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 10),
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    clipBehavior: Clip.antiAlias,
-                                    child: Image.asset(
-                                      'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-jc-laurio-1288182.jpg',
-                                      width: 55,
-                                      height: 55,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 10),
-                                  const Text(
-                                    'Trí',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color.fromARGB(255, 0, 0, 0),
-                                      fontSize: 12,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 5),
-                                  const Text(
-                                    'Từ 20.000 VNĐ',
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(
-                                      color: Color(0xFF677294),
-                                      fontSize: 9,
-                                      fontFamily: 'Google Sans',
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        //Trí
+                        SizedBox(width: 10),
+                        SmallBoxInHomeScreen(
+                            imageLink:
+                                'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-jc-laurio-1288182.jpg',
+                            name: 'Trí',
+                            isFavorite: false,
+                            numStar: 3.2,
+                            cost: 'Từ 20.000 VNĐ'),
 
-                        const SizedBox(width: 10),
+                        SizedBox(width: 10),
                       ],
                     ),
                   ),

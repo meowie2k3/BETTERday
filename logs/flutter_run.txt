@@ -1,18 +1,21 @@
-[2:36:58 PM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9102/","--target","lib\\main.dart"]
-[2:36:58 PM]: ..  in D:\BETTERday\BETTERday\betterday
-[2:36:58 PM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
-[2:36:58 PM]: PID: 26344
-[2:37:02 PM]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":20240}}]
-[2:37:02 PM]: <== [{"event":"app.start","params":{"appId":"75976114-fb18-4aeb-9714-6e45540f3cce","deviceId":"emulator-5554","directory":"D:\\BETTERday\\BETTERday\\betterday","supportsRestart":true,"launchMode":"run"}}]
-[2:37:03 PM]: <== Launching lib\main.dart on sdk gphone x86 in debug mode...
-[2:37:04 PM]: <== [{"event":"app.progress","params":{"appId":"75976114-fb18-4aeb-9714-6e45540f3cce","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
-[2:37:24 PM]: <== [{"event":"app.progress","params":{"appId":"75976114-fb18-4aeb-9714-6e45540f3cce","id":"0","progressId":null,"finished":true}}]
-[2:37:27 PM]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
-[2:37:34 PM]: <== [{"event":"app.debugPort","params":{"appId":"75976114-fb18-4aeb-9714-6e45540f3cce","port":56321,"wsUri":"ws://127.0.0.1:56321/U_pno7QeDwM=/ws","baseUri":"file:///data/user/0/com.example.betterday/code_cache/betterdayJWXJCS/betterday/"}}]
-[2:37:34 PM]: <== [{"event":"app.progress","params":{"appId":"75976114-fb18-4aeb-9714-6e45540f3cce","id":"1","progressId":null,"message":"Syncing files to device sdk gphone x86...","finished":false}}]
-[2:37:35 PM]: <== [{"event":"app.progress","params":{"appId":"75976114-fb18-4aeb-9714-6e45540f3cce","id":"1","progressId":null,"finished":true}}]
-[2:37:35 PM]: <== [{"event":"app.started","params":{"appId":"75976114-fb18-4aeb-9714-6e45540f3cce"}}]
-[2:37:40 PM]: <== D/permissions_handler(12470): No permissions found in manifest for: []12
-[2:38:09 PM]: <== I/flutter (12470): skipped
-[2:38:31 PM]: ==> [{"id":"1","method":"app.stop","params":{"appId":"75976114-fb18-4aeb-9714-6e45540f3cce"}}]
-[2:38:34 PM]: Process C:\src\flutter\bin\flutter.bat terminated! 1, null
+[5:31:27 PM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\main.dart"]
+[5:31:27 PM]: ..  in D:\BETTERday\BETTERday\betterday
+[5:31:27 PM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[5:31:27 PM]: PID: 7828
+[5:31:29 PM]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":24724}}]
+[5:31:29 PM]: <== [{"event":"app.start","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","deviceId":"emulator-5554","directory":"D:\\BETTERday\\BETTERday\\betterday","supportsRestart":true,"launchMode":"run"}}]
+[5:31:29 PM]: <== Launching lib\main.dart on sdk gphone x86 in debug mode...
+[5:31:30 PM]: <== [{"event":"app.progress","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
+[5:31:49 PM]: <== [{"event":"app.progress","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","id":"0","progressId":null,"finished":true}}]
+[5:31:51 PM]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
+[5:31:51 PM]: <== [{"event":"app.progress","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","id":"1","progressId":null,"message":"Installing build\\app\\outputs\\flutter-apk\\app-debug.apk...","finished":false}}]
+[5:31:53 PM]: <== [{"event":"app.progress","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","id":"1","progressId":null,"finished":true}}]
+[5:31:58 PM]: <== [{"event":"app.debugPort","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","port":58535,"wsUri":"ws://127.0.0.1:58535/AwxrLoXbYyM=/ws","baseUri":"file:///data/user/0/com.example.betterday/code_cache/betterdayNIIFHJ/betterday/"}}]
+[5:31:58 PM]: <== [{"event":"app.progress","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","id":"2","progressId":null,"message":"Syncing files to device sdk gphone x86...","finished":false}}]
+[5:31:58 PM]: <== [{"event":"app.progress","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","id":"2","progressId":null,"finished":true}}]
+[5:31:58 PM]: <== [{"event":"app.started","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59"}}]
+[5:32:01 PM]: <== D/permissions_handler(24108): No permissions found in manifest for: []12
+[5:32:07 PM]: <== I/flutter (24108): skipped
+[5:36:17 PM]: ==> [{"id":"1","method":"app.stop","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59"}}]
+[5:36:17 PM]: <== Application finished.
+[5:36:17 PM]: <== [{"event":"app.stop","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59"}}]
