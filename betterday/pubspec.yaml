@@ -36,6 +36,7 @@ dependencies:
     sdk: flutter
   permission_handler: ^10.2.0
   shared_preferences: ^2.1.1
+  url_launcher: ^6.0.2
 
 dev_dependencies:
   flutter_launcher_icons: "^0.13.1"
@@ -86,7 +87,8 @@ flutter:
     #CourseScreen
     - 'assets/images/CourseScreen/socratesmethod.jpg'
     - 'assets/images/CourseScreen/10-bai-hoc-dat-gia-tu-nha-gia-kim-elleman-1.jpg'
-    - 'assets/images/CourseScreen/thay-minh-niem-nhin-kho-dau-bang-con-mat-tinh-thuc-38b906f5c4414a0890292624ce91874d.jpg'
+    - 'assets/images/CourseScreen/su_tien_hoa_cua_long_tin.png'
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
