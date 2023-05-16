@@ -64,12 +64,12 @@ class CallScreenPatient extends StatelessWidget {
                           Icon(
                             Icons.report_outlined,
                             color: Colors.red,
+                            size: 30,
                           ),
-                          SizedBox(height: 2), // Add some space
                           Text('Báo cáo',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: 10,
+                                fontSize: 15,
                                 fontFamily: 'Google Sans',
                                 fontWeight: FontWeight.w500,
                                 //fontStyle: FontStyle.italic
