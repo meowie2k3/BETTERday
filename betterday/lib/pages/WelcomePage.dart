@@ -1,10 +1,6 @@
-import 'package:betterday/helper/helper_function.dart';
-import 'package:betterday/service/auth_service.dart';
-import 'package:betterday/service/database_service.dart';
 import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:betterday/widgets/GradientCircle.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:betterday/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:betterday/pages/BotChatScreen.dart';
 
@@ -15,15 +11,7 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
-  bool _isLoading = false;
-  AuthService authService = AuthService();
-
-  final formKey = GlobalKey<FormState>();
-  // for register
-  String email = "BETTERdayUser01@gmail.com";
-  String password = "123456";
-  String fullname = "BETTERdayUser01";
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,13 +51,7 @@ class _WelcomePageState extends State<WelcomePage> {
               const SizedBox(
                 height: 20,
               ),
-              _isLoading
-                  ? const Center(
-                      child: CircularProgressIndicator(
-                        color: Colors.blue,
-                      ),
-                    )
-                  : Row(
+              Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const <Widget>[
                         RatingButton(
@@ -125,7 +107,7 @@ class _WelcomePageState extends State<WelcomePage> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  login();
+                  nextScreenReplace(context, const BotChat());
                 },
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all<Color>(
@@ -153,76 +135,7 @@ class _WelcomePageState extends State<WelcomePage> {
     );
   }
 
-  register() async {
-    //if (formKey.currentState!.validate()) {
-    setState(() {
-      _isLoading = true;
-    });
-    await authService
-        .registerUserWithEmailAndPassword(fullname, email, password)
-        .then((value) async {
-      if (value == true) {
-        //saving the shared preference state
-        print("Register success");
-        await HelperFunction.saveUserLogginStatus(true);
-        await HelperFunction.saveUserEmailSF(email);
-        await HelperFunction.saveUserNameSF(fullname);
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const BotChat()),
-          );
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(value),
-            duration: const Duration(seconds: 5),
-          ),
-        );
-        setState(() {
-          _isLoading = false;
-        });
-      }
-    });
-    //}
-  }
-
-  login() async {
-    //if (formKey.currentState!.validate()) {
-    setState(() {
-      _isLoading = true;
-    });
-    await authService
-        .loginUserWithEmailAndPassword(email, password)
-        .then((value) async {
-      if (value == true) {
-        print("Login success");
-        QuerySnapshot snapshot = await DatabaseService(uid: FirebaseAuth.instance.currentUser!.uid)
-            .gettingUserData(email);
-        // saving the values to our shared preferences
-        await HelperFunction.saveUserLogginStatus(true);
-        await HelperFunction.saveUserEmailSF(email);
-        await HelperFunction.saveUserNameSF(
-          snapshot.docs[0].get('fullname')
-        );
-
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const BotChat()),
-          );
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(value),
-            duration: const Duration(seconds: 5),
-          ),
-        );
-        setState(() {
-          _isLoading = false;
-        });
-      }
-    });
-    //}
-  }
+  
 }
 
 class RatingButton extends StatelessWidget {
@@ -245,7 +158,7 @@ class RatingButton extends StatelessWidget {
         child: ElevatedButton(
             onPressed: () {
               print(text);
-              //_WelcomePageState().login();
+              nextScreenReplace(context, BotChat());
             },
             style: ButtonStyle(
               backgroundColor:
