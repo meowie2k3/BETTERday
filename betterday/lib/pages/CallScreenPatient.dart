@@ -1,11 +1,17 @@
 import 'package:betterday/widgets/CountdownTimer.dart';
 import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:betterday/widgets/GradientCircle.dart';
+import 'package:betterday/widgets/MessageInCallScreenPatient.dart';
 import 'package:flutter/material.dart';
 
 class CallScreenPatient extends StatelessWidget {
-  const CallScreenPatient({super.key});
-  final int _timeLimit = 1;
+  CallScreenPatient({super.key});
+
+  StopWatchWidget stopWatchWidget = StopWatchWidget(timelimit: 5);
+
+  String getTime() {
+    return stopWatchWidget.getTime();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -77,7 +83,7 @@ class CallScreenPatient extends StatelessWidget {
                     ],
                   ),
                   //counter
-                  StopWatchWidget(timelimit: _timeLimit),
+                  stopWatchWidget,
                   //box chat
                   const SizedBox(height: 20),
                   Container(
@@ -92,7 +98,16 @@ class CallScreenPatient extends StatelessWidget {
                       child: GestureDetector(
                         //onTap: () {},
                         child: Column(
-                          children: <Widget>[],
+                          children: <Widget>[
+                            TextContainer(
+                              displayText: const [
+                                'Bạn cảm thấy thế nào?',
+                                'Tôi rất tiếc khi phải nghe điều đó!',
+                                'Bạn có thể nhìn về sự tích cực trong đó mà!',
+                                'Cố lên bạn nhé!'
+                              ],
+                            ),
+                          ],
                         ),
                       ),
                     ),
@@ -146,7 +161,9 @@ class CallScreenPatient extends StatelessWidget {
                             child: Transform.translate(
                               offset: const Offset(0, 6),
                               child: GestureDetector(
-                                onTap: () {},
+                                onTap: () {
+                                  stopWatchWidget.addTimeLimit();
+                                },
                                 child: Column(
                                   children: const <Widget>[
                                     Icon(
@@ -239,7 +256,7 @@ class CallScreenPatient extends StatelessWidget {
                     ],
                   ),
 
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 17),
                 ],
               ),
             ),

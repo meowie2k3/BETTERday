@@ -168,7 +168,7 @@ class HomeScreen extends StatelessWidget {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) =>
-                                          const CallScreenPatient()));
+                                          CallScreenPatient()));
                             },
                             child: const Icon(
                               Icons.call,

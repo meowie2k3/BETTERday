@@ -2,26 +2,41 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class StopWatchWidget extends StatefulWidget {
-  final int timelimit;
+  int timelimit;
 
-  const StopWatchWidget({Key? key, required this.timelimit}) : super(key: key);
+  StopWatchWidget({Key? key, required this.timelimit}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
   _StopWatchWidgetState createState() => _StopWatchWidgetState();
+
+  String getTime() {
+    return _StopWatchWidgetState().getTime();
+  }
+
+  void addTimeLimit() {
+    timelimit += 5;
+  }
 }
 
 class _StopWatchWidgetState extends State<StopWatchWidget> {
   int _seconds = 0;
   int _minutes = 0;
   late Timer _timer;
-  late int _timelimit;
+  int _timelimit = 0;
+
+  String getTime() {
+    String timerOutput = _minutes.toString().padLeft(2, '0') +
+        ':' +
+        _seconds.toString().padLeft(2, '0');
+    return timerOutput;
+  }
 
   @override
   void initState() {
     super.initState();
-    _timelimit = widget.timelimit;
 
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       setState(() {
@@ -33,12 +48,14 @@ class _StopWatchWidgetState extends State<StopWatchWidget> {
       });
     });
 
-    Timer.periodic(Duration(seconds: 1), (timer) {
+    Timer.periodic(const Duration(seconds: 1), (timer) {
       setState(() {
+        _timelimit = widget.timelimit;
         if (_minutes == _timelimit) {
           // sử dụng _timelimit thay vì timelimit
           _timer.cancel();
           //return homescreen
+          Navigator.pop(context);
         }
       });
     });
