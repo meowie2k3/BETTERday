@@ -60,6 +60,7 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children:const [
+                SizedBox(height: 150,),
                 Center(child: CircularProgressIndicator())
                 ])
             :
@@ -82,7 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       const SizedBox(height: 20),
-                      Container(
+                      SizedBox(
                         width: 350,
                         child: TextFormField(
                             decoration: textInputDecoration.copyWith(
@@ -107,7 +108,7 @@ class _LoginPageState extends State<LoginPage> {
                             }),
                       ),
                       const SizedBox(height: 20),
-                      Container(
+                      SizedBox(
                         width: 350,
                         child: TextFormField(
                           obscureText: true,
