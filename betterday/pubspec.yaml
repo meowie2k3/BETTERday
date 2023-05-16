@@ -71,6 +71,9 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   assets:
+    #logos
+    - 'assets/icon/icon.png'
+    - 'assets/icon/white_icon.png'
     #HomeScreen
     - 'assets/images/HomeScreen/pexels-vinicius-wiesehofer-1130626.jpg'
 
@@ -90,7 +93,14 @@ flutter:
     - 'assets/images/CourseScreen/socratesmethod.jpg'
     - 'assets/images/CourseScreen/10-bai-hoc-dat-gia-tu-nha-gia-kim-elleman-1.jpg'
     - 'assets/images/CourseScreen/su_tien_hoa_cua_long_tin.png'
-
+    #WelcomePage
+    - 'assets/images/WelcomePage/mascot.png'
+    - 'assets/images/WelcomePage/Rate_1.png'
+    - 'assets/images/WelcomePage/Rate_2.png'
+    - 'assets/images/WelcomePage/Rate_3.png'
+    - 'assets/images/WelcomePage/Rate_4.png'
+    - 'assets/images/WelcomePage/Rate_5.png'
+    - 'assets/images/WelcomePage/Rate_6.png'
     #CallScreenPatient
     - 'assets/icon/LOGO 2.png'
     - 'assets/images/CallScreenPatient/chatBox.png'

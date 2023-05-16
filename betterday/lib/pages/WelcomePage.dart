@@ -1,35 +1,16 @@
 import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:betterday/widgets/GradientCircle.dart';
-import 'package:betterday/pages/HomeScreen.dart';
+import 'package:betterday/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:permission_handler/permission_handler.dart';
+import 'package:betterday/pages/BotChatScreen.dart';
+
 class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
-@override
+  @override
   _WelcomePageState createState() => _WelcomePageState();
 }
+
 class _WelcomePageState extends State<WelcomePage> {
-  bool _hasInternetPermission = false;
-
-  @override
-  void initState() {
-    super.initState();
-    _checkInternetPermission();
-  }
-
-  Future<void> _checkInternetPermission() async {
-    final status = await Permission.sensors.status;
-    setState(() {
-      _hasInternetPermission = status == PermissionStatus.granted;
-    });
-  }
-
-  Future<void> _requestInternetPermission() async {
-    final status = await Permission.sensors.request();
-    setState(() {
-      _hasInternetPermission = status == PermissionStatus.granted;
-    });
-  }
   
   @override
   Widget build(BuildContext context) {
@@ -55,7 +36,7 @@ class _WelcomePageState extends State<WelcomePage> {
               SizedBox(
                 width: 350,
                 height: 350,
-                child: Image.network('https://i.imgur.com/OliMevp.png'),
+                child: Image.asset('assets/images/WelcomePage/mascot.png'),
               ),
               const Text(
                 'Xin chào Tú!\nHôm nay của bạn thế nào?',
@@ -71,39 +52,45 @@ class _WelcomePageState extends State<WelcomePage> {
                 height: 20,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const <Widget>[
-                  RatingButton(
-                      imageUrl: 'https://i.imgur.com/UQB0TYm.png',
-                      size: 45,
-                      text: 'Tuyệt vời'),
-                  SizedBox(width: 10),
-                  RatingButton(
-                      imageUrl: 'https://i.imgur.com/1ufDJ4E.png',
-                      size: 45,
-                      text: 'Vui vẻ'),
-                  SizedBox(width: 10),
-                  RatingButton(
-                      imageUrl: 'https://i.imgur.com/Obdcq5i.png',
-                      size: 45,
-                      text: 'Bình thường'),
-                  SizedBox(width: 10),
-                  RatingButton(
-                      imageUrl: 'https://i.imgur.com/CQ3tPRC.png',
-                      size: 45,
-                      text: 'Buồn'),
-                  SizedBox(width: 10),
-                  RatingButton(
-                      imageUrl: 'https://i.imgur.com/TQFekcJ.png',
-                      size: 45,
-                      text: 'Tệ'),
-                  SizedBox(width: 10),
-                  RatingButton(
-                      imageUrl: 'https://i.imgur.com/5637DkS.png',
-                      size: 45,
-                      text: 'Cực tệ'),
-                ],
-              ),
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const <Widget>[
+                        RatingButton(
+                            imagedestination:
+                                'assets/images/WelcomePage/Rate_1.png',
+                            size: 45,
+                            text: 'Tuyệt vời'),
+                        SizedBox(width: 10),
+                        RatingButton(
+                            imagedestination:
+                                'assets/images/WelcomePage/Rate_2.png',
+                            size: 45,
+                            text: 'Vui vẻ'),
+                        SizedBox(width: 10),
+                        RatingButton(
+                            imagedestination:
+                                'assets/images/WelcomePage/Rate_3.png',
+                            size: 45,
+                            text: 'Bình thường'),
+                        SizedBox(width: 10),
+                        RatingButton(
+                            imagedestination:
+                                'assets/images/WelcomePage/Rate_4.png',
+                            size: 45,
+                            text: 'Buồn'),
+                        SizedBox(width: 10),
+                        RatingButton(
+                            imagedestination:
+                                'assets/images/WelcomePage/Rate_5.png',
+                            size: 45,
+                            text: 'Tệ'),
+                        SizedBox(width: 10),
+                        RatingButton(
+                            imagedestination:
+                                'assets/images/WelcomePage/Rate_6.png',
+                            size: 45,
+                            text: 'Cực tệ'),
+                      ],
+                    ),
               const SizedBox(
                 height: 50,
               ),
@@ -120,11 +107,7 @@ class _WelcomePageState extends State<WelcomePage> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  print("skipped");
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const HomeScreen()),
-                  );
+                  nextScreenReplace(context, const BotChat());
                 },
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all<Color>(
@@ -151,16 +134,18 @@ class _WelcomePageState extends State<WelcomePage> {
       ]),
     );
   }
+
+  
 }
 
 class RatingButton extends StatelessWidget {
-  final String imageUrl;
+  final String imagedestination;
   final double size;
   final String text;
 
   const RatingButton(
       {Key? key,
-      required this.imageUrl,
+      required this.imagedestination,
       required this.size,
       required this.text})
       : super(key: key);
@@ -173,10 +158,7 @@ class RatingButton extends StatelessWidget {
         child: ElevatedButton(
             onPressed: () {
               print(text);
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const HomeScreen()),
-              );
+              nextScreenReplace(context, BotChat());
             },
             style: ButtonStyle(
               backgroundColor:
@@ -189,8 +171,8 @@ class RatingButton extends StatelessWidget {
             ),
             child: Transform.scale(
               scale: 3.5,
-              child: Image.network(
-                imageUrl,
+              child: Image.asset(
+                imagedestination,
                 width: size / 2,
                 height: size / 2,
               ),

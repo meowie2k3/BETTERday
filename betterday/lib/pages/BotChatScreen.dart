@@ -1,10 +1,19 @@
+import 'package:betterday/pages/HomeScreen.dart';
+import 'package:betterday/service/auth_service.dart';
 import 'package:betterday/widgets/GradientCircle.dart';
 import 'package:flutter/material.dart';
 
 import 'package:betterday/widgets/DustyCircle.dart';
 
-class BotChat extends StatelessWidget {
+class BotChat extends StatefulWidget {
   const BotChat({Key? key}) : super(key: key);
+
+  @override
+  State<BotChat> createState() => _BotChatState();
+}
+
+class _BotChatState extends State<BotChat> {
+  AuthService authService = AuthService();
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +43,8 @@ class BotChat extends StatelessWidget {
               child: Transform.translate(
                 offset: const Offset(4, 0),
                 child: GestureDetector(
-                  onTap: () => Navigator.pop(context),
+                  onTap: () => Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const HomeScreen())),
                   child: const Icon(
                     Icons.arrow_back_ios,
                     color: Color(0xFF677294),
@@ -55,6 +65,14 @@ class BotChat extends StatelessWidget {
             ),
           ),
         ),
+        Center(
+          child: ElevatedButton(
+            child: const Text("LOGOUT"),
+            onPressed: () {
+              authService.signOut();
+            },
+            )
+          )
       ]),
     );
   }
