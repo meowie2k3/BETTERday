@@ -1,7 +1,6 @@
 import 'package:betterday/helper/helper_function.dart';
 import 'package:betterday/pages/BotChatScreen.dart';
 import 'package:betterday/pages/AuthPages/LoginPage.dart';
-import 'package:betterday/main.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 

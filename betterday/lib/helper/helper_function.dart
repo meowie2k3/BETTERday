@@ -59,8 +59,6 @@ class HelperFunction {
       rootBundle.load('assets/images/CourseScreen/socratesmethod.jpg'),
       rootBundle.load(
           'assets/images/CourseScreen/10-bai-hoc-dat-gia-tu-nha-gia-kim-elleman-1.jpg'),
-      rootBundle.load(
-          'assets/images/CourseScreen/thay-minh-niem-nhin-kho-dau-bang-con-mat-tinh-thuc-38b906f5c4414a0890292624ce91874d.jpg'),
       rootBundle.load('assets/images/WelcomePage/mascot.png'),
       rootBundle.load('assets/images/WelcomePage/Rate_1.png'),
       rootBundle.load('assets/images/WelcomePage/Rate_2.png'),
