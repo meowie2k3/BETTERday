@@ -42,7 +42,7 @@ class _TextContainerState extends State<TextContainer> {
   Widget build(BuildContext context) {
     List<Widget> rows = [];
 
-    for (int i = _textList.length - 1; i >= 0; i--) {
+    for (int i = 0; i < _textList.length; i++) {
       rows.add(
         Row(
           children: <Widget>[
@@ -141,6 +141,7 @@ class _TextContainerState extends State<TextContainer> {
         child: GestureDetector(
           //onTap: () {},
           child: SingleChildScrollView(
+            reverse: true,
             child: Column(
               children: rows,
             ),
