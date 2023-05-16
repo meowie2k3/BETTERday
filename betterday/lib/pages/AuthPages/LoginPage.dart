@@ -55,8 +55,16 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ])),
         ),
+        _isLoading
+            ? Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children:const [
+                Center(child: CircularProgressIndicator())
+                ])
+            :
         Transform.translate(
-          offset: const Offset(0, 150),
+          offset: const Offset(0, 155),
           child: Center(
               child: Form(
                   key: formKey,

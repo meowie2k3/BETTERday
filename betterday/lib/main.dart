@@ -54,18 +54,12 @@ void main(List<String> args) async {
     await Firebase.initializeApp();
   }
 
-  runApp(new MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatefulWidget {
   MyApp({Key? key}) : super(key: key);
-  bool _isSignedIn = false;
-
-  bool get isSignedIn => _isSignedIn;
-
-  set isSignedIn(bool value) {
-    _isSignedIn = value;
-  }
+  
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -77,23 +71,14 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    getUserLoggedInStatus();
   }
 
-  getUserLoggedInStatus() async {
-    await HelperFunction.getUserLoggedInStatus().then((value) {
-      if (value != null) {
-        setState(() {
-          MyApp()._isSignedIn = value;
-        });
-      }
-    });
-  }
+  
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );

@@ -13,12 +13,24 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   bool _hasInternetPermission = false;
+  bool _isSignedIn = false;
   Future<bool>? _initFuture;
 
   @override
   void initState() {
     super.initState();
+    getUserLoggedInStatus();
     _initFuture = _init();
+  }
+
+  getUserLoggedInStatus() async {
+    await HelperFunction.getUserLoggedInStatus().then((value) {
+      if (value != null) {
+        setState(() {
+          _isSignedIn = value;
+        });
+      }
+    });
   }
 
   Future<bool> _init() async {
@@ -71,7 +83,7 @@ class _SplashScreenState extends State<SplashScreen> {
             // handle error
             return const Text('Error!');
           } else {
-            return MyApp().isSignedIn
+            return _isSignedIn
                 ? const BotChat()
                 : const LoginPage();
           }
