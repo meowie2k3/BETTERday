@@ -37,6 +37,7 @@ dependencies:
   permission_handler: ^10.2.0
   shared_preferences: ^2.1.1
   url_launcher: ^6.0.2
+  flutter_icons: ^1.1.0
 
 dev_dependencies:
   flutter_launcher_icons: "^0.13.1"
@@ -84,10 +85,15 @@ flutter:
     - 'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-juliana-stein-1898555.jpg'
     - 'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-nur-andi-ravsanjani-gusma-974266.jpg'
     - 'assets/images/HomeScreen/NguoiLangNghePhuHop/pexels-serhii-volyk-15237921.jpg'
+
     #CourseScreen
     - 'assets/images/CourseScreen/socratesmethod.jpg'
     - 'assets/images/CourseScreen/10-bai-hoc-dat-gia-tu-nha-gia-kim-elleman-1.jpg'
     - 'assets/images/CourseScreen/su_tien_hoa_cua_long_tin.png'
+
+    #CallScreenPatient
+    - 'assets/icon/LOGO 2.png'
+    - 'assets/images/CallScreenPatient/chatBox.png'
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

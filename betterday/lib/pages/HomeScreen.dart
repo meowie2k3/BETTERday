@@ -1,10 +1,10 @@
 import 'package:betterday/pages/BotChatScreen.dart';
 import 'package:betterday/pages/CallScreenPatient.dart';
+import 'package:betterday/widgets/BigBoxInHomeScreen.dart';
 import 'package:betterday/widgets/DustyCircle.dart';
+import 'package:betterday/widgets/SmallBoxInHomeScreen.dart';
 import 'package:flutter/material.dart';
 
-import '../widgets/BigBoxInHomeScreen.dart';
-import '../widgets/SmallBoxInHomeScreen.dart';
 import 'CourseScreen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -170,7 +170,7 @@ class HomeScreen extends StatelessWidget {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) =>
-                                          const CallScreenPatient()));
+                                          CallScreenPatient()));
                             },
                             child: const Icon(
                               Icons.call,
