@@ -9,10 +9,6 @@ class CallScreenPatient extends StatelessWidget {
 
   StopWatchWidget stopWatchWidget = StopWatchWidget(timelimit: 5);
 
-  String getTime() {
-    return stopWatchWidget.getTime();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -103,7 +99,7 @@ class CallScreenPatient extends StatelessWidget {
                               displayText: const [
                                 'Bạn cảm thấy thế nào?',
                                 'Tôi rất tiếc khi phải nghe điều đó!',
-                                'Bạn có thể nhìn về sự tích cực trong đó mà!',
+                                'Hãy nhìn về mặt tích cực nào!',
                                 'Cố lên bạn nhé!'
                               ],
                             ),

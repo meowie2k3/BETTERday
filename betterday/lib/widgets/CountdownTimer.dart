@@ -12,10 +12,6 @@ class StopWatchWidget extends StatefulWidget {
   // ignore: library_private_types_in_public_api
   _StopWatchWidgetState createState() => _StopWatchWidgetState();
 
-  String getTime() {
-    return _StopWatchWidgetState().getTime();
-  }
-
   void addTimeLimit() {
     timelimit += 5;
   }
@@ -27,18 +23,12 @@ class _StopWatchWidgetState extends State<StopWatchWidget> {
   late Timer _timer;
   int _timelimit = 0;
 
-  String getTime() {
-    String timerOutput = _minutes.toString().padLeft(2, '0') +
-        ':' +
-        _seconds.toString().padLeft(2, '0');
-    return timerOutput;
-  }
-
   @override
   void initState() {
     super.initState();
 
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
+      //print(getTime());
       setState(() {
         _seconds++;
         if (_seconds == 60) {
