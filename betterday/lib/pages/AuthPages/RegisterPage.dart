@@ -1,3 +1,4 @@
+import 'package:betterday/pages/AuthPages/BotUI.dart';
 import 'package:flutter/material.dart';
 import 'package:betterday/service/auth_service.dart';
 import 'package:betterday/service/database_service.dart';
@@ -27,6 +28,8 @@ class _RegisterPageState extends State<RegisterPage> {
   String email = "";
   String password = "";
   String fullname = "";
+
+  Stream? groups;
 
 
   @override
@@ -186,6 +189,12 @@ class _RegisterPageState extends State<RegisterPage> {
     );
   }
 
+  createGroup() async {
+    DatabaseService(uid: FirebaseAuth.instance.currentUser!.uid)
+        .createGroup(fullname, FirebaseAuth.instance.currentUser!.uid, fullname);
+    //showSnackbar(context, Colors.green, "Group created successfully");
+  }
+
   register() async {
     if (formKey.currentState!.validate()) {
     setState(() {
@@ -200,14 +209,10 @@ class _RegisterPageState extends State<RegisterPage> {
         await HelperFunction.saveUserLogginStatus(true);
         await HelperFunction.saveUserEmailSF(email);
         await HelperFunction.saveUserNameSF(fullname);
-        nextScreenReplace(context, BotChat());
+        await createGroup();
+        nextScreenReplace(context, BotUI());
       } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(value),
-            duration: const Duration(seconds: 5),
-          ),
-        );
+        showSnackbar(context, Colors.red, value);
         setState(() {
           _isLoading = false;
         });

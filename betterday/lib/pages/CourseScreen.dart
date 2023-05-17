@@ -1,3 +1,4 @@
+import 'package:betterday/pages/AuthPages/BotUI.dart';
 import 'package:betterday/pages/BotChatScreen.dart';
 import 'package:betterday/pages/HomeScreen.dart';
 import 'package:betterday/widgets/CourseBox.dart';
@@ -336,7 +337,7 @@ class CourseScreen extends StatelessWidget {
               icon: const Icon(Icons.chat_bubble_outline),
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const BotChat()));
+                    MaterialPageRoute(builder: (context) => const BotUI()));
               },
             ),
           ],

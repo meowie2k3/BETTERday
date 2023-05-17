@@ -1,3 +1,4 @@
+import 'package:betterday/pages/AuthPages/BotUI.dart';
 import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:betterday/widgets/GradientCircle.dart';
 import 'package:betterday/widgets/widgets.dart';
@@ -107,7 +108,7 @@ class _WelcomePageState extends State<WelcomePage> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  nextScreenReplace(context, const BotChat());
+                  nextScreenReplace(context, const BotUI());
                 },
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all<Color>(
@@ -158,7 +159,7 @@ class RatingButton extends StatelessWidget {
         child: ElevatedButton(
             onPressed: () {
               print(text);
-              nextScreenReplace(context, BotChat());
+              nextScreenReplace(context, BotUI());
             },
             style: ButtonStyle(
               backgroundColor:
