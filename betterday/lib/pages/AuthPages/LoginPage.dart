@@ -9,6 +9,7 @@ import 'package:betterday/pages/AuthPages/RegisterPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:betterday/pages/BotChatScreen.dart';
+import 'package:betterday/pages/AuthPages/BotUI.dart';
 import 'package:flutter/gestures.dart';
 
 class LoginPage extends StatefulWidget {
@@ -26,6 +27,8 @@ class _LoginPageState extends State<LoginPage> {
   final formKey = GlobalKey<FormState>();
   String email = "";
   String password = "";
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -204,15 +207,9 @@ class _LoginPageState extends State<LoginPage> {
           await HelperFunction.saveUserLogginStatus(true);
           await HelperFunction.saveUserEmailSF(email);
           await HelperFunction.saveUserNameSF(snapshot.docs[0].get('fullname'));
-
-          nextScreenReplace(context, BotChat());
+          nextScreenReplace(context, BotUI());
         } else {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(value),
-              duration: const Duration(seconds: 5),
-            ),
-          );
+          showSnackbar(context, Colors.red, value);
           setState(() {
             _isLoading = false;
           });
