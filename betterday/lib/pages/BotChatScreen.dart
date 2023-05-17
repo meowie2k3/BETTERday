@@ -98,7 +98,7 @@ class _BotChatState extends State<BotChat> {
           ),
         ),
         Transform.translate(
-          offset: Offset(0, 50),
+          offset: const Offset(0, 75),
           child: chatMessages(),
           ),
         
@@ -169,7 +169,9 @@ class _BotChatState extends State<BotChat> {
       stream: chats,
       builder: (context, AsyncSnapshot snapshot) {
         return snapshot.hasData
-            ? ListView.builder(
+            ? SizedBox(
+              height: MediaQuery.of(context).size.height*0.79,
+              child: ListView.builder(
                 itemCount: snapshot.data.docs.length,
                 itemBuilder: (context, index) {
                   return MessageTile(
@@ -178,7 +180,7 @@ class _BotChatState extends State<BotChat> {
                       sentByMe: widget.userName ==
                           snapshot.data.docs[index]['sender']);
                 },
-              )
+              ))
             : Container();
       },
     );
