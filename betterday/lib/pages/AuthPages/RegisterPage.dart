@@ -1,4 +1,4 @@
-import 'package:betterday/pages/AuthPages/BotUI.dart';
+import 'package:betterday/pages/WelcomePage.dart';
 import 'package:flutter/material.dart';
 import 'package:betterday/service/auth_service.dart';
 import 'package:betterday/service/database_service.dart';
@@ -6,9 +6,6 @@ import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:betterday/widgets/GradientCircle.dart';
 import 'package:betterday/widgets/widgets.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/material.dart';
-import 'package:betterday/pages/BotChatScreen.dart';
 import 'package:betterday/helper/helper_function.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -210,7 +207,7 @@ class _RegisterPageState extends State<RegisterPage> {
         await HelperFunction.saveUserEmailSF(email);
         await HelperFunction.saveUserNameSF(fullname);
         await createGroup();
-        nextScreenReplace(context, BotUI());
+        nextScreenReplace(context, WelcomePage());
       } else {
         showSnackbar(context, Colors.red, value);
         setState(() {
