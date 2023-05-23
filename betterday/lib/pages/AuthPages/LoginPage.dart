@@ -1,3 +1,4 @@
+import 'package:betterday/pages/AuthPages/BotUI.dart';
 import 'package:betterday/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:betterday/helper/helper_function.dart';
@@ -15,6 +16,8 @@ class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
   static const String routeName = "/login";
 
+  
+
   @override
   _LoginPageState createState() => _LoginPageState();
 }
@@ -27,7 +30,7 @@ class _LoginPageState extends State<LoginPage> {
   String email = "";
   String password = "";
 
-  
+  final String botUID = "f9ShBaviCFTTYvgb5F9ENjAqKzy1";
 
   @override
   Widget build(BuildContext context) {
@@ -206,7 +209,8 @@ class _LoginPageState extends State<LoginPage> {
           await HelperFunction.saveUserLogginStatus(true);
           await HelperFunction.saveUserEmailSF(email);
           await HelperFunction.saveUserNameSF(snapshot.docs[0].get('fullname'));
-          nextScreenReplace(context, WelcomePage());
+          nextScreenReplace(context, FirebaseAuth.instance.currentUser!.uid == botUID 
+                            ? const BotUI() : const WelcomePage());
         } else {
           showSnackbar(context, Colors.red, value);
           setState(() {

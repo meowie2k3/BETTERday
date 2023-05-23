@@ -5,9 +5,20 @@ import 'package:betterday/widgets/CourseBox.dart';
 import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:flutter/material.dart';
 
-class CourseScreen extends StatelessWidget {
-  const CourseScreen({super.key});
+class CourseScreen extends StatefulWidget {
+  String username;
+  String email;
+  CourseScreen({
+    Key? key,
+    required this.email,
+    required this.username,
+  }) : super(key: key);
 
+  @override
+  _CourseScreenState createState() => _CourseScreenState();
+}
+
+class _CourseScreenState extends State<CourseScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -322,7 +333,7 @@ class CourseScreen extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const HomeScreen()));
+                        builder: (context) => HomeScreen(username: widget.username, email: widget.email)));
               },
             ),
             IconButton(

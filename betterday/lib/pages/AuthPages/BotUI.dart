@@ -52,6 +52,7 @@ class _BotUIState extends State<BotUI> {
         groups = snapshot;
       });
     });
+    
   }
 
   @override
@@ -66,9 +67,20 @@ class _BotUIState extends State<BotUI> {
       appBar: AppBar(
         title: const Text("BOT UI"),
         centerTitle: true,
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [Color(0xFF063B28), Color(0xFF07D9AD)]),
+            borderRadius: BorderRadius.vertical(
+              bottom: Radius.circular(20),
+            ),
+          ),
+        ),
         actions: [
           IconButton(
-        icon: Icon(Icons.logout),
+        icon: const Icon(Icons.logout),
         onPressed: () {
           authService.signOut();
         },
@@ -95,7 +107,8 @@ class _BotUIState extends State<BotUI> {
                     BotChat(
                         groupId: getId(snapshot.data['groups'][0]),
                         groupName: getName(snapshot.data['groups'][0]),
-                        userName: snapshot.data['fullname']));
+                        userName: snapshot.data['fullname'],
+                        email: snapshot.data['email']));
               }
               return ListView.builder(
                 itemCount: snapshot.data['groups'].length,
@@ -104,7 +117,8 @@ class _BotUIState extends State<BotUI> {
                   return GroupTile(
                       groupId: getId(snapshot.data['groups'][reverseIndex]),
                       groupName: getName(snapshot.data['groups'][reverseIndex]),
-                      userName: snapshot.data['fullname']);
+                      userName: snapshot.data['fullname'],
+                      email: snapshot.data['email']);
                 },
               );
             } else {

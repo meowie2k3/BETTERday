@@ -12,11 +12,13 @@ class BotChat extends StatefulWidget {
   final String groupId;
   final String groupName;
   final String userName;
+  final String email;
   const BotChat(
       {Key? key,
       required this.groupId,
       required this.groupName,
-      required this.userName})
+      required this.userName,
+      required this.email})
       : super(key: key);
 
   @override
@@ -140,7 +142,7 @@ class _BotChatState extends State<BotChat> {
               child: Transform.translate(
                 offset: const Offset(4, 0),
                 child: GestureDetector(
-                  onTap: () => nextScreen(context, const HomeScreen()),
+                  onTap: () => nextScreen(context, HomeScreen(username: widget.userName,email: widget.email,)),
                   child: const Icon(
                     Icons.arrow_back_ios,
                     color: Color(0xFF677294),

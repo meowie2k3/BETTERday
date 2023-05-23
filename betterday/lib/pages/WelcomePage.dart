@@ -1,7 +1,10 @@
 import 'package:betterday/pages/AuthPages/BotUI.dart';
+import 'package:betterday/service/auth_service.dart';
+import 'package:betterday/service/database_service.dart';
 import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:betterday/widgets/GradientCircle.dart';
 import 'package:betterday/widgets/widgets.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:betterday/pages/BotChatScreen.dart';
 
@@ -12,7 +15,8 @@ class WelcomePage extends StatefulWidget {
 }
 
 class _WelcomePageState extends State<WelcomePage> {
-  
+  AuthService authService = AuthService();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,6 +32,7 @@ class _WelcomePageState extends State<WelcomePage> {
           right: -230,
           child: DustyCircle(radius: 250),
         ),
+        
         Transform.translate(
           offset: const Offset(0, -50),
           child: Center(
@@ -59,37 +64,37 @@ class _WelcomePageState extends State<WelcomePage> {
                             imagedestination:
                                 'assets/images/WelcomePage/Rate_1.png',
                             size: 45,
-                            text: 'Tuyệt vời'),
+                            rate: 6,),
                         SizedBox(width: 10),
                         RatingButton(
                             imagedestination:
                                 'assets/images/WelcomePage/Rate_2.png',
                             size: 45,
-                            text: 'Vui vẻ'),
+                            rate: 5,),
                         SizedBox(width: 10),
                         RatingButton(
                             imagedestination:
                                 'assets/images/WelcomePage/Rate_3.png',
                             size: 45,
-                            text: 'Bình thường'),
+                            rate: 4,),
                         SizedBox(width: 10),
                         RatingButton(
                             imagedestination:
                                 'assets/images/WelcomePage/Rate_4.png',
                             size: 45,
-                            text: 'Buồn'),
+                            rate: 3,),
                         SizedBox(width: 10),
                         RatingButton(
                             imagedestination:
                                 'assets/images/WelcomePage/Rate_5.png',
                             size: 45,
-                            text: 'Tệ'),
+                            rate: 2,),
                         SizedBox(width: 10),
                         RatingButton(
                             imagedestination:
                                 'assets/images/WelcomePage/Rate_6.png',
                             size: 45,
-                            text: 'Cực tệ'),
+                           rate: 1,),
                       ],
                     ),
               const SizedBox(
@@ -132,6 +137,15 @@ class _WelcomePageState extends State<WelcomePage> {
             ],
           )),
         ),
+        //logout button on top right
+        Positioned(
+          top: 30,
+          left: 350,
+          child: IconButton(
+            onPressed:(){ authService.signOut();},
+             icon: const Icon(Icons.logout),
+          )
+        ),
       ]),
     );
   }
@@ -142,13 +156,13 @@ class _WelcomePageState extends State<WelcomePage> {
 class RatingButton extends StatelessWidget {
   final String imagedestination;
   final double size;
-  final String text;
+  final int rate;
 
   const RatingButton(
       {Key? key,
       required this.imagedestination,
       required this.size,
-      required this.text})
+      required this.rate})
       : super(key: key);
 
   @override
@@ -158,8 +172,9 @@ class RatingButton extends StatelessWidget {
         height: size,
         child: ElevatedButton(
             onPressed: () {
-              print(text);
-              nextScreenReplace(context, BotUI());
+              print(rate);
+              DatabaseService(uid: FirebaseAuth.instance.currentUser!.uid).recordEmotion(rate);
+              nextScreenReplace(context,const BotUI());
             },
             style: ButtonStyle(
               backgroundColor:

@@ -18,6 +18,7 @@ class DatabaseService {
       "fullname": fullname,
       "email": email,
       "groups": [],
+      "emotionRecord": [],
       "profilePic": "",
       "uid": uid,
     });
@@ -27,6 +28,17 @@ class DatabaseService {
     QuerySnapshot snapshot = 
         await userCollection.where("email", isEqualTo: email).get();
     return snapshot;
+  }
+
+  Future recordEmotion(int choice) async{
+    DocumentReference userDocumentReference = userCollection.doc(uid);
+     return await userDocumentReference.update({
+      "emotionRecord": FieldValue.arrayUnion([choice])
+  });
+  }
+
+  Future getUserEmotionRecord() async {
+    return userCollection.doc(uid).snapshots();
   }
 
   // get user groups
