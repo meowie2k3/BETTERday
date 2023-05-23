@@ -12,11 +12,13 @@ class BotChat extends StatefulWidget {
   final String groupId;
   final String groupName;
   final String userName;
+  final String email;
   const BotChat(
       {Key? key,
       required this.groupId,
       required this.groupName,
-      required this.userName})
+      required this.userName,
+      required this.email})
       : super(key: key);
 
   @override
@@ -63,6 +65,70 @@ class _BotChatState extends State<BotChat> {
           right: -230,
           child: DustyCircle(radius: 250),
         ),
+        Transform.translate(
+          offset: const Offset(0, 75),
+          child: chatMessages(),
+        ),
+        Container(
+          alignment: Alignment.bottomCenter,
+          width: MediaQuery.of(context).size.width,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+            width: MediaQuery.of(context).size.width,
+            child: Stack(
+              alignment: Alignment.centerRight,
+              children: [
+                TextFormField(
+                  controller: messageController,
+                  style: const TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+                  decoration: messageInputDecoration.copyWith(
+                    contentPadding: EdgeInsets.only(
+                        left: MediaQuery.of(context).size.width * 0.15),
+                  ),
+                ),
+                Positioned(
+                  left: MediaQuery.of(context).size.width * 0.01,
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 0.1,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      color: const Color(0xff0EBE7E),
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.add,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  right: 0,
+                  child: GestureDetector(
+                    onTap: () {
+                      sendMessage();
+                      FocusScope.of(context).unfocus();
+                    },
+                    child: Container(
+                      height: 70,
+                      width: MediaQuery.of(context).size.width * 0.1,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        //color: const Color(0xff0EBE7E),
+                      ),
+                      child: const Icon(
+                        Icons.send,
+                        color: Color(0xff0EBE7E),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
         Positioned(
             top: MediaQuery.of(context).padding.top + 20,
             left: 30,
@@ -76,7 +142,7 @@ class _BotChatState extends State<BotChat> {
               child: Transform.translate(
                 offset: const Offset(4, 0),
                 child: GestureDetector(
-                  onTap: () => nextScreen(context,const HomeScreen()),
+                  onTap: () => nextScreen(context, HomeScreen(username: widget.userName,email: widget.email,)),
                   child: const Icon(
                     Icons.arrow_back_ios,
                     color: Color(0xFF677294),
@@ -97,88 +163,27 @@ class _BotChatState extends State<BotChat> {
             ),
           ),
         ),
-        Transform.translate(
-          offset: Offset(0, 50),
-          child: chatMessages(),
-          ),
-        
-        Container(
-  alignment: Alignment.bottomCenter,
-  width: MediaQuery.of(context).size.width,
-  child: Container(
-    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
-    width: MediaQuery.of(context).size.width,
-    child: Stack(
-      alignment: Alignment.centerRight,
-      children: [
-        TextFormField(
-          controller: messageController,
-          style: const TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
-          decoration: messageInputDecoration.copyWith(
-            contentPadding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.15),
-          ),
-        ),
-        Positioned(
-          left: MediaQuery.of(context).size.width*0.01,
-          child: Container(
-            width: MediaQuery.of(context).size.width * 0.1,
-            height: 40,
-            decoration: BoxDecoration(
-              color: const Color(0xff0EBE7E),
-              borderRadius: BorderRadius.circular(30),
-            ),
-            child: IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.add,
-                color: Colors.white,
-              ),
-            ),
-          ),
-        ),
-        Positioned(
-          right: 0,
-          child: GestureDetector(
-            onTap: () {
-              sendMessage();
-              FocusScope.of(context).unfocus();
-            },
-            child: Container(
-              height: 70,
-              width: MediaQuery.of(context).size.width * 0.1,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
-                //color: const Color(0xff0EBE7E),
-              ),
-              child: const Icon(
-                Icons.send,
-                color:Color(0xff0EBE7E),
-              ),
-            ),
-          ),
-        ),
-      ],
-    ),
-  ),
-)
       ]),
     );
   }
+
   chatMessages() {
     return StreamBuilder(
       stream: chats,
       builder: (context, AsyncSnapshot snapshot) {
         return snapshot.hasData
-            ? ListView.builder(
-                itemCount: snapshot.data.docs.length,
-                itemBuilder: (context, index) {
-                  return MessageTile(
-                      message: snapshot.data.docs[index]['message'],
-                      sender: snapshot.data.docs[index]['sender'],
-                      sentByMe: widget.userName ==
-                          snapshot.data.docs[index]['sender']);
-                },
-              )
+            ? SizedBox(
+                height: MediaQuery.of(context).size.height * 0.79,
+                child: ListView.builder(
+                  itemCount: snapshot.data.docs.length,
+                  itemBuilder: (context, index) {
+                    return MessageTile(
+                        message: snapshot.data.docs[index]['message'],
+                        sender: snapshot.data.docs[index]['sender'],
+                        sentByMe: widget.userName ==
+                            snapshot.data.docs[index]['sender']);
+                  },
+                ))
             : Container();
       },
     );
@@ -198,5 +203,4 @@ class _BotChatState extends State<BotChat> {
       });
     }
   }
-  
 }

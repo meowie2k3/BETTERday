@@ -1,16 +1,30 @@
 import 'package:betterday/pages/AuthPages/BotUI.dart';
+import 'package:betterday/pages/AuthPages/LoginPage.dart';
 import 'package:betterday/pages/BotChatScreen.dart';
 import 'package:betterday/pages/CallScreenPatient.dart';
+import 'package:betterday/pages/ProfilePage.dart';
 import 'package:betterday/widgets/BigBoxInHomeScreen.dart';
 import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:betterday/widgets/SmallBoxInHomeScreen.dart';
+import 'package:betterday/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 import 'CourseScreen.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomeScreen extends StatefulWidget {
+  String username;
+  String email;
+  HomeScreen({
+    Key? key,
+    required this.email,
+    required this.username,
+  }) : super(key: key);
 
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,6 +79,10 @@ class HomeScreen extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
+                onTap:() {
+                  print("profile tapped");
+                  nextScreen(context, ProfilePage(email: widget.email, username: widget.username,));
+                },
               ),
             ),
           ),
@@ -140,7 +158,7 @@ class HomeScreen extends StatelessWidget {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) =>
-                                          const CourseScreen()));
+                                          CourseScreen(username: widget.username,email: widget.email)));
                             },
                             child: const Icon(
                               Icons.menu_book_outlined,
@@ -505,7 +523,7 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const CourseScreen()));
+                        builder: (context) => CourseScreen(email: widget.email, username: widget.username)));
               },
             ),
             IconButton(

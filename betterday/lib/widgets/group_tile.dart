@@ -6,11 +6,13 @@ class GroupTile extends StatefulWidget {
   final String userName;
   final String groupId;
   final String groupName;
+  final String email;
   const GroupTile(
       {Key? key,
       required this.groupId,
       required this.groupName,
-      required this.userName})
+      required this.userName,
+      required this.email})
       : super(key: key);
 
   @override
@@ -28,6 +30,7 @@ class _GroupTileState extends State<GroupTile> {
               groupId: widget.groupId,
               groupName: widget.groupName,
               userName: widget.userName,
+              email: widget.email,
             ));
       },
       child: Container(
