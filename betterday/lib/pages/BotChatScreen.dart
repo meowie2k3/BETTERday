@@ -1,4 +1,5 @@
 import 'package:betterday/pages/HomeScreen.dart';
+import 'package:betterday/pages/ProfilePage.dart';
 import 'package:betterday/service/auth_service.dart';
 import 'package:betterday/widgets/GradientCircle.dart';
 import 'package:betterday/widgets/message_tile.dart';
@@ -7,12 +8,15 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:betterday/service/database_service.dart';
+import 'package:flutter/scheduler.dart';
 
 class BotChat extends StatefulWidget {
   final String groupId;
   final String groupName;
   final String userName;
   final String email;
+  static final ScrollController _scrollController = ScrollController();
+
   const BotChat(
       {Key? key,
       required this.groupId,
@@ -30,6 +34,8 @@ class _BotChatState extends State<BotChat> {
   Stream<QuerySnapshot>? chats;
   TextEditingController messageController = TextEditingController();
   String admin = "";
+  static final ScrollController _scrollController = ScrollController();
+  bool isScrollable = false;
 
   @override
   void initState() {
@@ -37,17 +43,19 @@ class _BotChatState extends State<BotChat> {
     super.initState();
   }
 
-  getChatandAdmin() {
-    DatabaseService().getChats(widget.groupId).then((val) {
+  getChatandAdmin() async {
+    await DatabaseService().getChats(widget.groupId).then((val) {
       setState(() {
         chats = val;
       });
     });
-    DatabaseService().getGroupAdmin(widget.groupId).then((val) {
+    await DatabaseService().getGroupAdmin(widget.groupId).then((val) {
       setState(() {
         admin = val;
       });
     });
+    //_scrollToBottom();
+    isScrollable = true;
   }
 
   @override
@@ -110,6 +118,7 @@ class _BotChatState extends State<BotChat> {
                     onTap: () {
                       sendMessage();
                       FocusScope.of(context).unfocus();
+                      //auto scroll to bottom
                     },
                     child: Container(
                       height: 70,
@@ -142,7 +151,11 @@ class _BotChatState extends State<BotChat> {
               child: Transform.translate(
                 offset: const Offset(4, 0),
                 child: GestureDetector(
-                  onTap: () => nextScreen(context, HomeScreen(username: widget.userName,email: widget.email,)),
+                  //onTap: () => nextScreen(context, HomeScreen(username: widget.userName,email: widget.email,)),
+                  onTap: () => nextScreen(
+                      context,
+                      ProfilePage(
+                          email: widget.email, username: widget.userName)),
                   child: const Icon(
                     Icons.arrow_back_ios,
                     color: Color(0xFF677294),
@@ -171,20 +184,39 @@ class _BotChatState extends State<BotChat> {
     return StreamBuilder(
       stream: chats,
       builder: (context, AsyncSnapshot snapshot) {
-        return snapshot.hasData
-            ? SizedBox(
-                height: MediaQuery.of(context).size.height * 0.79,
-                child: ListView.builder(
-                  itemCount: snapshot.data.docs.length,
-                  itemBuilder: (context, index) {
-                    return MessageTile(
-                        message: snapshot.data.docs[index]['message'],
-                        sender: snapshot.data.docs[index]['sender'],
-                        sentByMe: widget.userName ==
-                            snapshot.data.docs[index]['sender']);
-                  },
-                ))
-            : Container();
+        if (snapshot.hasData) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (isScrollable) {
+            _scrollToBottom();
+          }
+        });
+
+        // Scroll to bottom whenever a new message is added
+        SchedulerBinding.instance.addPostFrameCallback((_) {
+          if (_scrollController.hasClients &&
+              _scrollController.position.maxScrollExtent ==
+                  _scrollController.position.pixels) {
+            _scrollToBottom();
+          }
+        });
+          return SizedBox(
+            height: MediaQuery.of(context).size.height * 0.79,
+            child: ListView.builder(
+              controller: _scrollController,
+              itemCount: snapshot.data.docs.length,
+              itemBuilder: (context, index) {
+                return MessageTile(
+                  message: snapshot.data.docs[index]['message'],
+                  sender: snapshot.data.docs[index]['sender'],
+                  sentByMe:
+                      widget.userName == snapshot.data.docs[index]['sender'],
+                );
+              },
+            )
+          );
+        } else {
+          return Container();
+        }
       },
     );
   }
@@ -200,7 +232,16 @@ class _BotChatState extends State<BotChat> {
       DatabaseService().sendMessage(widget.groupId, chatMessageMap);
       setState(() {
         messageController.clear();
+        _scrollToBottom();
       });
     }
+  }
+
+  static void _scrollToBottom() async {
+    _scrollController.animateTo(
+      _scrollController.position.maxScrollExtent,
+      duration: const Duration(milliseconds: 300),
+      curve: Curves.easeInOut,
+    );
   }
 }

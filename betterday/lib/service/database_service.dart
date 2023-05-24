@@ -33,7 +33,8 @@ class DatabaseService {
   Future recordEmotion(int choice) async{
     DocumentReference userDocumentReference = userCollection.doc(uid);
      return await userDocumentReference.update({
-      "emotionRecord": FieldValue.arrayUnion([choice])
+      //record all including duplicates
+      "emotionRecord": FieldValue.arrayUnion([choice]),
   });
   }
 

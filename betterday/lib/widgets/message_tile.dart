@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:betterday/pages/BotChatScreen.dart';
 
 class MessageTile extends StatefulWidget {
   final String message;
@@ -17,6 +18,13 @@ class MessageTile extends StatefulWidget {
 }
 
 class _MessageTileState extends State<MessageTile> {
+
+  @override
+  void initState() {
+    super.initState();
+    
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
