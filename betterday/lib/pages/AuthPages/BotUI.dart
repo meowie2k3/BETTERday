@@ -1,3 +1,4 @@
+import 'package:betterday/pages/AuthPages/LoginPage.dart';
 import 'package:betterday/pages/BotChatScreen.dart';
 import 'package:betterday/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,6 @@ class _BotUIState extends State<BotUI> {
   String email = "";
   AuthService authService = AuthService();
   Stream? groups;
-  bool _isLoading = false;
   String groupName = "";
 
   final String botUID = "f9ShBaviCFTTYvgb5F9ENjAqKzy1";
@@ -81,8 +81,11 @@ class _BotUIState extends State<BotUI> {
         actions: [
           IconButton(
         icon: const Icon(Icons.logout),
-        onPressed: () {
-          authService.signOut();
+        onPressed: () async {
+          await authService.signOut();
+          Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) 
+                => const LoginPage()), (route) => false);
+          
         },
       ),
         ],

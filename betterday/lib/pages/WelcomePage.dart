@@ -1,4 +1,5 @@
 import 'package:betterday/pages/AuthPages/BotUI.dart';
+import 'package:betterday/pages/AuthPages/LoginPage.dart';
 import 'package:betterday/service/auth_service.dart';
 import 'package:betterday/service/database_service.dart';
 import 'package:betterday/widgets/DustyCircle.dart';
@@ -142,7 +143,11 @@ class _WelcomePageState extends State<WelcomePage> {
           top: 30,
           left: 350,
           child: IconButton(
-            onPressed:(){ authService.signOut();},
+            onPressed:() async {
+              await authService.signOut();
+              Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) 
+                => const LoginPage()), (route) => false);
+              },
              icon: const Icon(Icons.logout),
           )
         ),
