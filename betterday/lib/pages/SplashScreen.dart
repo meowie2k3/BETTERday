@@ -1,6 +1,8 @@
 import 'package:betterday/helper/helper_function.dart';
-import 'package:betterday/pages/WelcomePage.dart';
+import 'package:betterday/pages/AuthPages/BotUI.dart';
 import 'package:betterday/pages/AuthPages/LoginPage.dart';
+import 'package:betterday/pages/WelcomePage.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 
@@ -14,6 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   bool _hasInternetPermission = false;
   bool _isSignedIn = false;
   Future<bool>? _initFuture;
+  final String botUID = "f9ShBaviCFTTYvgb5F9ENjAqKzy1";
 
   @override
   void initState() {
@@ -83,7 +86,9 @@ class _SplashScreenState extends State<SplashScreen> {
             return const Text('Error!');
           } else {
             return _isSignedIn
-                ? const WelcomePage()
+                ? (botUID == FirebaseAuth.instance.currentUser!.uid
+                    ? const BotUI()
+                    : const WelcomePage())
                 : const LoginPage();
           }
         },
