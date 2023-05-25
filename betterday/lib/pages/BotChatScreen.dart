@@ -1,13 +1,12 @@
 import 'package:betterday/pages/HomeScreen.dart';
-import 'package:betterday/pages/ProfilePage.dart';
 import 'package:betterday/service/auth_service.dart';
+import 'package:betterday/service/database_service.dart';
+import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:betterday/widgets/GradientCircle.dart';
 import 'package:betterday/widgets/message_tile.dart';
 import 'package:betterday/widgets/widgets.dart';
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:betterday/widgets/DustyCircle.dart';
-import 'package:betterday/service/database_service.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 
 class BotChat extends StatefulWidget {
@@ -151,11 +150,12 @@ class _BotChatState extends State<BotChat> {
               child: Transform.translate(
                 offset: const Offset(4, 0),
                 child: GestureDetector(
-                  //onTap: () => nextScreen(context, HomeScreen(username: widget.userName,email: widget.email,)),
                   onTap: () => nextScreen(
                       context,
-                      ProfilePage(
-                          email: widget.email, username: widget.userName)),
+                      HomeScreen(
+                        username: widget.userName,
+                        email: widget.email,
+                      )),
                   child: const Icon(
                     Icons.arrow_back_ios,
                     color: Color(0xFF677294),
@@ -185,35 +185,34 @@ class _BotChatState extends State<BotChat> {
       stream: chats,
       builder: (context, AsyncSnapshot snapshot) {
         if (snapshot.hasData) {
-        WidgetsBinding.instance.addPostFrameCallback((_) {
-          if (isScrollable) {
-            _scrollToBottom();
-          }
-        });
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            if (isScrollable) {
+              _scrollToBottom();
+            }
+          });
 
-        // Scroll to bottom whenever a new message is added
-        SchedulerBinding.instance.addPostFrameCallback((_) {
-          if (_scrollController.hasClients &&
-              _scrollController.position.maxScrollExtent ==
-                  _scrollController.position.pixels) {
-            _scrollToBottom();
-          }
-        });
+          // Scroll to bottom whenever a new message is added
+          SchedulerBinding.instance.addPostFrameCallback((_) {
+            if (_scrollController.hasClients &&
+                _scrollController.position.maxScrollExtent ==
+                    _scrollController.position.pixels) {
+              _scrollToBottom();
+            }
+          });
           return SizedBox(
-            height: MediaQuery.of(context).size.height * 0.79,
-            child: ListView.builder(
-              controller: _scrollController,
-              itemCount: snapshot.data.docs.length,
-              itemBuilder: (context, index) {
-                return MessageTile(
-                  message: snapshot.data.docs[index]['message'],
-                  sender: snapshot.data.docs[index]['sender'],
-                  sentByMe:
-                      widget.userName == snapshot.data.docs[index]['sender'],
-                );
-              },
-            )
-          );
+              height: MediaQuery.of(context).size.height * 0.79,
+              child: ListView.builder(
+                controller: _scrollController,
+                itemCount: snapshot.data.docs.length,
+                itemBuilder: (context, index) {
+                  return MessageTile(
+                    message: snapshot.data.docs[index]['message'],
+                    sender: snapshot.data.docs[index]['sender'],
+                    sentByMe:
+                        widget.userName == snapshot.data.docs[index]['sender'],
+                  );
+                },
+              ));
         } else {
           return Container();
         }
