@@ -25,12 +25,12 @@ class CourseBox extends StatelessWidget {
       // ignore: deprecated_member_use
       onTap: () => launch(url),
       child: Container(
+        margin: const EdgeInsets.only(top: 15, left: 15, right: 15),
+        width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),
         ),
-        width: 360,
-        height: 370,
         child: Transform.translate(
           offset: const Offset(0, 0),
           child: GestureDetector(
@@ -81,8 +81,7 @@ class CourseBox extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                   child: Image.asset(
                     imageLink,
-                    width: 360,
-                    height: 200,
+                    width: MediaQuery.of(context).size.width,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -90,42 +89,50 @@ class CourseBox extends StatelessWidget {
                 //cost
                 const SizedBox(height: 15),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     const SizedBox(width: 15),
-                    Text(
-                      discountCost,
-                      textAlign: TextAlign.left,
-                      style: const TextStyle(
-                        color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 18,
-                        fontFamily: 'Google Sans',
-                        fontWeight: FontWeight.w500,
-                        //fontStyle: FontStyle.italic,
+                    Expanded(
+                      flex: 1,
+                      child: Text(
+                        discountCost,
+                        textAlign: TextAlign.left,
+                        style: const TextStyle(
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 18,
+                          fontFamily: 'Google Sans',
+                          fontWeight: FontWeight.w500,
+                          //fontStyle: FontStyle.italic,
+                        ),
                       ),
                     ),
-                    const SizedBox(width: 55),
-                    Text(
-                      realCost,
-                      textAlign: TextAlign.left,
-                      style: const TextStyle(
-                        color: Color(0xFF677294),
-                        fontSize: 16,
-                        fontFamily: 'Google Sans',
-                        fontWeight: FontWeight.w500,
-                        decoration: TextDecoration.lineThrough,
-                        //fontStyle: FontStyle.italic,
+                    Expanded(
+                      flex: 1,
+                      child: Text(
+                        realCost,
+                        textAlign: TextAlign.left,
+                        style: const TextStyle(
+                          color: Color(0xFF677294),
+                          fontSize: 16,
+                          fontFamily: 'Google Sans',
+                          fontWeight: FontWeight.w500,
+                          decoration: TextDecoration.lineThrough,
+                          //fontStyle: FontStyle.italic,
+                        ),
                       ),
                     ),
-                    const SizedBox(width: 15),
-                    const Text(
-                      'ƯU ĐÃI CÓ HẠN!',
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        color: Color.fromARGB(255, 222, 12, 12),
-                        fontSize: 10,
-                        fontFamily: 'Google Sans',
-                        fontWeight: FontWeight.w500,
-                        //fontStyle: FontStyle.italic,
+                    const Expanded(
+                      flex: 1,
+                      child: Text(
+                        'ƯU ĐÃI CÓ HẠN!',
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          color: Color.fromARGB(255, 222, 12, 12),
+                          fontSize: 10,
+                          fontFamily: 'Google Sans',
+                          fontWeight: FontWeight.w500,
+                          //fontStyle: FontStyle.italic,
+                        ),
                       ),
                     ),
                   ],
@@ -137,26 +144,30 @@ class CourseBox extends StatelessWidget {
                   children: <Widget>[
                     //button học thử
                     const SizedBox(width: 15),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xFF0EBE7F),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      width: 150,
-                      height: 32,
-                      child: Transform.translate(
-                        offset: const Offset(0, 0),
-                        child: TextButton(
-                          onPressed: () {},
-                          child: const Text(
-                            'Học thử miễn phí',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 255, 255, 255),
-                              fontSize: 15,
-                              fontFamily: 'Google Sans',
-                              fontWeight: FontWeight.w500,
-                              //fontStyle: FontStyle.italic,
+                    Expanded(
+                      flex: 1,
+                      child: Container(
+                        margin: const EdgeInsets.only(right: 15),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFF0EBE7F),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        width: 150,
+                        height: 32,
+                        child: Transform.translate(
+                          offset: const Offset(0, 0),
+                          child: TextButton(
+                            onPressed: () {},
+                            child: const Text(
+                              'Học thử miễn phí',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                fontSize: 15,
+                                fontFamily: 'Google Sans',
+                                fontWeight: FontWeight.w500,
+                                //fontStyle: FontStyle.italic,
+                              ),
                             ),
                           ),
                         ),
@@ -164,34 +175,40 @@ class CourseBox extends StatelessWidget {
                     ),
 
                     //button mua ngay
-                    const SizedBox(width: 80),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xFF0EBE7F),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      width: 100,
-                      height: 32,
-                      child: Transform.translate(
-                        offset: const Offset(0, 0),
-                        child: TextButton(
-                          onPressed: () {},
-                          child: const Text(
-                            'Mua ngay',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: Color.fromARGB(255, 255, 255, 255),
-                              fontSize: 15,
-                              fontFamily: 'Google Sans',
-                              fontWeight: FontWeight.w500,
-                              //fontStyle: FontStyle.italic,
+                    Expanded(
+                      child: Container(
+                        margin: const EdgeInsets.only(left: 60),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFF0EBE7F),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        width: 100,
+                        height: 32,
+                        child: Transform.translate(
+                          offset: const Offset(0, 0),
+                          child: TextButton(
+                            onPressed: () {},
+                            child: const Text(
+                              'Mua ngay',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Color.fromARGB(255, 255, 255, 255),
+                                fontSize: 15,
+                                fontFamily: 'Google Sans',
+                                fontWeight: FontWeight.w500,
+                                //fontStyle: FontStyle.italic,
+                              ),
                             ),
                           ),
                         ),
                       ),
                     ),
+
+                    const SizedBox(width: 15),
                   ],
                 ),
+
+                const SizedBox(height: 15),
               ],
             ),
           ),

@@ -339,7 +339,6 @@ class _HomeScreenState extends State<HomeScreen> {
                       SizedBox(width: 10),
                     ],
                   ),
-
                   //hình ảnh chuyên gia nổi bật
                   const SizedBox(height: 15),
                   SingleChildScrollView(
@@ -665,7 +664,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-            //child: Stack(children: <Widget>[
           ],
         ),
       ),
