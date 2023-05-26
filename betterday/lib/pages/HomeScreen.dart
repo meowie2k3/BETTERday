@@ -169,8 +169,11 @@ class HomeScreen extends StatelessWidget {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) =>
-                                          CallScreenPatient()));
+                                      builder: (context) => CallScreenPatient(
+                                            name: 'Trang',
+                                            imageLink:
+                                                'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-guilherme-almeida-1858175.jpg',
+                                          )));
                             },
                             child: const Icon(
                               Icons.call,

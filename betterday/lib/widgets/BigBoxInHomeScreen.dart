@@ -26,10 +26,12 @@ class BigBoxInHomeScreen extends StatelessWidget {
         offset: const Offset(0, 0),
         child: GestureDetector(
           onTap: () {
-            if (name == 'Trang') {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => CallScreenPatient()));
-            }
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) =>
+                      CallScreenPatient(name: name, imageLink: imageLink)),
+            );
           },
           child: Column(
             children: <Widget>[

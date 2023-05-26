@@ -5,7 +5,11 @@ import 'package:betterday/widgets/MessageInCallScreenPatient.dart';
 import 'package:flutter/material.dart';
 
 class CallScreenPatient extends StatelessWidget {
-  CallScreenPatient({super.key});
+  final String imageLink;
+  final String name;
+
+  CallScreenPatient({Key? key, required this.imageLink, required this.name})
+      : super(key: key);
 
   StopWatchWidget stopWatchWidget = StopWatchWidget(timelimit: 5);
 
@@ -94,6 +98,8 @@ class CallScreenPatient extends StatelessWidget {
                       child: Column(
                         children: <Widget>[
                           TextContainer(
+                            imageLink: imageLink,
+                            name: name,
                             displayText: const [
                               'Bạn cảm thấy thế nào?',
                               'Tôi rất tiếc khi phải nghe điều đó!',
