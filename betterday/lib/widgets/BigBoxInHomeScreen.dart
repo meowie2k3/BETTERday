@@ -1,3 +1,4 @@
+import 'package:betterday/pages/CallScreenPatient.dart';
 import 'package:flutter/material.dart';
 
 class BigBoxInHomeScreen extends StatelessWidget {
@@ -24,7 +25,12 @@ class BigBoxInHomeScreen extends StatelessWidget {
       child: Transform.translate(
         offset: const Offset(0, 0),
         child: GestureDetector(
-          //onTap: () {},
+          onTap: () {
+            if (name == 'Trang') {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => CallScreenPatient()));
+            }
+          },
           child: Column(
             children: <Widget>[
               ClipRRect(

@@ -37,5 +37,6 @@
 		"sorce.fixAll": true
 	},
 	"dart.previewFlutterUiGuides": true,
-	"cmake.configureOnOpen": false
+	"cmake.configureOnOpen": false,
+	"cmake.sourceDirectory": "D:/BETTERday/BETTERday/betterday/linux"
 }
