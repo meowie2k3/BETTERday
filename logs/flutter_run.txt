@@ -1,23 +1,16 @@
-[9:56:16 PM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\main.dart"]
-[9:56:16 PM]: ..  in D:\BETTERday\BETTERday\betterday
-[9:56:16 PM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
-[9:56:16 PM]: PID: 20240
-[9:56:17 PM]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":16988}}]
-[9:56:17 PM]: <== [{"event":"app.start","params":{"appId":"c9559dd5-b9a6-490d-8922-deb3c15db9a0","deviceId":"emulator-5554","directory":"D:\\BETTERday\\BETTERday\\betterday","supportsRestart":true,"launchMode":"run"}}]
-[9:56:17 PM]: <== Launching lib\main.dart on sdk gphone x86 in debug mode...
-[9:56:18 PM]: <== [{"event":"app.progress","params":{"appId":"c9559dd5-b9a6-490d-8922-deb3c15db9a0","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
-[9:56:31 PM]: <== [{"event":"app.progress","params":{"appId":"c9559dd5-b9a6-490d-8922-deb3c15db9a0","id":"0","progressId":null,"finished":true}}]
-[9:56:32 PM]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
-[9:56:32 PM]: <== [{"event":"app.progress","params":{"appId":"c9559dd5-b9a6-490d-8922-deb3c15db9a0","id":"1","progressId":null,"message":"Installing build\\app\\outputs\\flutter-apk\\app-debug.apk...","finished":false}}]
-[9:56:34 PM]: <== [{"event":"app.progress","params":{"appId":"c9559dd5-b9a6-490d-8922-deb3c15db9a0","id":"1","progressId":null,"finished":true}}]
-[9:56:36 PM]: <== [{"event":"app.debugPort","params":{"appId":"c9559dd5-b9a6-490d-8922-deb3c15db9a0","port":55245,"wsUri":"ws://127.0.0.1:55245/WAwMJp892Mc=/ws","baseUri":"file:///data/user/0/com.example.betterday/code_cache/betterdayNBVTVX/betterday/"}}]
-[9:56:36 PM]: <== [{"event":"app.progress","params":{"appId":"c9559dd5-b9a6-490d-8922-deb3c15db9a0","id":"2","progressId":null,"message":"Syncing files to device sdk gphone x86...","finished":false}}]
-[9:56:39 PM]: <== [{"event":"app.progress","params":{"appId":"c9559dd5-b9a6-490d-8922-deb3c15db9a0","id":"2","progressId":null,"finished":true}}]
-[9:56:39 PM]: <== [{"event":"app.started","params":{"appId":"c9559dd5-b9a6-490d-8922-deb3c15db9a0"}}]
-[9:56:40 PM]: <== D/permissions_handler(18175): No permissions found in manifest for: []12
-[9:58:25 PM]: <== I/ample.betterda(18175): Thread[5,tid=18200,WaitingInMainSignalCatcherLoop,Thread*=0xe4acc410,peer=0x132c0268,"Signal Catcher"]: reacting to signal 3
-[9:58:25 PM]: <== I/ample.betterda(18175):
-[9:58:25 PM]: <== I/ample.betterda(18175): Wrote stack traces to tombstoned
-[9:58:25 PM]: <== F/crash_dump32(18443): crash_dump.cpp:474] failed to attach to thread 183: Permission denied
-[9:58:31 PM]: ==> [{"id":"1","method":"app.stop","params":{"appId":"c9559dd5-b9a6-490d-8922-deb3c15db9a0"}}]
-[9:58:34 PM]: Process C:\src\flutter\bin\flutter.bat terminated! 1, null
+[12:57:47 AM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5556","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\pages\\CourseScreen.dart"]
+[12:57:47 AM]: ..  in D:\BETTERday\BETTERday\betterday
+[12:57:47 AM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[12:57:47 AM]: PID: 17108
+[12:57:49 AM]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":15444}}]
+[12:57:49 AM]: <== [{"event":"app.start","params":{"appId":"88e61dd1-4be6-4464-84ed-2158befb0205","deviceId":"emulator-5556","directory":"D:\\BETTERday\\BETTERday\\betterday","supportsRestart":true,"launchMode":"run"}}]
+[12:57:49 AM]: <== Launching lib\pages\CourseScreen.dart on sdk gphone x86 in debug mode...
+[12:57:50 AM]: <== [{"event":"app.progress","params":{"appId":"88e61dd1-4be6-4464-84ed-2158befb0205","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
+[12:58:17 AM]: <== [{"event":"app.progress","params":{"appId":"88e61dd1-4be6-4464-84ed-2158befb0205","id":"0","progressId":null,"finished":true}}]
+[12:58:19 AM]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
+[12:58:19 AM]: <== [{"event":"app.progress","params":{"appId":"88e61dd1-4be6-4464-84ed-2158befb0205","id":"1","progressId":null,"message":"Installing build\\app\\outputs\\flutter-apk\\app-debug.apk...","finished":false}}]
+[12:58:21 AM]: <== [{"event":"app.progress","params":{"appId":"88e61dd1-4be6-4464-84ed-2158befb0205","id":"1","progressId":null,"finished":true}}]
+[12:58:25 AM]: <== E/flutter ( 4680): [ERROR:flutter/runtime/dart_isolate.cc(144)] Could not prepare isolate.
+[12:58:25 AM]: <== E/flutter ( 4680): [ERROR:flutter/runtime/runtime_controller.cc(417)] Could not create root isolate.
+[12:58:25 AM]: <== E/flutter ( 4680): [ERROR:flutter/shell/common/shell.cc(606)] Could not launch engine with configuration.
+[1:00:50 AM]: Process C:\src\flutter\bin\flutter.bat terminated! 1, null

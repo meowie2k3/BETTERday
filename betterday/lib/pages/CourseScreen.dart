@@ -92,157 +92,207 @@ class CourseScreen extends StatelessWidget {
                     ],
                   ),
 
-                  //kết nối & trò chuyện
                   const SizedBox(height: 15),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      //icon nhà
+                      //icon nhà vs sách
                       const SizedBox(width: 15),
-                      Container(
-                        decoration: BoxDecoration(
-                          gradient: const LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              colors: [Color(0xFF2753F3), Color(0xFF765AFC)]),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        width: 50,
-                        height: 50,
-                        child: Transform.translate(
-                          offset: const Offset(0, 0),
-                          child: GestureDetector(
-                            //onTap: () {},
-                            child: const Icon(
-                              Icons.home_filled,
-                              color: Color.fromARGB(255, 255, 255, 255),
+                      Expanded(
+                        flex: 1,
+                        child: Column(
+                          children: <Widget>[
+                            //icon nhà
+                            Container(
+                              decoration: BoxDecoration(
+                                gradient: const LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    Color(0xFF2753F3),
+                                    Color(0xFF765AFC)
+                                  ],
+                                ),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              width: 50,
+                              height: 50,
+                              child: Center(
+                                child: GestureDetector(
+                                  child: const Icon(
+                                    Icons.home_filled,
+                                    color: Color.fromARGB(255, 255, 255, 255),
+                                  ),
+                                ),
+                              ),
                             ),
-                          ),
-                        ),
-                      ),
-                      //text kết nối
-                      const SizedBox(width: 10),
-                      const Text(
-                        'Kết nối với ngôi nhà\ncủa chính bạn',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 15,
-                          fontFamily: 'Google Sans',
-                          //fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                      //icon trò chuyện
-                      const SizedBox(width: 6),
-                      Container(
-                        decoration: BoxDecoration(
-                          gradient: const LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              colors: [Color(0xFFFF484C), Color(0xFFFF6C60)]),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        width: 50,
-                        height: 50,
-                        child: Transform.translate(
-                          offset: const Offset(0, 0),
-                          child: GestureDetector(
-                            //onTap: () {},
-                            child: const Icon(
-                              Icons.call,
-                              color: Color.fromARGB(255, 255, 255, 255),
-                            ),
-                          ),
-                        ),
-                      ),
-                      //text trò chuyện
-                      const SizedBox(width: 10),
-                      const Text(
-                        'Trò chuyện với\nnhững người\nthích hợp',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 15,
-                          fontFamily: 'Google Sans',
-                          //fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                    ],
-                  ),
 
-                  //Test & research
-                  const SizedBox(height: 15),
-                  Row(
-                    children: <Widget>[
-                      //icon nhà
+                            //icon sách
+                            const SizedBox(height: 15),
+                            Container(
+                              decoration: BoxDecoration(
+                                gradient: const LinearGradient(
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                    colors: [
+                                      Color(0xFFFE7F44),
+                                      Color(0xFFFFCF68)
+                                    ]),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              width: 50,
+                              height: 50,
+                              child: Transform.translate(
+                                offset: const Offset(0, 0),
+                                child: GestureDetector(
+                                  //onTap: () {},
+                                  child: const Icon(
+                                    Icons.text_snippet_outlined,
+                                    color: Color.fromARGB(255, 255, 255, 255),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+
+                      //text kết nối vs test
+                      const SizedBox(width: 10),
+                      Expanded(
+                        flex: 2,
+                        child: Column(
+                          children: const <Widget>[
+                            //text kết nối
+                            Center(
+                              child: Text(
+                                'Kết nối với ngôi nhà của chính bạn',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  fontSize: 15,
+                                  fontFamily: 'Google Sans',
+                                  //fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+
+                            //text test
+                            SizedBox(height: 15),
+                            Center(
+                              child: Text(
+                                'Những bài kiểm tra tâm lí đơn giản',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                  color: Color.fromARGB(255, 0, 0, 0),
+                                  fontSize: 15,
+                                  fontFamily: 'Google Sans',
+                                  //fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+
+                      //icon call vs research
                       const SizedBox(width: 15),
-                      Container(
-                        decoration: BoxDecoration(
-                          gradient: const LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              colors: [Color(0xFFFE7F44), Color(0xFFFFCF68)]),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        width: 50,
-                        height: 50,
-                        child: Transform.translate(
-                          offset: const Offset(0, 0),
-                          child: GestureDetector(
-                            //onTap: () {},
-                            child: const Icon(
-                              Icons.text_snippet_outlined,
-                              color: Color.fromARGB(255, 255, 255, 255),
+                      Expanded(
+                        flex: 1,
+                        child: Column(
+                          children: <Widget>[
+                            //icon trò chuyện
+                            Container(
+                              //margin: const EdgeInsets.symmetric(horizontal: 70),
+                              decoration: BoxDecoration(
+                                gradient: const LinearGradient(
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                    colors: [
+                                      Color(0xFFFF484C),
+                                      Color(0xFFFF6C60)
+                                    ]),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              width: 50,
+                              height: 50,
+                              child: Transform.translate(
+                                offset: const Offset(0, 0),
+                                child: GestureDetector(
+                                  //onTap: () {},
+                                  child: const Icon(
+                                    Icons.call,
+                                    color: Color.fromARGB(255, 255, 255, 255),
+                                  ),
+                                ),
+                              ),
                             ),
-                          ),
-                        ),
-                      ),
-                      //text kết nối
-                      const SizedBox(width: 10),
-                      const Text(
-                        'Những bài kiểm tra\ntâm lí đơn giản',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 15,
-                          fontFamily: 'Google Sans',
-                          //fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                      //icon trò chuyện
-                      const SizedBox(width: 10),
-                      Container(
-                        decoration: BoxDecoration(
-                          gradient: const LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              colors: [Color(0xFF0EBE7E), Color(0xFF07D9AD)]),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        width: 50,
-                        height: 50,
-                        child: Transform.translate(
-                          offset: const Offset(0, 0),
-                          child: GestureDetector(
-                            //onTap: () {},
-                            child: const Icon(
-                              Icons.zoom_in_outlined,
-                              color: Color.fromARGB(255, 255, 255, 255),
+
+                            //icon research
+                            const SizedBox(height: 15),
+                            Container(
+                              decoration: BoxDecoration(
+                                gradient: const LinearGradient(
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                    colors: [
+                                      Color(0xFF0EBE7E),
+                                      Color(0xFF07D9AD)
+                                    ]),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              width: 50,
+                              height: 50,
+                              child: Transform.translate(
+                                offset: const Offset(0, 0),
+                                child: GestureDetector(
+                                  //onTap: () {},
+                                  child: const Icon(
+                                    Icons.zoom_in_outlined,
+                                    color: Color.fromARGB(255, 255, 255, 255),
+                                  ),
+                                ),
+                              ),
                             ),
-                          ),
+                          ],
                         ),
                       ),
-                      //text trò chuyện
+
+                      //text trò chuyện vs research
                       const SizedBox(width: 10),
-                      const Text(
-                        'Tìm hiểu sâu hơn\nvề tâm lí học',
-                        textAlign: TextAlign.left,
-                        style: TextStyle(
-                          color: Color.fromARGB(255, 0, 0, 0),
-                          fontSize: 15,
-                          fontFamily: 'Google Sans',
-                          //fontWeight: FontWeight.w700,
+                      Expanded(
+                        flex: 2,
+                        child: Column(
+                          children: const <Widget>[
+                            //text trò chuyện
+                            Text(
+                              'Trò chuyện với những người thích hợp',
+                              textAlign: TextAlign.left,
+                              style: TextStyle(
+                                color: Color.fromARGB(255, 0, 0, 0),
+                                fontSize: 15,
+                                fontFamily: 'Google Sans',
+                                //fontWeight: FontWeight.w700,
+                              ),
+                            ),
+
+                            //text research
+                            SizedBox(height: 15),
+                            Text(
+                              'Tìm hiểu sâu hơn về tâm lí học',
+                              textAlign: TextAlign.left,
+                              style: TextStyle(
+                                color: Color.fromARGB(255, 0, 0, 0),
+                                fontSize: 15,
+                                fontFamily: 'Google Sans',
+                                //fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
+
+                      const SizedBox(width: 15),
                     ],
                   ),
 
@@ -265,19 +315,7 @@ class CourseScreen extends StatelessWidget {
                     ],
                   ),
 
-                  //Góc nhìn của Socrates
-                  const SizedBox(height: 15),
-                  const CourseBox(
-                    imageLink: 'assets/images/CourseScreen/socratesmethod.jpg',
-                    name: 'Góc nhìn của Socrates',
-                    details: 'Bao gồm 40+ bài học từ vị triết gia lỗi lạc',
-                    discountCost: '14.999 VNĐ',
-                    realCost: '24.999 VNĐ',
-                    url: '',
-                  ),
-
                   //Sự tiến hóa của lòng tin
-                  const SizedBox(height: 15),
                   const CourseBox(
                     imageLink:
                         'assets/images/CourseScreen/su_tien_hoa_cua_long_tin.png',
@@ -288,8 +326,17 @@ class CourseScreen extends StatelessWidget {
                     url: 'https://nghiatt90.github.io/trust-vn/',
                   ),
 
+                  //Góc nhìn của Socrates
+                  const CourseBox(
+                    imageLink: 'assets/images/CourseScreen/socratesmethod.jpg',
+                    name: 'Góc nhìn của Socrates',
+                    details: 'Bao gồm 40+ bài học từ vị triết gia lỗi lạc',
+                    discountCost: '14.999 VNĐ',
+                    realCost: '24.999 VNĐ',
+                    url: '',
+                  ),
+
                   //Bài học từ  “Nhà giả kim”
-                  const SizedBox(height: 15),
                   const CourseBox(
                     imageLink:
                         'assets/images/CourseScreen/10-bai-hoc-dat-gia-tu-nha-gia-kim-elleman-1.jpg',
