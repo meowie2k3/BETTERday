@@ -1,21 +1,17 @@
-[5:31:27 PM]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\main.dart"]
-[5:31:27 PM]: ..  in D:\BETTERday\BETTERday\betterday
-[5:31:27 PM]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
-[5:31:27 PM]: PID: 7828
-[5:31:29 PM]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":24724}}]
-[5:31:29 PM]: <== [{"event":"app.start","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","deviceId":"emulator-5554","directory":"D:\\BETTERday\\BETTERday\\betterday","supportsRestart":true,"launchMode":"run"}}]
-[5:31:29 PM]: <== Launching lib\main.dart on sdk gphone x86 in debug mode...
-[5:31:30 PM]: <== [{"event":"app.progress","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
-[5:31:49 PM]: <== [{"event":"app.progress","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","id":"0","progressId":null,"finished":true}}]
-[5:31:51 PM]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
-[5:31:51 PM]: <== [{"event":"app.progress","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","id":"1","progressId":null,"message":"Installing build\\app\\outputs\\flutter-apk\\app-debug.apk...","finished":false}}]
-[5:31:53 PM]: <== [{"event":"app.progress","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","id":"1","progressId":null,"finished":true}}]
-[5:31:58 PM]: <== [{"event":"app.debugPort","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","port":58535,"wsUri":"ws://127.0.0.1:58535/AwxrLoXbYyM=/ws","baseUri":"file:///data/user/0/com.example.betterday/code_cache/betterdayNIIFHJ/betterday/"}}]
-[5:31:58 PM]: <== [{"event":"app.progress","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","id":"2","progressId":null,"message":"Syncing files to device sdk gphone x86...","finished":false}}]
-[5:31:58 PM]: <== [{"event":"app.progress","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59","id":"2","progressId":null,"finished":true}}]
-[5:31:58 PM]: <== [{"event":"app.started","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59"}}]
-[5:32:01 PM]: <== D/permissions_handler(24108): No permissions found in manifest for: []12
-[5:32:07 PM]: <== I/flutter (24108): skipped
-[5:36:17 PM]: ==> [{"id":"1","method":"app.stop","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59"}}]
-[5:36:17 PM]: <== Application finished.
-[5:36:17 PM]: <== [{"event":"app.stop","params":{"appId":"32cbcb4b-4e60-4660-be7d-16df29771c59"}}]
+[22:46:28]: Spawning D:\Coding\IDE data\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\pages\\SplashScreen.dart"]
+[22:46:28]: ..  in D:\Coding\Projects\BETTERday\betterday
+[22:46:28]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[22:46:28]: PID: 4408
+[22:46:30]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":13408}}]
+[22:46:30]: <== [{"event":"app.start","params":{"appId":"0c12d8a7-121f-4e45-ad8c-c9d636771f72","deviceId":"emulator-5554","directory":"D:\\Coding\\Projects\\BETTERday\\betterday","supportsRestart":true,"launchMode":"run"}}]
+[22:46:30]: <== Launching lib\pages\SplashScreen.dart on sdk gphone64 x86 64 in debug mode...
+[22:46:30]: <== [{"event":"app.progress","params":{"appId":"0c12d8a7-121f-4e45-ad8c-c9d636771f72","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
+[22:47:40]: <== [{"event":"app.progress","params":{"appId":"0c12d8a7-121f-4e45-ad8c-c9d636771f72","id":"0","progressId":null,"finished":true}}]
+[22:47:41]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
+[22:47:41]: <== [{"event":"app.progress","params":{"appId":"0c12d8a7-121f-4e45-ad8c-c9d636771f72","id":"1","progressId":null,"message":"Installing build\\app\\outputs\\flutter-apk\\app-debug.apk...","finished":false}}]
+[22:47:43]: <== [{"event":"app.progress","params":{"appId":"0c12d8a7-121f-4e45-ad8c-c9d636771f72","id":"1","progressId":null,"finished":true}}]
+[22:47:46]: <== E/flutter ( 5099): [ERROR:flutter/runtime/dart_isolate.cc(144)] Could not prepare isolate.
+[22:47:46]: <== E/flutter ( 5099): [ERROR:flutter/runtime/runtime_controller.cc(417)] Could not create root isolate.
+[22:47:46]: <== E/flutter ( 5099): [ERROR:flutter/shell/common/shell.cc(606)] Could not launch engine with configuration.
+[22:49:32]: Error connecting to the service protocol: failed to connect to http://127.0.0.1:53106/DuUyDHHoEjQ=/
+[22:49:32]: <== [{"event":"app.stop","params":{"appId":"0c12d8a7-121f-4e45-ad8c-c9d636771f72"}}]

@@ -1,15 +1,30 @@
+import 'package:betterday/pages/AuthPages/BotUI.dart';
+import 'package:betterday/pages/AuthPages/LoginPage.dart';
 import 'package:betterday/pages/BotChatScreen.dart';
 import 'package:betterday/pages/CallScreenPatient.dart';
+import 'package:betterday/pages/ProfilePage.dart';
 import 'package:betterday/widgets/BigBoxInHomeScreen.dart';
 import 'package:betterday/widgets/DustyCircle.dart';
 import 'package:betterday/widgets/SmallBoxInHomeScreen.dart';
+import 'package:betterday/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 import 'CourseScreen.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomeScreen extends StatefulWidget {
+  String username;
+  String email;
+  HomeScreen({
+    Key? key,
+    required this.email,
+    required this.username,
+  }) : super(key: key);
 
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,6 +79,10 @@ class HomeScreen extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
+                onTap:() {
+                  print("profile tapped");
+                  nextScreen(context, ProfilePage(email: widget.email, username: widget.username,));
+                },
               ),
             ),
           ),
@@ -121,6 +140,7 @@ class HomeScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       //button tài nguyên
+
                       Expanded(
                         flex: 1,
                         child: Container(
@@ -149,12 +169,40 @@ class HomeScreen extends StatelessWidget {
                                 color: Color.fromARGB(255, 255, 255, 255),
                                 size: 50,
                               ),
+
+                      const SizedBox(width: 65),
+                      Container(
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                              colors: [Color(0xFF1FAE7B), Color(0xFF07D9AD)]),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        width: 80,
+                        height: 80,
+                        child: Transform.translate(
+                          offset: const Offset(0, 0),
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          CourseScreen(username: widget.username,email: widget.email)));
+                            },
+                            child: const Icon(
+                              Icons.menu_book_outlined,
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              size: 50,
+
                             ),
                           ),
                         ),
                       ),
 
                       //button lắng nghe
+
                       Expanded(
                         flex: 1,
                         child: Container(
@@ -183,6 +231,33 @@ class HomeScreen extends StatelessWidget {
                                 color: Color.fromARGB(255, 255, 255, 255),
                                 size: 50,
                               ),
+
+                      const SizedBox(width: 105),
+                      Container(
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                              colors: [Color(0xFF1FAE7B), Color(0xFF07D9AD)]),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        width: 80,
+                        height: 80,
+                        child: Transform.translate(
+                          offset: const Offset(0, 0),
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          CallScreenPatient()));
+                            },
+                            child: const Icon(
+                              Icons.call,
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              size: 50,
+
                             ),
                           ),
                         ),
@@ -302,7 +377,7 @@ class HomeScreen extends StatelessWidget {
                                 'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-ruslan-sikunov-16542850.jpg',
                             name: 'Ngọc',
                             numStar: 4),
-//thu
+                        //thu
                         SizedBox(width: 15),
                         BigBoxInHomeScreen(
                             imageLink:
@@ -419,7 +494,7 @@ class HomeScreen extends StatelessWidget {
                               isFavorite: true,
                               numStar: 3.9,
                               cost: 'Từ 23.000 VNĐ'),
-//Linh
+                          //Linh
                           SizedBox(width: 10),
                           SmallBoxInHomeScreen(
                               imageLink:
@@ -550,7 +625,7 @@ class HomeScreen extends StatelessWidget {
                               isFavorite: false,
                               numStar: 3.2,
                               cost: 'Từ 20.000 VNĐ'),
-//Dũng
+                          //Dũng
                           SizedBox(width: 10),
                           SmallBoxInHomeScreen(
                               imageLink:
@@ -615,14 +690,14 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const CourseScreen()));
+                        builder: (context) => CourseScreen(email: widget.email, username: widget.username)));
               },
             ),
             IconButton(
               icon: const Icon(Icons.chat_bubble_outline),
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const BotChat()));
+                    MaterialPageRoute(builder: (context) => const BotUI()));
               },
             ),
           ],
