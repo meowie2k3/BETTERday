@@ -1,3 +1,4 @@
+import 'package:betterday/pages/CallScreenPatient.dart';
 import 'package:flutter/material.dart';
 
 class SmallBoxInHomeScreen extends StatelessWidget {
@@ -28,7 +29,14 @@ class SmallBoxInHomeScreen extends StatelessWidget {
       child: Transform.translate(
         offset: const Offset(0, 0),
         child: GestureDetector(
-          //onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) =>
+                      CallScreenPatient(name: name, imageLink: imageLink)),
+            );
+          },
           child: Column(
             children: <Widget>[
               const SizedBox(height: 5),

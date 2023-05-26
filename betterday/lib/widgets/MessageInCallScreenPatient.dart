@@ -5,9 +5,16 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class TextContainer extends StatefulWidget {
   final List<String> displayText;
+  final String imageLink;
+  final String name;
   int i = 0;
 
-  TextContainer({Key? key, required this.displayText}) : super(key: key);
+  TextContainer(
+      {Key? key,
+      required this.displayText,
+      required this.imageLink,
+      required this.name})
+      : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
@@ -62,9 +69,9 @@ class _TextContainerState extends State<TextContainer> {
                   child: ClipRRect(
                       borderRadius: BorderRadius.circular(50),
                       child: Opacity(
-                        opacity: 0.8,
+                        opacity: 1,
                         child: Image.asset(
-                          'assets/images/HomeScreen/ChuyenGiaNoiBat/pexels-guilherme-almeida-1858175.jpg',
+                          widget.imageLink,
                           width: 60,
                           height: 60,
                           fit: BoxFit.cover,
@@ -79,12 +86,12 @@ class _TextContainerState extends State<TextContainer> {
                     width: 300,
                     image: AssetImage(
                         'assets/images/CallScreenPatient/chatBox.png')),
-                const Positioned(
+                Positioned(
                   top: 5,
                   left: 15,
                   child: Text(
-                    'Ms. Trang',
-                    style: TextStyle(
+                    widget.name,
+                    style: const TextStyle(
                       color: Colors.white,
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold,
@@ -134,8 +141,8 @@ class _TextContainerState extends State<TextContainer> {
         color: Colors.transparent,
         borderRadius: BorderRadius.circular(10),
       ),
-      width: 360,
-      height: 370,
+      width: MediaQuery.of(context).size.width * 0.92,
+      height: MediaQuery.of(context).size.height * 0.45,
       child: Transform.translate(
         offset: const Offset(0, 0),
         child: GestureDetector(
