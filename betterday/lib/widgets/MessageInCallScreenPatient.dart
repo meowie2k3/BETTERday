@@ -134,8 +134,8 @@ class _TextContainerState extends State<TextContainer> {
         color: Colors.transparent,
         borderRadius: BorderRadius.circular(10),
       ),
-      width: 360,
-      height: 370,
+      width: MediaQuery.of(context).size.width * 0.92,
+      height: MediaQuery.of(context).size.height * 0.45,
       child: Transform.translate(
         offset: const Offset(0, 0),
         child: GestureDetector(
