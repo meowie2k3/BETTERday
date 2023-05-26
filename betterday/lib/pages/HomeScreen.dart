@@ -1,6 +1,8 @@
 import 'package:betterday/pages/BotChatScreen.dart';
 import 'package:betterday/pages/CallScreenPatient.dart';
+import 'package:betterday/widgets/BigBoxInHomeScreen.dart';
 import 'package:betterday/widgets/DustyCircle.dart';
+import 'package:betterday/widgets/SmallBoxInHomeScreen.dart';
 import 'package:flutter/material.dart';
 
 import 'CourseScreen.dart';
@@ -244,7 +246,6 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-/*
                   //hình ảnh chuyên gia nổi bật
                   const SizedBox(height: 15),
                   SingleChildScrollView(
@@ -473,7 +474,6 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  */
                   const SizedBox(height: 25),
                 ],
               ),
