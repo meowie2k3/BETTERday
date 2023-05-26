@@ -33,7 +33,7 @@ class _BotChatState extends State<BotChat> {
   Stream<QuerySnapshot>? chats;
   TextEditingController messageController = TextEditingController();
   String admin = "";
-  static final ScrollController _scrollController = ScrollController();
+  final ScrollController _scrollController = ScrollController();
   bool isScrollable = false;
 
   @override
@@ -236,7 +236,7 @@ class _BotChatState extends State<BotChat> {
     }
   }
 
-  static void _scrollToBottom() async {
+  void _scrollToBottom() async {
     _scrollController.animateTo(
       _scrollController.position.maxScrollExtent,
       duration: const Duration(milliseconds: 300),

@@ -1,0 +1,17 @@
+[22:46:28]: Spawning D:\Coding\IDE data\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9101/","--target","lib\\pages\\SplashScreen.dart"]
+[22:46:28]: ..  in D:\Coding\Projects\BETTERday\betterday
+[22:46:28]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[22:46:28]: PID: 4408
+[22:46:30]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":13408}}]
+[22:46:30]: <== [{"event":"app.start","params":{"appId":"0c12d8a7-121f-4e45-ad8c-c9d636771f72","deviceId":"emulator-5554","directory":"D:\\Coding\\Projects\\BETTERday\\betterday","supportsRestart":true,"launchMode":"run"}}]
+[22:46:30]: <== Launching lib\pages\SplashScreen.dart on sdk gphone64 x86 64 in debug mode...
+[22:46:30]: <== [{"event":"app.progress","params":{"appId":"0c12d8a7-121f-4e45-ad8c-c9d636771f72","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
+[22:47:40]: <== [{"event":"app.progress","params":{"appId":"0c12d8a7-121f-4e45-ad8c-c9d636771f72","id":"0","progressId":null,"finished":true}}]
+[22:47:41]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
+[22:47:41]: <== [{"event":"app.progress","params":{"appId":"0c12d8a7-121f-4e45-ad8c-c9d636771f72","id":"1","progressId":null,"message":"Installing build\\app\\outputs\\flutter-apk\\app-debug.apk...","finished":false}}]
+[22:47:43]: <== [{"event":"app.progress","params":{"appId":"0c12d8a7-121f-4e45-ad8c-c9d636771f72","id":"1","progressId":null,"finished":true}}]
+[22:47:46]: <== E/flutter ( 5099): [ERROR:flutter/runtime/dart_isolate.cc(144)] Could not prepare isolate.
+[22:47:46]: <== E/flutter ( 5099): [ERROR:flutter/runtime/runtime_controller.cc(417)] Could not create root isolate.
+[22:47:46]: <== E/flutter ( 5099): [ERROR:flutter/shell/common/shell.cc(606)] Could not launch engine with configuration.
+[22:49:32]: Error connecting to the service protocol: failed to connect to http://127.0.0.1:53106/DuUyDHHoEjQ=/
+[22:49:32]: <== [{"event":"app.stop","params":{"appId":"0c12d8a7-121f-4e45-ad8c-c9d636771f72"}}]
